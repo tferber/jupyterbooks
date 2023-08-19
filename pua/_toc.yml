@@ -3,7 +3,11 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+
+parts:
+- caption: VORLESUNGEN ✍️
+  chapters:
+  - file: content/vorlesung_2.md
+    sections:
+    - file: content/variablen.md
+    - file: content/jupyterquiz/quiz_variablen
