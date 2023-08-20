@@ -7,6 +7,10 @@ root: intro
 parts:
 - caption: VORLESUNGEN ✍️
   chapters:
+  - file: content/vorlesung_1.md
+    sections:
+    - file: content/jupyterquiz/quiz_syntax
+
   - file: content/vorlesung_2.md
     sections:
     - file: content/variablen.md
