@@ -15,3 +15,5 @@ parts:
     sections:
     - file: content/variablen.md
     - file: content/jupyterquiz/quiz_variablen
+  - file: content/vorlesung_3.md
+  - file: content/vorlesung_4.md
