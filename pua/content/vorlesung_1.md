@@ -1,8 +1,10 @@
 # Vorlesung 1
 
-```{admonition} Hier geht zum Quiz...
+```{admonition} Hier geht zu den Quizes...
 :class: tip
 [Quiz zum Thema "Python Syntax"](jupyterquiz/quiz_syntax.ipynb)
+
+[Quiz zum Thema "Python Grundrechenarten"](jupyterquiz/quiz_grundrechenarten.ipynb)
 ```
 
 ## Was Sie wissen sollten

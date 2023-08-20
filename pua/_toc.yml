@@ -10,6 +10,7 @@ parts:
   - file: content/vorlesung_1.md
     sections:
     - file: content/jupyterquiz/quiz_syntax
+    - file: content/jupyterquiz/quiz_grundrechenarten
 
   - file: content/vorlesung_2.md
     sections:
