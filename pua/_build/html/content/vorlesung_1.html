@@ -354,7 +354,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -370,6 +372,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -381,11 +391,44 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-1">
 <h1>Vorlesung 1<a class="headerlink" href="#vorlesung-1" title="Permalink to this heading">#</a></h1>
-<p>Text</p>
 <div class="tip admonition">
 <p class="admonition-title">Hier geht zum Quiz…</p>
-<p><a class="reference internal" href="jupyterquiz/quiz_syntax.html"><span class="doc std std-doc">Quiz zum Thema “Variablen”</span></a></p>
+<p><a class="reference internal" href="jupyterquiz/quiz_syntax.html"><span class="doc std std-doc">Quiz zum Thema “Python Syntax”</span></a></p>
 </div>
+<section id="was-sie-wissen-sollten">
+<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python ist eine formale Sprache und folgt syntaktischen und semantischen Regeln</p>
+<ul>
+<li><p>Wie unterscheiden sich formale und natürliche Sprachen? Was ist der unterschied zwischen syntaktischen und semantischen Regeln?</p></li>
+</ul>
+</li>
+<li><p>Eine Möglichkeit Python zu nutzen ist der sog. <em>Interactive Mode</em></p>
+<ul>
+<li><p>Wie starten sie den Interactive Mode? Wie verlassen sie den <em>Interactive Mode</em>? Wie erkennen Sie welche Python Version benutzen?</p></li>
+</ul>
+</li>
+<li><p>Python besitzt nur vier grundlegende Datenobjekte: <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<ul>
+<li><p>Wie unterscheiden sich die verschiedenen Datenobjekte? Wann verwenden sie <code class="docutils literal notranslate"><span class="pre">int</span></code> und wann <code class="docutils literal notranslate"><span class="pre">float</span></code>? Welche Werte kann das Datenobjekt <code class="docutils literal notranslate"><span class="pre">bool</span></code> annehmen?</p></li>
+</ul>
+</li>
+<li><p>Python besitzt arithmetische Operatoren für alle sieben Grundrechenarten</p>
+<ul>
+<li><p>Welche Grundrechenarten sind das? Wie stellt man die Exponentiation in Python dar? Stellen Sie sicher, dass sie auch die Division mit Rest verinnerlicht haben.</p></li>
+</ul>
+</li>
+<li><p>Python erlaubt implizite und explizite Umwandlung von Datentypen</p>
+<ul>
+<li><p>Was ist der Unterschied zwischen impliziten und expliziten Umwandlungen? Welche Operationen die Sie bereits kennen führen eine impliziten Umwandlung durch?</p></li>
+</ul>
+</li>
+<li><p>Zeichenketten werden im Datenobjekt <code class="docutils literal notranslate"><span class="pre">string</span></code> repräsentiert</p>
+<ul>
+<li><p>Wie erstellen sie ein Datenobjekt des Typs <code class="docutils literal notranslate"><span class="pre">string</span></code>? Was ist der Unterschied zwischen einfachen und doppelten Anführungszeichen? Wie stellen sie ein Anführungszeichen selbst in einer Zeichenketten dar?</p></li>
+</ul>
+</li>
+</ul>
 <!--## Download Vorlesungsfolien-->
 <!---->
 <!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
@@ -404,6 +447,7 @@ document.write(`
 <!---->
 <!---->
 <!--::::-->
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -466,6 +510,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
