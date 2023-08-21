@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Quiz Variablen &#8212; Programmieren und Algorithmen</title>
+    <title>Quiz f-strings &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_variablen';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_fstrings';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Vorlesung 3" href="../vorlesung_3.html" />
-    <link rel="prev" title="Vorlesung 2" href="../vorlesung_2.html" />
+    <link rel="prev" title="Quiz Variablen" href="quiz_variablen.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -165,7 +165,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_2.html">Vorlesung 2</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_variablen.html">Quiz Variablen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz f-strings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_3.html">Vorlesung 3</a></li>
@@ -241,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/jupyterquiz/quiz_variablen.ipynb" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/jupyterquiz/quiz_fstrings.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -258,7 +259,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/issues/new?title=Issue%20on%20page%20%2Fcontent/jupyterquiz/quiz_variablen.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/issues/new?title=Issue%20on%20page%20%2Fcontent/jupyterquiz/quiz_fstrings.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +289,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/jupyterquiz/quiz_variablen.ipynb" target="_blank"
+      <li><a href="../../_sources/content/jupyterquiz/quiz_fstrings.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quiz Variablen</h1>
+    <h1>Quiz f-strings</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,19 +383,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quiz-variablen">
-<h1>Quiz Variablen<a class="headerlink" href="#quiz-variablen" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="quiz-f-strings">
+<h1>Quiz f-strings<a class="headerlink" href="#quiz-f-strings" title="Permalink to this heading">#</a></h1>
 <div class="cell tag_remove-input docutils container">
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="fAMbeojxLFYJ" data-shufflequestions="False"
+<div class="output text_html"><div id="XIGyVEGjvpnq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#fAMbeojxLFYJ {
+#XIGyVEGjvpnq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -564,7 +565,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsfAMbeojxLFYJ=[{"question": "Was ist `b`?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
+</style></div><script type="application/javascript">var questionsXIGyVEGjvpnq=[{"question": "Was ist ein f-string in Python?", "type": "multiple_choice", "answers": [{"answer": "Ein string der mit dem Buchstaben f beginnt", "correct": false, "feedback": "Falsch! Ein f-string beginnt zwar mit einem f, es ist aber nicht Teil des strings!"}, {"answer": "Die empfohlene string-Formatierung in modernem Python", "correct": true, "feedback": "Richtig! f-strings wurden erst in python 3.6 eingef\u00fchrt und sind die empfohlene Methode strings mit Zahlen darzustellen."}, {"answer": "Eine Methode eine Gleitkommazahl (`float`) in einen string umzuwandeln.", "correct": false, "feedback": "Falsch! Eine Gleitkommazahl `x` wandeln sie durch explizite Type-Konvertierung str(x) in einen string um."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1313,8 +1314,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("fAMbeojxLFYJ")) {
-            show_questions(questionsfAMbeojxLFYJ,  fAMbeojxLFYJ); 
+          if(document.getElementById("XIGyVEGjvpnq")) {
+            show_questions(questionsXIGyVEGjvpnq,  XIGyVEGjvpnq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1323,18 +1324,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("fAMbeojxLFYJ");
-        // console.log(document.getElementById("fAMbeojxLFYJ"));
+        //console.log("XIGyVEGjvpnq");
+        // console.log(document.getElementById("XIGyVEGjvpnq"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="SaDNoeommPvw" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="orfvQjULiubf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SaDNoeommPvw {
+#orfvQjULiubf {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1504,7 +1505,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSaDNoeommPvw=[{"question": "Was ist `b`?", "code": "a=2\nb=a*5\na=4\nb=b+1", "type": "multiple_choice", "answers": [{"answer": "b=11", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! Die Operation `b=b+1` ist erlaubt und wird sogar recht h\u00e4ufig angewendet."}, {"answer": "b=21", "correct": false, "feedback": "Falsch! Die zweite Zuweisung von `a` hat keinerlei Auswirkung auf `b`."}]}];
+</style></div><script type="application/javascript">var questionsorfvQjULiubf=[{"question": "Wie w\u00fcrden sie eine Variable `x=42.0` in einem f-string benutzen?", "type": "multiple_choice", "answers": [{"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {x}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is %f\" % x", "correct": false, "feedback": "Falsch! Dies ist die veraltete %-Formatierung."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {}\".format(x)", "correct": false, "feedback": "Falsch! Dies ist das veraltete str.format()."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is\" + x", "correct": false, "feedback": "Falsch! Sie k\u00f6nnen einen `string` und eine Gleitkommazahl nicht mit einer Additionsoperation verbinden."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2253,8 +2254,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SaDNoeommPvw")) {
-            show_questions(questionsSaDNoeommPvw,  SaDNoeommPvw); 
+          if(document.getElementById("orfvQjULiubf")) {
+            show_questions(questionsorfvQjULiubf,  orfvQjULiubf); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2263,18 +2264,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SaDNoeommPvw");
-        // console.log(document.getElementById("SaDNoeommPvw"));
+        //console.log("orfvQjULiubf");
+        // console.log(document.getElementById("orfvQjULiubf"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="QpHCZoxuBxrL" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="GOAhbJkMdhJA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#QpHCZoxuBxrL {
+#GOAhbJkMdhJA {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2444,7 +2445,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsQpHCZoxuBxrL=[{"question": "Welche beiden Variablen referenzieren das gleiche Objekt bei Verwendung des Interpreter Mode? (F\u00fcr Expert*innen!)", "type": "multiple_choice", "answers": [{"code": "a=10\nb=10", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. Caching sehr kleiner `int` Werte zwischen -5 und 256 in Python."}, {"code": "a=3120\nb=3120", "correct": false, "feedback": "Falsch (aber sehr trickreich!)! Die beiden Variablen refenzieren unterschiedliche Datenobjekte - die zuf\u00e4llig den gleichen Wert abbilden. Sollten sie den Code im Script Mode ausf\u00fchren und die beiden Referenzen mit dem `is` Operator vergleichen, wird der Python Bytecode Compiler eine Optimierung vornehmen und erkennen, dass die beiden Werte mit nur einem Objekt dargestellt werden k\u00f6nnen."}, {"code": "a=\"Haus_Am_See\"\nb=\"Haus_Am_See\"", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerischen Buchstaben und des Unterstrichs. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}, {"code": "a=\"Haus Am See\"\nb=\"Haus Am See\"", "correct": false, "feedback": "Falsch! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerrischen Buchstaben und des Unterstrichs - nicht aber des Leerzeichens. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}]}];
+</style></div><script type="application/javascript">var questionsGOAhbJkMdhJA=[{"question": "Wie w\u00fcrden sie einen f-string so verwenden, dass `x` mit zwei Dezimalstellen angezeigt wird?", "type": "multiple_choice", "answers": [{"answer": "f\"{number:.2}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number:.2f}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"{number:2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number.2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist ein Syntaxfehler, auf eine Gleitkommazahl muss ein Doppelpunkt folgen um weitere Fomrtierungsoptionen anzugeben."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3193,8 +3194,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("QpHCZoxuBxrL")) {
-            show_questions(questionsQpHCZoxuBxrL,  QpHCZoxuBxrL); 
+          if(document.getElementById("GOAhbJkMdhJA")) {
+            show_questions(questionsGOAhbJkMdhJA,  GOAhbJkMdhJA); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3203,8 +3204,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("QpHCZoxuBxrL");
-        // console.log(document.getElementById("QpHCZoxuBxrL"));
+        //console.log("GOAhbJkMdhJA");
+        // console.log(document.getElementById("GOAhbJkMdhJA"));
 
         try_show();
         }
@@ -3244,12 +3245,12 @@ if (typeof version == 'undefined') {
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../vorlesung_2.html"
+       href="quiz_variablen.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Vorlesung 2</p>
+        <p class="prev-next-title">Quiz Variablen</p>
       </div>
     </a>
     <a class="right-next"
