@@ -30,6 +30,14 @@ Facts and Myths about Python names and values - PyCon 2015 (Ned Batchelder)
 <iframe width="200" height="113" src="https://www.youtube.com/embed/_AEJHKGk9ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
+:::{grid-item-card}
+:columns: 5
+:class-header: bg-light
+The PEP 8 Song (Leon Sandøy)
+
+<iframe width="200" height="113" src="https://www.youtube.com/embed/hgI0p1zf31k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
 
 ::::
 
