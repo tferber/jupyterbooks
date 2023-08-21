@@ -159,7 +159,8 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_2.html">Vorlesung 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -355,7 +356,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -371,6 +374,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -386,19 +397,11 @@ document.write(`
 <!--:class: tip-->
 <!--[Quiz zum Thema "Python Syntax"](jupyterquiz/quiz_syntax.ipynb)-->
 <!--```-->
-<!--## Was Sie wissen sollten-->
-<!--* Python ist eine formale Sprache und folgt syntaktischen und semantischen Regeln-->
-<!--    * Wie unterscheiden sich formale und natürliche Sprachen? Was ist der unterschied zwischen syntaktischen und semantischen Regeln? -->
-<!--* Eine Möglichkeit Python zu nutzen ist der sog. *Interactive Mode*-->
-<!--    * Wie starten sie den Interactive Mode? Wie verlassen sie den *Interactive Mode*? Wie erkennen Sie welche Python Version benutzen?-->
-<!--* Python besitzt nur vier grundlegende Datenobjekte: `int`, `float`, `bool`, `None`-->
-<!--    * Wie unterscheiden sich die verschiedenen Datenobjekte? Wann verwenden sie `int` und wann `float`? Welche Werte kann das Datenobjekt `bool` annehmen?-->
-<!--* Python besitzt arithmetische Operatoren für alle sieben Grundrechenarten-->
-<!--    * Welche Grundrechenarten sind das? Wie stellt man die Exponentiation in Python dar? Stellen Sie sicher, dass sie auch die Division mit Rest verinnerlicht haben.-->
-<!--* Python erlaubt implizite und explizite Umwandlung von Datentypen-->
-<!--    * Was ist der Unterschied zwischen impliziten und expliziten Umwandlungen? Welche Operationen die Sie bereits kennen führen eine impliziten Umwandlung durch?-->
-<!--* Zeichenketten werden im Datenobjekt `string` repräsentiert-->
-<!--    * Wie erstellen sie ein Datenobjekt des Typs `string`? Was ist der Unterschied zwischen einfachen und doppelten Anführungszeichen? Wie stellen sie ein Anführungszeichen selbst in einer Zeichenketten dar?-->
+<section id="was-sie-wissen-sollten">
+<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Text</p></li>
+</ul>
 <!--## Download Vorlesungsfolien-->
 <!---->
 <!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
@@ -417,6 +420,7 @@ document.write(`
 <!---->
 <!---->
 <!--::::-->
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -468,6 +472,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

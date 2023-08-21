@@ -11,6 +11,10 @@ Text
 <!---->
 <!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
 
+## Was Sie wissen sollten
+* Text
+
+
 ## Videos to watch...
 ::::{grid}
 :class-container: text-center
