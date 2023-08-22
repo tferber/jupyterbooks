@@ -7,6 +7,8 @@ Text
 [Quiz zum Thema "Variablen"](jupyterquiz/quiz_variablen.ipynb)
 
 [Quiz zum Thema "f-strings"](jupyterquiz/quiz_fstrings.ipynb)
+
+[Quiz zum Thema "Funktionen"](jupyterquiz/quiz_funktionen.ipynb)
 ```
 
 <!--## Download Vorlesungsfolien-->

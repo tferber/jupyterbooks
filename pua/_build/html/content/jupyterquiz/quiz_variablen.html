@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_variablen';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Vorlesung 3" href="../vorlesung_3.html" />
+    <link rel="next" title="Quiz f-strings" href="quiz_fstrings.html" />
     <link rel="prev" title="Vorlesung 2" href="../vorlesung_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -166,10 +166,15 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_2.html">Vorlesung 2</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_fstrings.html">Quiz f-strings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_3.html">Vorlesung 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_4.html">Vorlesung 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../extra.html">Extra</a></li>
 </ul>
 
     </div>
@@ -388,13 +393,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="fAMbeojxLFYJ" data-shufflequestions="False"
+<div class="output text_html"><div id="modOneHpDkEd" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#fAMbeojxLFYJ {
+#modOneHpDkEd {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -564,7 +569,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsfAMbeojxLFYJ=[{"question": "Was ist `b`?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
+</style></div><script type="application/javascript">var questionsmodOneHpDkEd=[{"question": "Was ist `b`?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1313,8 +1318,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("fAMbeojxLFYJ")) {
-            show_questions(questionsfAMbeojxLFYJ,  fAMbeojxLFYJ); 
+          if(document.getElementById("modOneHpDkEd")) {
+            show_questions(questionsmodOneHpDkEd,  modOneHpDkEd); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1323,18 +1328,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("fAMbeojxLFYJ");
-        // console.log(document.getElementById("fAMbeojxLFYJ"));
+        //console.log("modOneHpDkEd");
+        // console.log(document.getElementById("modOneHpDkEd"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="SaDNoeommPvw" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="nXoegYrlfvbF" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SaDNoeommPvw {
+#nXoegYrlfvbF {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1504,7 +1509,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSaDNoeommPvw=[{"question": "Was ist `b`?", "code": "a=2\nb=a*5\na=4\nb=b+1", "type": "multiple_choice", "answers": [{"answer": "b=11", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! Die Operation `b=b+1` ist erlaubt und wird sogar recht h\u00e4ufig angewendet."}, {"answer": "b=21", "correct": false, "feedback": "Falsch! Die zweite Zuweisung von `a` hat keinerlei Auswirkung auf `b`."}]}];
+</style></div><script type="application/javascript">var questionsnXoegYrlfvbF=[{"question": "Was ist `b`?", "code": "a=2\nb=a*5\na=4\nb=b+1", "type": "multiple_choice", "answers": [{"answer": "b=11", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! Die Operation `b=b+1` ist erlaubt und wird sogar recht h\u00e4ufig angewendet."}, {"answer": "b=21", "correct": false, "feedback": "Falsch! Die zweite Zuweisung von `a` hat keinerlei Auswirkung auf `b`."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2253,8 +2258,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SaDNoeommPvw")) {
-            show_questions(questionsSaDNoeommPvw,  SaDNoeommPvw); 
+          if(document.getElementById("nXoegYrlfvbF")) {
+            show_questions(questionsnXoegYrlfvbF,  nXoegYrlfvbF); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2263,18 +2268,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SaDNoeommPvw");
-        // console.log(document.getElementById("SaDNoeommPvw"));
+        //console.log("nXoegYrlfvbF");
+        // console.log(document.getElementById("nXoegYrlfvbF"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="QpHCZoxuBxrL" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="jgxfELOKBiWs" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#QpHCZoxuBxrL {
+#jgxfELOKBiWs {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2444,7 +2449,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsQpHCZoxuBxrL=[{"question": "Welche beiden Variablen referenzieren das gleiche Objekt bei Verwendung des Interpreter Mode? (F\u00fcr Expert*innen!)", "type": "multiple_choice", "answers": [{"code": "a=10\nb=10", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. Caching sehr kleiner `int` Werte zwischen -5 und 256 in Python."}, {"code": "a=3120\nb=3120", "correct": false, "feedback": "Falsch (aber sehr trickreich!)! Die beiden Variablen refenzieren unterschiedliche Datenobjekte - die zuf\u00e4llig den gleichen Wert abbilden. Sollten sie den Code im Script Mode ausf\u00fchren und die beiden Referenzen mit dem `is` Operator vergleichen, wird der Python Bytecode Compiler eine Optimierung vornehmen und erkennen, dass die beiden Werte mit nur einem Objekt dargestellt werden k\u00f6nnen."}, {"code": "a=\"Haus_Am_See\"\nb=\"Haus_Am_See\"", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerischen Buchstaben und des Unterstrichs. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}, {"code": "a=\"Haus Am See\"\nb=\"Haus Am See\"", "correct": false, "feedback": "Falsch! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerrischen Buchstaben und des Unterstrichs - nicht aber des Leerzeichens. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}]}];
+</style></div><script type="application/javascript">var questionsjgxfELOKBiWs=[{"question": "Welche beiden Variablen referenzieren das gleiche Objekt bei Verwendung des Interpreter Mode? (F\u00fcr Expert*innen!)", "type": "multiple_choice", "answers": [{"code": "a=10\nb=10", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. Caching sehr kleiner `int` Werte zwischen -5 und 256 in Python."}, {"code": "a=3120\nb=3120", "correct": false, "feedback": "Falsch (aber sehr trickreich!)! Die beiden Variablen refenzieren unterschiedliche Datenobjekte - die zuf\u00e4llig den gleichen Wert abbilden. Sollten sie den Code im Script Mode ausf\u00fchren und die beiden Referenzen mit dem `is` Operator vergleichen, wird der Python Bytecode Compiler eine Optimierung vornehmen und erkennen, dass die beiden Werte mit nur einem Objekt dargestellt werden k\u00f6nnen."}, {"code": "a=\"Haus_Am_See\"\nb=\"Haus_Am_See\"", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerischen Buchstaben und des Unterstrichs. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}, {"code": "a=\"Haus Am See\"\nb=\"Haus Am See\"", "correct": false, "feedback": "Falsch! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerrischen Buchstaben und des Unterstrichs - nicht aber des Leerzeichens. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3193,8 +3198,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("QpHCZoxuBxrL")) {
-            show_questions(questionsQpHCZoxuBxrL,  QpHCZoxuBxrL); 
+          if(document.getElementById("jgxfELOKBiWs")) {
+            show_questions(questionsjgxfELOKBiWs,  jgxfELOKBiWs); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3203,8 +3208,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("QpHCZoxuBxrL");
-        // console.log(document.getElementById("QpHCZoxuBxrL"));
+        //console.log("jgxfELOKBiWs");
+        // console.log(document.getElementById("jgxfELOKBiWs"));
 
         try_show();
         }
@@ -3253,11 +3258,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../vorlesung_3.html"
+       href="quiz_fstrings.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Vorlesung 3</p>
+        <p class="prev-next-title">Quiz f-strings</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

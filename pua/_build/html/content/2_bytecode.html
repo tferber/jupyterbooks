@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Vorlesung 1 &#8212; Programmieren und Algorithmen</title>
+    <title>Bytecode &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -62,11 +62,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/vorlesung_1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/2_bytecode';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz Syntax und Semantik" href="jupyterquiz/quiz_syntax.html" />
-    <link rel="prev" title="Welcome" href="../intro.html" />
+    <link rel="prev" title="Extra" href="extra.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,8 +157,8 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Vorlesung 1</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
 </ul>
@@ -173,8 +172,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_4.html">Vorlesung 4</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="extra.html">Extra</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="extra.html">Extra</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Bytecode</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -246,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/vorlesung_1.md" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/2_bytecode.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -263,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/issues/new?title=Issue%20on%20page%20%2Fcontent/vorlesung_1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/issues/new?title=Issue%20on%20page%20%2Fcontent/2_bytecode.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/vorlesung_1.md" target="_blank"
+      <li><a href="../_sources/content/2_bytecode.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -303,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -362,9 +364,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -375,20 +375,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vorlesung 1</h1>
+    <h1>Bytecode</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -398,67 +389,93 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-1">
-<h1>Vorlesung 1<a class="headerlink" href="#vorlesung-1" title="Permalink to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Hier geht zu den Quizes…</p>
-<p><a class="reference internal" href="jupyterquiz/quiz_syntax.html"><span class="doc std std-doc">Quiz zum Thema “Python Syntax”</span></a></p>
-<p><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html"><span class="doc std std-doc">Quiz zum Thema “Python Grundrechenarten”</span></a></p>
-</div>
-<section id="was-sie-wissen-sollten">
-<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="bytecode">
+<h1>Bytecode<a class="headerlink" href="#bytecode" title="Permalink to this heading">#</a></h1>
+<p>Python ist eine menschenlesbare Sprache. Anders als C++ wird Python erst bei der Ausführung in maschinenlesbaren Code (bestehend aus Nullen und Einsen) umgewandelt.
+Die folgt dem folgenden Schritten:</p>
 <ul class="simple">
-<li><p>Python ist eine formale Sprache und folgt syntaktischen und semantischen Regeln</p>
+<li><p>Quellcode:</p>
 <ul>
-<li><p>Wie unterscheiden sich formale und natürliche Sprachen? Was ist der unterschied zwischen syntaktischen und semantischen Regeln?</p></li>
+<li><p>Python-Programme beginnen als menschenlesbare Textdateien, geschrieben in der Sprache Python</p></li>
 </ul>
 </li>
-<li><p>Eine Möglichkeit Python zu nutzen ist der sog. <em>Interactive Mode</em></p>
+<li><p>Kompilierung</p>
 <ul>
-<li><p>Wie starten sie den Interactive Mode? Wie verlassen sie den <em>Interactive Mode</em>? Wie erkennen Sie welche Python Version benutzen?</p></li>
+<li><p>Wenn ein Python-Programm im Script Mode ausgeführt wird, wird die Textdatei an den Python-Interpreter übergeben. Der Interpreter kompiliert diesen Quellcode während der Laufzeit in eine Zwischenform, die als Bytecode bezeichnet wird.</p></li>
 </ul>
 </li>
-<li><p>Python besitzt nur vier grundlegende Datenobjekte: <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<li><p>Bytecode</p>
 <ul>
-<li><p>Wie unterscheiden sich die verschiedenen Datenobjekte? Wann verwenden sie <code class="docutils literal notranslate"><span class="pre">int</span></code> und wann <code class="docutils literal notranslate"><span class="pre">float</span></code>? Welche Werte kann das Datenobjekt <code class="docutils literal notranslate"><span class="pre">bool</span></code> annehmen?</p></li>
+<li><p>Bytecode ist eine plattformunabhängige Low-Level-Darstellung Ihres Quellcodes, die so konzipiert ist, dass sie leicht interpretiert werden kann. Er wird in .pyc-Dateien gespeichert.</p></li>
 </ul>
 </li>
-<li><p>Python besitzt arithmetische Operatoren für alle sieben Grundrechenarten</p>
+<li><p>Python Virtual Machine (PVM)</p>
 <ul>
-<li><p>Welche Grundrechenarten sind das? Wie stellt man die Exponentiation in Python dar? Stellen Sie sicher, dass sie auch die Division mit Rest verinnerlicht haben.</p></li>
+<li><p>Die PVM lädt den Bytecode und führt ihn aus. Hier wird Ihr Programm tatsächlich ausgeführt.</p></li>
 </ul>
 </li>
-<li><p>Python erlaubt implizite und explizite Umwandlung von Datentypen</p>
+<li><p>Ausführung</p>
 <ul>
-<li><p>Was ist der Unterschied zwischen impliziten und expliziten Umwandlungen? Welche Operationen die Sie bereits kennen führen eine impliziten Umwandlung durch?</p></li>
-</ul>
-</li>
-<li><p>Zeichenketten werden im Datenobjekt <code class="docutils literal notranslate"><span class="pre">string</span></code> repräsentiert</p>
-<ul>
-<li><p>Wie erstellen sie ein Datenobjekt des Typs <code class="docutils literal notranslate"><span class="pre">string</span></code>? Was ist der Unterschied zwischen einfachen und doppelten Anführungszeichen? Wie stellen sie ein Anführungszeichen selbst in einer Zeichenketten dar?</p></li>
+<li><p>Die PVM liest jede Anweisung im Bytecode einzeln ein und führt die entsprechende Operation aus (z. B. Arithmetik, Aufruf einer Funktion usw.).</p></li>
 </ul>
 </li>
 </ul>
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
-</section>
-<section id="videos-to-watch">
-<h2>Videos to watch…<a class="headerlink" href="#videos-to-watch" title="Permalink to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
-<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
-<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Exact Instructions Challenge (Josh Darnit)</p>
-<iframe width="200" height="113" src="https://www.youtube.com/embed/cDA3_5982h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Das folgende Beispiel ist eine Funktion die <code class="docutils literal notranslate"><span class="pre">(a+b)*(c+d)</span></code> berechnet.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_function</span><span class="p">():</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1000</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">2000</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="mi">3000</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="mi">4000</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">c</span> <span class="o">+</span> <span class="n">d</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
+<p>Mit dem Python disassembler kann der erzeugte Bytecode direkt analysiert werden. Mehr Infos unter <a class="reference external" href="https://docs.python.org/3/library/dis.html">https://docs.python.org/3/library/dis.html</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dis</span>
+<span class="n">dis</span><span class="o">.</span><span class="n">dis</span><span class="p">(</span><span class="n">test_function</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
-</section>
-<div class="toctree-wrapper compound">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1           0 RESUME                   0
+
+  2           2 LOAD_CONST               1 (1000)
+              4 STORE_FAST               0 (a)
+
+  3           6 LOAD_CONST               2 (2000)
+              8 STORE_FAST               1 (b)
+
+  4          10 LOAD_CONST               3 (3000)
+             12 STORE_FAST               2 (c)
+
+  5          14 LOAD_CONST               4 (4000)
+             16 STORE_FAST               3 (d)
+
+  6          18 LOAD_FAST                0 (a)
+             20 LOAD_FAST                1 (b)
+             22 BINARY_OP                0 (+)
+             26 LOAD_FAST                2 (c)
+             28 LOAD_FAST                3 (d)
+             30 BINARY_OP                0 (+)
+             34 BINARY_OP                5 (*)
+             38 STORE_FAST               4 (e)
+
+  7          40 LOAD_GLOBAL              1 (NULL + print)
+             52 LOAD_FAST                4 (e)
+             54 PRECALL                  1
+             58 CALL                     1
+             68 POP_TOP
+             70 LOAD_CONST               0 (None)
+             72 RETURN_VALUE
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 
@@ -494,22 +511,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="extra.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome</p>
+        <p class="prev-next-title">Extra</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="jupyterquiz/quiz_syntax.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quiz Syntax und Semantik</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -520,21 +528,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
