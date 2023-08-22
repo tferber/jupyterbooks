@@ -33,8 +33,8 @@
     * Was ist der Unterschied zwischen den Gleichheitszeichen in der Mathematik und dem Assignment-Operator in Python?
 * Variablen referenzieren immer Werte. Variablen referenzieren niemals Variablen.
     * Kann die gleiche Variable gleichzeitig verschiedene Werte referenzieren? Kann sie nacheinander verschiedene Werte referenzieren? Kann eine Variable auf eine andere Variable referenzieren?
-* Um andere Variablen in Zeichenketten zu verwenden, nutzen sie f-strings.
-    * Welche anderen Methoden gibt es? Warum sollten sie f-strings bevorzugen? Wie beschränkt man die Zahl der Nachkommastellen von Gleitkommazahlen und warum ist das wichtig?
+* Um andere Variablen in Zeichenketten zu verwenden, nutzen sie` f-strings`.
+    * Welche anderen Methoden gibt es? Warum sollten sie `f-strings` bevorzugen? Wie beschränkt man die Zahl der Nachkommastellen von Gleitkommazahlen (`float`) und warum ist das wichtig?
 * Für wiederkehrende Anweisungen bietet es sich an Funktionen selbst zu schreiben
     * Was genau ist eine void-Funltion? Was ist der Rückgabewert einer void-Funktion? Was sind Header und Body einer Funktion? Welche Argumente können sie einer Funktion übergeben? Können sie eine Variable die sie ausserhalb einer Funktion definiert haben auch innerhalb einer void-Funktion ändern so dass sie auch ausserhalb der Funktion geändert ist?
 * Code muss so dokumentiert, dass die Intention klar ist. Jede Funktion (Modul, Klasse, Methode) muss mit einem docstring versehen sein.
