@@ -1,9 +1,13 @@
 # Vorlesung 3
 
-<!--```{admonition} Hier geht zum Quiz...-->
-<!--:class: tip-->
-<!--[Quiz zum Thema "Python Syntax"](jupyterquiz/quiz_syntax.ipynb)-->
-<!--```-->
+```{admonition} Hier geht zum Quiz...
+:class: tip
+[Quiz zum Thema "Python Boolsche Algebra"](jupyterquiz/quiz_conditions.ipynb)
+
+[Quiz zum Thema "Python Kontrollstrukturen"](jupyterquiz/quiz_control.ipynb)
+
+[Quiz zum Thema "Python Rekursion"](jupyterquiz/quiz_recursion.ipynb)
+```
 
 ## Was Sie wissen sollten
 * Text

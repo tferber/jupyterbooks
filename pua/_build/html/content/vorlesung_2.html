@@ -167,14 +167,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Vorlesung 2</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_variablen.html">Quiz Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_fstrings.html">Quiz f-strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_funktionen_1.html">Quiz void-Funktionen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="vorlesung_3.html">Vorlesung 3</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_3.html">Vorlesung 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz void-Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz void-Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_recursion.html">Quiz void-Funktionen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_4.html">Vorlesung 4</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
 </ul>
 </li>
@@ -388,6 +394,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#warum-sollten-sie-code-dokumentieren-und-kommentieren">Warum sollten Sie Code dokumentieren und kommentieren?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
 </ul>
@@ -403,7 +410,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-2">
 <h1>Vorlesung 2<a class="headerlink" href="#vorlesung-2" title="Permalink to this heading">#</a></h1>
-<p>Text</p>
 <div class="tip admonition">
 <p class="admonition-title">Hier geht zum Quiz…</p>
 <p><a class="reference internal" href="jupyterquiz/quiz_variablen.html"><span class="doc std std-doc">Quiz zum Thema “Variablen”</span></a></p>
@@ -413,10 +419,65 @@ document.write(`
 <!--## Download Vorlesungsfolien-->
 <!---->
 <!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+<section id="warum-sollten-sie-code-dokumentieren-und-kommentieren">
+<h2>Warum sollten Sie Code dokumentieren und kommentieren?<a class="headerlink" href="#warum-sollten-sie-code-dokumentieren-und-kommentieren" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Lesbarkeit:</p>
+<ul>
+<li><p>Kommentare verbessern die Lesbarkeit Ihres Codes, indem sie Kontext liefern und erklären, was jeder Teil des Codes tut. Dies ist besonders hilfreich bei komplexen Algorithmen oder komplizierter Logik.</p></li>
+</ul>
+</li>
+<li><p>Wartbarkeit:</p>
+<ul>
+<li><p>Kommentare helfen bei der Pflege des Codes. Wenn Sie Ihren Code in Zukunft aktualisieren oder ändern müssen, helfen Ihnen die Kommentare dabei, die einzelnen Teile des Codes zu verstehen.</p></li>
+</ul>
+</li>
+<li><p>Kollaboration:</p>
+<ul>
+<li><p>Wenn Sie in einem Team arbeiten, helfen Kommentare Ihren Teamkollegen, Ihren Code zu verstehen. Dies ist entscheidend für eine effektive Zusammenarbeit und die Produktivität des Teams.</p></li>
+</ul>
+</li>
+<li><p>Fehlersuche:</p>
+<ul>
+<li><p>Wenn etwas schief geht, können Kommentare Ihnen helfen, den Ablauf Ihres Codes zu verstehen und die Fehlersuche zu erleichtern.</p></li>
+</ul>
+</li>
+<li><p>Lernen:</p>
+<ul>
+<li><p>Wenn Sie ein/e Anfänger*in sind oder versuchen eine neue Programmiersprache zu verstehen, können Kommentare sehr lehrreich sein und einen guten Einblick in die Funktionsweise des Codes geben.</p></li>
+</ul>
+</li>
+<li><p>Mehr Informationen in <a class="reference external" href="https://peps.python.org/pep-0008/">PEP8 - Style Guide for Python Code</a> und <a class="reference external" href="https://peps.python.org/pep-0257/">PEP257 - Docstring Conventions</a>.</p></li>
+</ul>
+</section>
 <section id="was-sie-wissen-sollten">
 <h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Text</p></li>
+<li><p>Variablen sind Namen die Objekten z.B. mit dem Assignment-Operator “=“ zugewiesen werden</p>
+<ul>
+<li><p>Was ist der Unterschied zwischen den Gleichheitszeichen in der Mathematik und dem Assignment-Operator in Python?</p></li>
+</ul>
+</li>
+<li><p>Variablen referenzieren immer Werte. Variablen referenzieren niemals Variablen.</p>
+<ul>
+<li><p>Kann die gleiche Variable gleichzeitig verschiedene Werte referenzieren? Kann sie nacheinander verschiedene Werte referenzieren? Kann eine Variable auf eine andere Variable referenzieren?</p></li>
+</ul>
+</li>
+<li><p>Um andere Variablen in Zeichenketten zu verwenden, nutzen sie f-strings.</p>
+<ul>
+<li><p>Welche anderen Methoden gibt es? Warum sollten sie f-strings bevorzugen? Wie beschränkt man die Zahl der Nachkommastellen von Gleitkommazahlen und warum ist das wichtig?</p></li>
+</ul>
+</li>
+<li><p>Für wiederkehrende Anweisungen bietet es sich an Funktionen selbst zu schreiben</p>
+<ul>
+<li><p>Was genau ist eine void-Funltion? Was ist der Rückgabewert einer void-Funktion? Was sind Header und Body einer Funktion? Welche Argumente können sie einer Funktion übergeben? Können sie eine Variable die sie ausserhalb einer Funktion definiert haben auch innerhalb einer void-Funktion ändern so dass sie auch ausserhalb der Funktion geändert ist?</p></li>
+</ul>
+</li>
+<li><p>Code muss so dokumentiert, dass die Intention klar ist. Jede Funktion (Modul, Klasse, Methode) muss mit einem docstring versehen sein.</p>
+<ul>
+<li><p>Gute Dokumentation braucht Erfahrung - dokumentieren sie am Anfang eher zu viel als zu wenig.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="videos-to-watch">
@@ -513,6 +574,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#warum-sollten-sie-code-dokumentieren-und-kommentieren">Warum sollten Sie Code dokumentieren und kommentieren?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
 </ul>
