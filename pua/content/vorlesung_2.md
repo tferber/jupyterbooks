@@ -8,7 +8,7 @@ Text
 
 [Quiz zum Thema "f-strings"](jupyterquiz/quiz_fstrings.ipynb)
 
-[Quiz zum Thema "Funktionen"](jupyterquiz/quiz_funktionen.ipynb)
+[Quiz zum Thema "void-Funktionen"](jupyterquiz/quiz_funktionen_1.ipynb)
 ```
 
 <!--## Download Vorlesungsfolien-->
