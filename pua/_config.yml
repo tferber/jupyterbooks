@@ -21,15 +21,15 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/tferber/jupyterbooks/tree/main/pua  # Online location of your book
-#  path_to_book:  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/tferber/jupyterbooks/  # Online location of your book
+  path_to_book: "pua"  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
   jupyterhub_url: "https://jupytermachine.etp.kit.edu"  # The URL for your JupyterHub
+  colab_url: "https://colab.research.google.com"
 
-# Add GitHub buttons to your book
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
