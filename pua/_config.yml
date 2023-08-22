@@ -27,7 +27,7 @@ repository:
 
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
-  jupyterhub_url: "https://jupytermachine.etp.kit.edu"  # The URL for your JupyterHub
+#  jupyterhub_url: "https://jupytermachine.etp.kit.edu"  # The URL for your JupyterHub
   colab_url: "https://colab.research.google.com"
 
 # Add GitHub buttons to your book
