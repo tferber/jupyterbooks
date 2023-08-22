@@ -174,7 +174,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../extra.html">Extra</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -221,6 +224,37 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks/tree/main/pua&urlpath=lab/tree/pua/content/jupyterquiz/quiz_variablen.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -246,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/jupyterquiz/quiz_variablen.ipynb" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/content/jupyterquiz/quiz_variablen.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -393,13 +427,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="modOneHpDkEd" data-shufflequestions="False"
+<div class="output text_html"><div id="LxaUwQJmXCQl" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#modOneHpDkEd {
+#LxaUwQJmXCQl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -569,7 +603,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsmodOneHpDkEd=[{"question": "Was ist `b`?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
+</style></div><script type="application/javascript">var questionsLxaUwQJmXCQl=[{"question": "Was ist `b`?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1318,8 +1352,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("modOneHpDkEd")) {
-            show_questions(questionsmodOneHpDkEd,  modOneHpDkEd); 
+          if(document.getElementById("LxaUwQJmXCQl")) {
+            show_questions(questionsLxaUwQJmXCQl,  LxaUwQJmXCQl); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1328,18 +1362,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("modOneHpDkEd");
-        // console.log(document.getElementById("modOneHpDkEd"));
+        //console.log("LxaUwQJmXCQl");
+        // console.log(document.getElementById("LxaUwQJmXCQl"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="nXoegYrlfvbF" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="RRAelaihHqvC" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#nXoegYrlfvbF {
+#RRAelaihHqvC {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1509,7 +1543,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsnXoegYrlfvbF=[{"question": "Was ist `b`?", "code": "a=2\nb=a*5\na=4\nb=b+1", "type": "multiple_choice", "answers": [{"answer": "b=11", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! Die Operation `b=b+1` ist erlaubt und wird sogar recht h\u00e4ufig angewendet."}, {"answer": "b=21", "correct": false, "feedback": "Falsch! Die zweite Zuweisung von `a` hat keinerlei Auswirkung auf `b`."}]}];
+</style></div><script type="application/javascript">var questionsRRAelaihHqvC=[{"question": "Was ist `b`?", "code": "a=2\nb=a*5\na=4\nb=b+1", "type": "multiple_choice", "answers": [{"answer": "b=11", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! Die Operation `b=b+1` ist erlaubt und wird sogar recht h\u00e4ufig angewendet."}, {"answer": "b=21", "correct": false, "feedback": "Falsch! Die zweite Zuweisung von `a` hat keinerlei Auswirkung auf `b`."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2258,8 +2292,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("nXoegYrlfvbF")) {
-            show_questions(questionsnXoegYrlfvbF,  nXoegYrlfvbF); 
+          if(document.getElementById("RRAelaihHqvC")) {
+            show_questions(questionsRRAelaihHqvC,  RRAelaihHqvC); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2268,18 +2302,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("nXoegYrlfvbF");
-        // console.log(document.getElementById("nXoegYrlfvbF"));
+        //console.log("RRAelaihHqvC");
+        // console.log(document.getElementById("RRAelaihHqvC"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="jgxfELOKBiWs" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="UYEehsTbLkKY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#jgxfELOKBiWs {
+#UYEehsTbLkKY {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2449,7 +2483,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsjgxfELOKBiWs=[{"question": "Welche beiden Variablen referenzieren das gleiche Objekt bei Verwendung des Interpreter Mode? (F\u00fcr Expert*innen!)", "type": "multiple_choice", "answers": [{"code": "a=10\nb=10", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. Caching sehr kleiner `int` Werte zwischen -5 und 256 in Python."}, {"code": "a=3120\nb=3120", "correct": false, "feedback": "Falsch (aber sehr trickreich!)! Die beiden Variablen refenzieren unterschiedliche Datenobjekte - die zuf\u00e4llig den gleichen Wert abbilden. Sollten sie den Code im Script Mode ausf\u00fchren und die beiden Referenzen mit dem `is` Operator vergleichen, wird der Python Bytecode Compiler eine Optimierung vornehmen und erkennen, dass die beiden Werte mit nur einem Objekt dargestellt werden k\u00f6nnen."}, {"code": "a=\"Haus_Am_See\"\nb=\"Haus_Am_See\"", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerischen Buchstaben und des Unterstrichs. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}, {"code": "a=\"Haus Am See\"\nb=\"Haus Am See\"", "correct": false, "feedback": "Falsch! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerrischen Buchstaben und des Unterstrichs - nicht aber des Leerzeichens. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}]}];
+</style></div><script type="application/javascript">var questionsUYEehsTbLkKY=[{"question": "Welche beiden Variablen referenzieren das gleiche Objekt bei Verwendung des Interpreter Mode? (F\u00fcr Expert*innen!)", "type": "multiple_choice", "answers": [{"code": "a=10\nb=10", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. Caching sehr kleiner `int` Werte zwischen -5 und 256 in Python."}, {"code": "a=3120\nb=3120", "correct": false, "feedback": "Falsch (aber sehr trickreich!)! Die beiden Variablen refenzieren unterschiedliche Datenobjekte - die zuf\u00e4llig den gleichen Wert abbilden. Sollten sie den Code im Script Mode ausf\u00fchren und die beiden Referenzen mit dem `is` Operator vergleichen, wird der Python Bytecode Compiler eine Optimierung vornehmen und erkennen, dass die beiden Werte mit nur einem Objekt dargestellt werden k\u00f6nnen."}, {"code": "a=\"Haus_Am_See\"\nb=\"Haus_Am_See\"", "correct": true, "feedback": "Richtig! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerischen Buchstaben und des Unterstrichs. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}, {"code": "a=\"Haus Am See\"\nb=\"Haus Am See\"", "correct": false, "feedback": "Falsch! Hierf\u00fcr verantworlich ist sog. string interning aller alphanumerrischen Buchstaben und des Unterstrichs - nicht aber des Leerzeichens. Dies ist nicht Teil des Python Standards sondern eine Optimierung im CPython Interpreter die sich jederzeit auch ohne Ank\u00fcndigung \u00e4ndern kann."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3198,8 +3232,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("jgxfELOKBiWs")) {
-            show_questions(questionsjgxfELOKBiWs,  jgxfELOKBiWs); 
+          if(document.getElementById("UYEehsTbLkKY")) {
+            show_questions(questionsUYEehsTbLkKY,  UYEehsTbLkKY); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3208,8 +3242,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("jgxfELOKBiWs");
-        // console.log(document.getElementById("jgxfELOKBiWs"));
+        //console.log("UYEehsTbLkKY");
+        // console.log(document.getElementById("UYEehsTbLkKY"));
 
         try_show();
         }

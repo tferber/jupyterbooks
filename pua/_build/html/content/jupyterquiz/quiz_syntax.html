@@ -174,7 +174,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../extra.html">Extra</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -221,6 +224,37 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks/tree/main/pua&urlpath=lab/tree/pua/content/jupyterquiz/quiz_syntax.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -246,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/docs/content/jupyterquiz/quiz_syntax.ipynb" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/tree/main/pua/edit/master/content/jupyterquiz/quiz_syntax.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -393,13 +427,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="uBcTeZufuPRx" data-shufflequestions="False"
+<div class="output text_html"><div id="sFssNAspCsmt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#uBcTeZufuPRx {
+#sFssNAspCsmt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -569,7 +603,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsuBcTeZufuPRx=[{"question": "Welche der folgenden Zeichenketten sind erlaubt?", "type": "multiple_choice", "answers": [{"answer": "\"Haus\"", "correct": true, "feedback": "Richtig! Das ist eine ganz normale, langweilige Zeichenkennte mit einem Wort."}, {"answer": "\"Haus@See\"", "correct": true, "feedback": "Richtig! Die Zeichenkette enth\u00e4lt zwar ein Sonderzeichen, aber das ist erlaubt."}, {"answer": "\"493.330\"", "correct": true, "feedback": "Richtig! Das ist eine erlaubte Zeichenkette - sie beschreibt aber keine Gleitkommazahl, obwohl sie so aussieht."}, {"answer": "\"Haus'", "correct": false, "feedback": "Falsch! Diese Zeichenkette ist mit anderen Anf\u00fchrungszeichen beendet als begonnen. Dies f\u00fchrt zu einem SyntaxError (unterminated string literal)."}, {"answer": "\"Haus am See\"", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}, {"answer": "'Haus am See'", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}]}];
+</style></div><script type="application/javascript">var questionssFssNAspCsmt=[{"question": "Welche der folgenden Zeichenketten sind erlaubt?", "type": "multiple_choice", "answers": [{"answer": "\"Haus\"", "correct": true, "feedback": "Richtig! Das ist eine ganz normale, langweilige Zeichenkennte mit einem Wort."}, {"answer": "\"Haus@See\"", "correct": true, "feedback": "Richtig! Die Zeichenkette enth\u00e4lt zwar ein Sonderzeichen, aber das ist erlaubt."}, {"answer": "\"493.330\"", "correct": true, "feedback": "Richtig! Das ist eine erlaubte Zeichenkette - sie beschreibt aber keine Gleitkommazahl, obwohl sie so aussieht."}, {"answer": "\"Haus'", "correct": false, "feedback": "Falsch! Diese Zeichenkette ist mit anderen Anf\u00fchrungszeichen beendet als begonnen. Dies f\u00fchrt zu einem SyntaxError (unterminated string literal)."}, {"answer": "\"Haus am See\"", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}, {"answer": "'Haus am See'", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1318,8 +1352,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("uBcTeZufuPRx")) {
-            show_questions(questionsuBcTeZufuPRx,  uBcTeZufuPRx); 
+          if(document.getElementById("sFssNAspCsmt")) {
+            show_questions(questionssFssNAspCsmt,  sFssNAspCsmt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1328,18 +1362,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("uBcTeZufuPRx");
-        // console.log(document.getElementById("uBcTeZufuPRx"));
+        //console.log("sFssNAspCsmt");
+        // console.log(document.getElementById("sFssNAspCsmt"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="dQIUPZWqkWYi" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="tcTdNvzCUGoi" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#dQIUPZWqkWYi {
+#tcTdNvzCUGoi {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1509,7 +1543,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsdQIUPZWqkWYi=[{"question": "Was ist type(5)?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": true, "feedback": "Richtig! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "float", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "string", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}]}];
+</style></div><script type="application/javascript">var questionstcTdNvzCUGoi=[{"question": "Was ist type(5)?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": true, "feedback": "Richtig! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "float", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "string", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2258,8 +2292,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("dQIUPZWqkWYi")) {
-            show_questions(questionsdQIUPZWqkWYi,  dQIUPZWqkWYi); 
+          if(document.getElementById("tcTdNvzCUGoi")) {
+            show_questions(questionstcTdNvzCUGoi,  tcTdNvzCUGoi); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2268,18 +2302,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("dQIUPZWqkWYi");
-        // console.log(document.getElementById("dQIUPZWqkWYi"));
+        //console.log("tcTdNvzCUGoi");
+        // console.log(document.getElementById("tcTdNvzCUGoi"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="wEimrRBbEsuV" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="eXhKTEkmSGNb" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#wEimrRBbEsuV {
+#eXhKTEkmSGNb {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2449,7 +2483,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswEimrRBbEsuV=[{"question": "Was ist type(\"26.3\")?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl (die durch `float` beschrieben w\u00fcrde), ist aber keine."}, {"answer": "float", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl, ist aber keine."}, {"answer": "string", "correct": true, "feedback": "Richtig! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird."}]}];
+</style></div><script type="application/javascript">var questionseXhKTEkmSGNb=[{"question": "Was ist type(\"26.3\")?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl (die durch `float` beschrieben w\u00fcrde), ist aber keine."}, {"answer": "float", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl, ist aber keine."}, {"answer": "string", "correct": true, "feedback": "Richtig! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3198,8 +3232,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("wEimrRBbEsuV")) {
-            show_questions(questionswEimrRBbEsuV,  wEimrRBbEsuV); 
+          if(document.getElementById("eXhKTEkmSGNb")) {
+            show_questions(questionseXhKTEkmSGNb,  eXhKTEkmSGNb); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3208,8 +3242,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("wEimrRBbEsuV");
-        // console.log(document.getElementById("wEimrRBbEsuV"));
+        //console.log("eXhKTEkmSGNb");
+        // console.log(document.getElementById("eXhKTEkmSGNb"));
 
         try_show();
         }
