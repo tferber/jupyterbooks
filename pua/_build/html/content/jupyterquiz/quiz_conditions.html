@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_conditions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Quiz Kontrollstrukturen" href="quiz_control.html" />
+    <link rel="next" title="Jupyter Notebooks" href="../extra.html" />
     <link rel="prev" title="Vorlesung 3" href="../vorlesung_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,8 +172,6 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_3.html">Vorlesung 3</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Bedingungen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quiz_control.html">Quiz Kontrollstrukturen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quiz_recursion.html">Quiz Rekursion</a></li>
 </ul>
 </li>
 </ul>
@@ -432,13 +430,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="xUSzDYyMRXcD" data-shufflequestions="False"
+<div class="output text_html"><div id="FViZhQxlbvNx" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#xUSzDYyMRXcD {
+#FViZhQxlbvNx {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -608,7 +606,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsxUSzDYyMRXcD=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print((True or False) and (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch!"}, {"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsFViZhQxlbvNx=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print((True or False) and (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch!"}, {"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1357,8 +1355,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("xUSzDYyMRXcD")) {
-            show_questions(questionsxUSzDYyMRXcD,  xUSzDYyMRXcD); 
+          if(document.getElementById("FViZhQxlbvNx")) {
+            show_questions(questionsFViZhQxlbvNx,  FViZhQxlbvNx); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1367,18 +1365,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("xUSzDYyMRXcD");
-        // console.log(document.getElementById("xUSzDYyMRXcD"));
+        //console.log("FViZhQxlbvNx");
+        // console.log(document.getElementById("FViZhQxlbvNx"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="eUhnMJZfvxiJ" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="pxDlPiVsrbTe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#eUhnMJZfvxiJ {
+#pxDlPiVsrbTe {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1548,7 +1546,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionseUhnMJZfvxiJ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(not (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch! `not` negiert die Bedingung in Klammern."}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionspxDlPiVsrbTe=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(not (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch! `not` negiert die Bedingung in Klammern."}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2297,8 +2295,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("eUhnMJZfvxiJ")) {
-            show_questions(questionseUhnMJZfvxiJ,  eUhnMJZfvxiJ); 
+          if(document.getElementById("pxDlPiVsrbTe")) {
+            show_questions(questionspxDlPiVsrbTe,  pxDlPiVsrbTe); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2307,18 +2305,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("eUhnMJZfvxiJ");
-        // console.log(document.getElementById("eUhnMJZfvxiJ"));
+        //console.log("pxDlPiVsrbTe");
+        // console.log(document.getElementById("pxDlPiVsrbTe"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="VboaraMSLAOX" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="SPTrpnnXNYFa" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#VboaraMSLAOX {
+#SPTrpnnXNYFa {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2488,7 +2486,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsVboaraMSLAOX=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ny = 20\nprint(x == y or x != y)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsSPTrpnnXNYFa=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ny = 20\nprint(x == y or x != y)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3237,8 +3235,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VboaraMSLAOX")) {
-            show_questions(questionsVboaraMSLAOX,  VboaraMSLAOX); 
+          if(document.getElementById("SPTrpnnXNYFa")) {
+            show_questions(questionsSPTrpnnXNYFa,  SPTrpnnXNYFa); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3247,8 +3245,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("VboaraMSLAOX");
-        // console.log(document.getElementById("VboaraMSLAOX"));
+        //console.log("SPTrpnnXNYFa");
+        // console.log(document.getElementById("SPTrpnnXNYFa"));
 
         try_show();
         }
@@ -3297,11 +3295,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="quiz_control.html"
+       href="../extra.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quiz Kontrollstrukturen</p>
+        <p class="prev-next-title">Jupyter Notebooks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
