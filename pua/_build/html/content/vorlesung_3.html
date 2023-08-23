@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/vorlesung_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz void-Funktionen" href="jupyterquiz/quiz_conditions.html" />
-    <link rel="prev" title="Quiz f-strings" href="jupyterquiz/quiz_fstrings.html" />
+    <link rel="next" title="Quiz Bedingungen" href="jupyterquiz/quiz_conditions.html" />
+    <link rel="prev" title="Quiz void-Funktionen" href="jupyterquiz/quiz_funktionen_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,15 +167,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_2.html">Vorlesung 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_variablen.html">Quiz Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_fstrings.html">Quiz f-strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_funktionen_1.html">Quiz void-Funktionen</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Vorlesung 3</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz void-Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz void-Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_recursion.html">Quiz void-Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz Kontrollstrukturen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_recursion.html">Quiz Rekursion</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="vorlesung_4.html">Vorlesung 4</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
@@ -409,18 +409,15 @@ document.write(`
 <h1>Vorlesung 3<a class="headerlink" href="#vorlesung-3" title="Permalink to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Hier geht zum Quiz…</p>
-<p><a class="reference internal" href="jupyterquiz/quiz_conditions.html"><span class="doc std std-doc">Quiz zum Thema “Python Boolsche Algebra”</span></a></p>
-<p><a class="reference internal" href="jupyterquiz/quiz_control.html"><span class="doc std std-doc">Quiz zum Thema “Python Kontrollstrukturen”</span></a></p>
-<p><a class="reference internal" href="jupyterquiz/quiz_recursion.html"><span class="doc std std-doc">Quiz zum Thema “Python Rekursion”</span></a></p>
+<p><a class="reference internal" href="jupyterquiz/quiz_conditions.html"><span class="doc std std-doc">Quiz zum Thema “Boolsche Algebra und Bedingungen”</span></a></p>
+<p><a class="reference internal" href="jupyterquiz/quiz_control.html"><span class="doc std std-doc">Quiz zum Thema “Kontrollstrukturen”</span></a></p>
+<p><a class="reference internal" href="jupyterquiz/quiz_recursion.html"><span class="doc std std-doc">Quiz zum Thema “Rekursion”</span></a></p>
 </div>
-<section id="was-sie-wissen-sollten">
-<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Text</p></li>
-</ul>
 <!--## Download Vorlesungsfolien-->
 <!---->
-<!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+<!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+<section id="was-sie-wissen-sollten">
+<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
 <!--## Videos to watch...-->
 <!--::::{grid}-->
 <!--:class-container: text-center-->
@@ -432,6 +429,14 @@ document.write(`
 <!--Facts and Myths about Python names and values - PyCon 2015 (Ned Batchelder)-->
 <!---->
 <!--<iframe width="200" height="113" src="https://www.youtube.com/embed/_AEJHKGk9ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--:::-->
+<!---->
+<!--:::{grid-item-card}-->
+<!--:columns: 5-->
+<!--:class-header: bg-light-->
+<!--The PEP 8 Song (Leon Sandøy)-->
+<!---->
+<!--<iframe width="200" height="113" src="https://www.youtube.com/embed/hgI0p1zf31k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 <!--:::-->
 <!---->
 <!---->
@@ -473,12 +478,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jupyterquiz/quiz_fstrings.html"
+       href="jupyterquiz/quiz_funktionen_1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz f-strings</p>
+        <p class="prev-next-title">Quiz void-Funktionen</p>
       </div>
     </a>
     <a class="right-next"
@@ -486,7 +491,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quiz void-Funktionen</p>
+        <p class="prev-next-title">Quiz Bedingungen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

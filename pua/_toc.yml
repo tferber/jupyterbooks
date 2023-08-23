@@ -17,11 +17,12 @@ parts:
     - file: content/jupyterquiz/quiz_variablen
     - file: content/jupyterquiz/quiz_fstrings
     - file: content/jupyterquiz/quiz_funktionen_1
-#  - file: content/vorlesung_3.md
-#    sections:
-#    - file: content/jupyterquiz/quiz_conditions
-#    - file: content/jupyterquiz/quiz_control
-#    - file: content/jupyterquiz/quiz_recursion
+    
+  - file: content/vorlesung_3.md
+    sections:
+    - file: content/jupyterquiz/quiz_conditions
+    - file: content/jupyterquiz/quiz_control
+    - file: content/jupyterquiz/quiz_recursion
 #
 #  - file: content/vorlesung_4.md
 
