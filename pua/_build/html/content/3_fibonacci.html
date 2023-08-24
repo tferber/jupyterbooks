@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Jupyter Notebooks &#8212; Programmieren und Algorithmen</title>
+    <title>Fibonacci Zahlen &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -62,11 +62,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/extra';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/3_fibonacci';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bytecode" href="2_bytecode.html" />
-    <link rel="prev" title="Quiz Bedingungen" href="jupyterquiz/quiz_conditions.html" />
+    <link rel="prev" title="Boolsche Algebra und Bedingungen" href="3_bedingungen.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,10 +176,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Fibonacci Zahlen</a></li>
 </ul>
 </li>
 </ul>
@@ -229,6 +228,55 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/3_fibonacci.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/3_fibonacci.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -254,7 +302,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/extra.md" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/3_fibonacci.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,7 +319,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/extra.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/3_fibonacci.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -301,7 +349,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/extra.md" target="_blank"
+      <li><a href="../_sources/content/3_fibonacci.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +359,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -383,7 +431,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Jupyter Notebooks</h1>
+    <h1>Fibonacci Zahlen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,7 +441,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursive-funktion">Rekursive Funktion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterative-funktion">Iterative Funktion</a></li>
 </ul>
             </nav>
         </div>
@@ -405,27 +454,103 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebooks">
-<h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h1>
-<p>Hier werden Jupyter-Notebooks zur Verfügung gestellt um einige Aspekte der Vorlesung zu vertiefen oder um weitere Beispiele zu verdeutlichen.</p>
-<p>Jupyter-Notebooks  sofort ausprobieren: Klicken sie oben auf die Rakete und dann auf <em>Colab</em>. Es sollte ich nun eine interaktive Umgebung im Browser öffnen, in der das Jupyter-Notebook auf Google Colab gestartet wird. Die Rakete erscheint nur auf den Seiten, die als Jupyter-Notebooks hinterlegt sind.</p>
-<section id="videos-to-watch">
-<h2>Videos to watch…<a class="headerlink" href="#videos-to-watch" title="Permalink to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
-<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
-<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Quick introduction to Jupyter Notebook (Michael Fudge)</p>
-<iframe width="200" height="113" src="https://www.youtube.com/embed/jZ952vChhuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <section class="tex2jax_ignore mathjax_ignore" id="fibonacci-zahlen">
+<h1>Fibonacci Zahlen<a class="headerlink" href="#fibonacci-zahlen" title="Permalink to this heading">#</a></h1>
+<p>Die Fibonacci-Zahlen sind eine Zahlenfolge, bei der jede Zahl die Summe der beiden vorangegangenen ist. Die Folge beginnt in der Regel bei 0 und 1. Ausgehend von 0 und 1 lauten die ersten Werte in der Folge: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …</p>
+<p>Die Fibonacci-Zahlen wurden bereits 200 v. Chr. in der indischen Mathematik beschrieben. Sie sind nach dem italienischen Mathematiker Leonardo von Pisa, auch bekannt als Fibonacci, benannt, der die Zahlenreihe in seinem Buch Liber Abaci aus dem Jahr 1202 in die westeuropäische Mathematik einführte.</p>
+<p>Die Fibonacci-Zahlen tauchen unerwartet oft in der Mathematik auf, und sie kommen auch in der Biologie vor. Zu den Anwendungen der Fibonacci-Zahlen gehören Computeralgorithmen wie die Fibonacci-Suchtechnik und die Fibonacci-Haufen-Datenstruktur.</p>
+<p>Mehr Informationen: <a class="reference external" href="https://en.wikipedia.org/wiki/Fibonacci_sequence">https://en.wikipedia.org/wiki/Fibonacci_sequence</a></p>
+<section id="rekursive-funktion">
+<h2>Rekursive Funktion<a class="headerlink" href="#rekursive-funktion" title="Permalink to this heading">#</a></h2>
+<p>Das berechnen der fünfunddreissigsten Fibonacci-Zahl dauert mit dem rekursiven Algorithmus bereits mehrere Sekunden.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fibonacci_rekursiv</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Calculate the nth Fibonacci number using recursion.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    n (int): The position of the Fibonacci number in the Fibonacci sequence. Must be a positive integer.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    int: The nth Fibonacci number.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">    ValueError: If n is negative.</span>
+<span class="sd">    TypeError: If n is not an integer.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;n must be a integer.&quot;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fibonacci_rekursiv</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci_rekursiv</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Test the function</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fibonacci_rekursiv</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+</pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5702887
+</pre></div>
 </div>
 </div>
 </div>
 </section>
-<div class="toctree-wrapper compound">
+<section id="iterative-funktion">
+<h2>Iterative Funktion<a class="headerlink" href="#iterative-funktion" title="Permalink to this heading">#</a></h2>
+<p>Der iterative ALgorithmus ist deutlich schneller und funkioniert auch für sehr große Zahlen extrem schnell.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fibonacci_iterativ</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Calculate the nth Fibonacci number using iteration.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    n (int): The position of the Fibonacci number in the Fibonacci sequence. Must be a positive integer.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    int: The nth Fibonacci number.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">    ValueError: If n is negative.</span>
+<span class="sd">    TypeError: If n is not an integer.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;n must be a integer.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="k">return</span> <span class="n">b</span>
+
+<span class="c1"># Test the function</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fibonacci_iterativ</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5702887
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -460,22 +585,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jupyterquiz/quiz_conditions.html"
+       href="3_bedingungen.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz Bedingungen</p>
+        <p class="prev-next-title">Boolsche Algebra und Bedingungen</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="2_bytecode.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bytecode</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -495,7 +611,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursive-funktion">Rekursive Funktion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterative-funktion">Iterative Funktion</a></li>
 </ul>
   </nav></div>
 

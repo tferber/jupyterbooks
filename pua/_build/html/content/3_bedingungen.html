@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Jupyter Notebooks &#8212; Programmieren und Algorithmen</title>
+    <title>Boolsche Algebra und Bedingungen &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/extra';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/3_bedingungen';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bytecode" href="2_bytecode.html" />
-    <link rel="prev" title="Quiz Bedingungen" href="jupyterquiz/quiz_conditions.html" />
+    <link rel="next" title="Fibonacci Zahlen" href="3_fibonacci.html" />
+    <link rel="prev" title="Bytecode" href="2_bytecode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,9 +177,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
 </ul>
 </li>
@@ -229,6 +229,55 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/3_bedingungen.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/3_bedingungen.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -254,7 +303,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/extra.md" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/3_bedingungen.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,7 +320,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/extra.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/3_bedingungen.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -301,7 +350,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/extra.md" target="_blank"
+      <li><a href="../_sources/content/3_bedingungen.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +360,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -383,7 +432,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Jupyter Notebooks</h1>
+    <h1>Boolsche Algebra und Bedingungen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,7 +442,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolsche-algebra">Boolsche Algebra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-1">Beispiel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-2">Beispiel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logische-operatoren">Logische Operatoren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Beispiel 1</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -405,27 +462,149 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebooks">
-<h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h1>
-<p>Hier werden Jupyter-Notebooks zur Verfügung gestellt um einige Aspekte der Vorlesung zu vertiefen oder um weitere Beispiele zu verdeutlichen.</p>
-<p>Jupyter-Notebooks  sofort ausprobieren: Klicken sie oben auf die Rakete und dann auf <em>Colab</em>. Es sollte ich nun eine interaktive Umgebung im Browser öffnen, in der das Jupyter-Notebook auf Google Colab gestartet wird. Die Rakete erscheint nur auf den Seiten, die als Jupyter-Notebooks hinterlegt sind.</p>
-<section id="videos-to-watch">
-<h2>Videos to watch…<a class="headerlink" href="#videos-to-watch" title="Permalink to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
-<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
-<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Quick introduction to Jupyter Notebook (Michael Fudge)</p>
-<iframe width="200" height="113" src="https://www.youtube.com/embed/jZ952vChhuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <section class="tex2jax_ignore mathjax_ignore" id="boolsche-algebra-und-bedingungen">
+<h1>Boolsche Algebra und Bedingungen<a class="headerlink" href="#boolsche-algebra-und-bedingungen" title="Permalink to this heading">#</a></h1>
+<section id="boolsche-algebra">
+<h2>Boolsche Algebra<a class="headerlink" href="#boolsche-algebra" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>==: Dies ist der Gleichheitsoperator. Er prüft, ob die Werte von zwei Operanden gleich sind oder nicht. Wenn sie gleich sind, wird die Bedingung True. Zum Beispiel würde 5 == 5 True zurückgeben.</p></li>
+<li><p>!=: Dies ist der Ungleichheitsoperator. Er prüft, ob die Werte von zwei Operanden ungleich sind oder nicht. Wenn sie ungleich sind, wird die Bedingung True. Zum Beispiel würde 5 != 6 True zurückgeben.
+&lt;: Dies ist der Kleiner-als-Operator. Er prüft, ob der Wert des linken Operanden kleiner ist als der Wert des rechten Operanden. Wenn ja, dann wird die Bedingung True. Beispiel: 3 &lt; 4 würde True zurückgeben.</p></li>
+<li><p>&gt;: Dies ist der Größer-als-Operator. Er prüft, ob der Wert des linken Operanden größer ist als der Wert des rechten Operanden. Wenn ja, wird die Bedingung True. Beispiel: 4 &gt; 3 würde True zurückgeben.</p></li>
+<li><p>&lt;=: Dies ist der Operator “kleiner als” oder “gleich”. Er prüft, ob der Wert des linken Operanden kleiner oder gleich dem Wert des rechten Operanden ist. Wenn ja, dann wird die Bedingung True. Beispiel: 3 &lt;= 3 würde True zurückgeben.</p></li>
+<li><p>&gt;=: Dies ist der Größer-als-oder-Gleich-Operator. Er prüft, ob der Wert des linken Operanden größer oder gleich dem Wert des rechten Operanden ist. Wenn ja, dann wird die Bedingung True. Zum Beispiel würde 4 &gt;= 4 True zurückgeben.</p></li>
+</ul>
+<p>Testen sie die Gleichheit von zwei Gleitkommazahlen immer mit <code class="docutils literal notranslate"><span class="pre">math.isclose()</span></code>!</p>
+<section id="beispiel-1">
+<h3>Beispiel 1<a class="headerlink" href="#beispiel-1" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># In diesem Beipsiel erwarten wir, dass 0.1+02 gleich 0.3 ist. </span>
+<span class="c1"># Die endliche Auflösung von Gleitkommazahlen führt zu einem unerwartetetn Ergebnis.</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="nb">print</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Beim Testen mit einer relativen Toleranz von 1e-9 (ein Milliardstel) ergibt der Vergleich</span>
+<span class="c1"># das erwartete Ergebnis</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">),</span> <span class="n">z</span><span class="p">,</span> <span class="n">rel_tol</span><span class="o">=</span><span class="mf">1e-09</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
 </div>
 </div>
 </div>
 </section>
-<div class="toctree-wrapper compound">
+<section id="beispiel-2">
+<h3>Beispiel 2<a class="headerlink" href="#beispiel-2" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Beim Testen mit einer relativen Toleranz von 1e-9 (ein Milliardstel) </span>
+<span class="c1"># ergibt der Vergleich mit 0.0 ein unerwartets Ergebnis: (0.1 + 0.2 - 0.3) ist gleich 0.0... oder?</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">-</span><span class="n">z</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">rel_tol</span><span class="o">=</span><span class="mf">1e-09</span><span class="p">))</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Das unerwartete Ergebnis kommt zustande, weil der Standardparameter der Funktion `math.isclose()</span>
+<span class="c1"># nur eine absolute Tolreanz von 0.0 zulässt, und die relative Toleranz keine </span>
+<span class="c1"># Abweichung von Null feststellen kann. Durch Ändern der absoluten Toleranz ergibt der Vergleich</span>
+<span class="c1"># das erwartete Ergebnis</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">-</span><span class="n">z</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">rel_tol</span><span class="o">=</span><span class="mf">1e-09</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">1e-09</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="logische-operatoren">
+<h2>Logische Operatoren<a class="headerlink" href="#logische-operatoren" title="Permalink to this heading">#</a></h2>
+<p>Zum Kombinieren von boolschen Ausdrücken stehen drei Operatoren zur Auswahl: and, or, und not
+Die Bedeutung entspricht ihrer englischen Bedeutung
+Nutzen sie Klammern um Ausdrücke zu gruppieren</p>
+<ul class="simple">
+<li><p>x and y: Ist True wenn sowohl x als auch y True sind
+Wenn x False ist, ist der Ausdruck False. Wenn x True ist, ist der Ausdruck y.</p></li>
+<li><p>x or y: Ist True wenn entweder x, oder y, oder x und y True sind</p></li>
+<li><p>not x: Ist True wenn x False ist.</p></li>
+</ul>
+<section id="id1">
+<h3>Beispiel 1<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verwenden sie nicht den `is` Operator um Gleichheit zu testen, dieser Operator </span>
+<span class="c1"># testet ob zwei Variablen das gleiche Objekt referenzieren</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="ow">is</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Zum testen ob zwei Werte gleich sind, nutzen sie “==“ oder math.isclose()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -460,20 +639,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jupyterquiz/quiz_conditions.html"
+       href="2_bytecode.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz Bedingungen</p>
+        <p class="prev-next-title">Bytecode</p>
       </div>
     </a>
     <a class="right-next"
-       href="2_bytecode.html"
+       href="3_fibonacci.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bytecode</p>
+        <p class="prev-next-title">Fibonacci Zahlen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,7 +674,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolsche-algebra">Boolsche Algebra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-1">Beispiel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-2">Beispiel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logische-operatoren">Logische Operatoren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Beispiel 1</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

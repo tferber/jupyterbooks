@@ -177,6 +177,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
 </ul>
 </li>
 </ul>
@@ -446,13 +448,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qMotOgIxZUBL" data-shufflequestions="False"
+<div class="output text_html"><div id="UBOezHySxLbf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#qMotOgIxZUBL {
+#UBOezHySxLbf {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -622,7 +624,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqMotOgIxZUBL=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def print_square(n):\n    print(n ** 2)\n\nprint_square(4)", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": true, "feedback": "Richtig! Es ist erlaubt innerhalb einer Funktion (z.B. print_square()) eine weitere Funktion (z.B. print()) aufzurufen und in dieser sogar eine Berechnung durchzuf\u00fchren."}, {"answer": "8", "correct": false, "feedback": "Falsch! ** ist der Exponentiationsoperator, nicht der Multiplikatiosnoperator."}]}];
+</style></div><script type="application/javascript">var questionsUBOezHySxLbf=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def print_square(n):\n    print(n ** 2)\n\nprint_square(4)", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": true, "feedback": "Richtig! Es ist erlaubt innerhalb einer Funktion (z.B. print_square()) eine weitere Funktion (z.B. print()) aufzurufen und in dieser sogar eine Berechnung durchzuf\u00fchren."}, {"answer": "8", "correct": false, "feedback": "Falsch! ** ist der Exponentiationsoperator, nicht der Multiplikatiosnoperator."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1371,8 +1373,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("qMotOgIxZUBL")) {
-            show_questions(questionsqMotOgIxZUBL,  qMotOgIxZUBL); 
+          if(document.getElementById("UBOezHySxLbf")) {
+            show_questions(questionsUBOezHySxLbf,  UBOezHySxLbf); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1381,18 +1383,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("qMotOgIxZUBL");
-        // console.log(document.getElementById("qMotOgIxZUBL"));
+        //console.log("UBOezHySxLbf");
+        // console.log(document.getElementById("UBOezHySxLbf"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="uXbvWvHRvjFV" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="RgsbFaljjJXN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#uXbvWvHRvjFV {
+#RgsbFaljjJXN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1562,7 +1564,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsuXbvWvHRvjFV=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ndef change_x():\n    x = 20\n    print(x)\n\nchange_x()\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt. "}, {"answer": "20", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt."}, {"answer": "20, dann 20", "correct": false, "feedback": "Falsch! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}, {"answer": "20, dann 10", "correct": true, "feedback": "Richtig! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}]}];
+</style></div><script type="application/javascript">var questionsRgsbFaljjJXN=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ndef change_x():\n    x = 20\n    print(x)\n\nchange_x()\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt. "}, {"answer": "20", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt."}, {"answer": "20, dann 20", "correct": false, "feedback": "Falsch! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}, {"answer": "20, dann 10", "correct": true, "feedback": "Richtig! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2311,8 +2313,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("uXbvWvHRvjFV")) {
-            show_questions(questionsuXbvWvHRvjFV,  uXbvWvHRvjFV); 
+          if(document.getElementById("RgsbFaljjJXN")) {
+            show_questions(questionsRgsbFaljjJXN,  RgsbFaljjJXN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2321,18 +2323,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("uXbvWvHRvjFV");
-        // console.log(document.getElementById("uXbvWvHRvjFV"));
+        //console.log("RgsbFaljjJXN");
+        // console.log(document.getElementById("RgsbFaljjJXN"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="jQvRTsPbBHJO" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="TiPvHzhDZqnR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#jQvRTsPbBHJO {
+#TiPvHzhDZqnR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2502,7 +2504,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsjQvRTsPbBHJO=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def tricky():\n    print(x)\n    x = 10\n\ntricky()", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. "}, {"answer": "0", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat nicht den Wert null."}, {"answer": "Eine zuf\u00e4llige Zahl.", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat keinen zuf\u00e4lligen Wert."}, {"answer": "Eine Fehlermeldung.", "correct": true, "feedback": "Richtig! Genauer der Fehler \"UnboundLocalError local variable 'x' referenced before assignment\"."}]}];
+</style></div><script type="application/javascript">var questionsTiPvHzhDZqnR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def tricky():\n    print(x)\n    x = 10\n\ntricky()", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. "}, {"answer": "0", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat nicht den Wert null."}, {"answer": "Eine zuf\u00e4llige Zahl.", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat keinen zuf\u00e4lligen Wert."}, {"answer": "Eine Fehlermeldung.", "correct": true, "feedback": "Richtig! Genauer der Fehler \"UnboundLocalError local variable 'x' referenced before assignment\"."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3251,8 +3253,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("jQvRTsPbBHJO")) {
-            show_questions(questionsjQvRTsPbBHJO,  jQvRTsPbBHJO); 
+          if(document.getElementById("TiPvHzhDZqnR")) {
+            show_questions(questionsTiPvHzhDZqnR,  TiPvHzhDZqnR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3261,8 +3263,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("jQvRTsPbBHJO");
-        // console.log(document.getElementById("jQvRTsPbBHJO"));
+        //console.log("TiPvHzhDZqnR");
+        // console.log(document.getElementById("TiPvHzhDZqnR"));
 
         try_show();
         }

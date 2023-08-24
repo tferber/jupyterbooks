@@ -31,3 +31,5 @@ parts:
   - file: content/extra.md
     sections:
     - file: content/2_bytecode
+    - file: content/3_bedingungen
+    - file: content/3_fibonacci
