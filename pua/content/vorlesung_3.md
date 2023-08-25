@@ -6,7 +6,7 @@
 
 [Quiz zum Thema "Kontrollstrukturen"](jupyterquiz/quiz_control)
 
-<!--[Quiz zum Thema "Rekursion"](jupyterquiz/quiz_recursion)-->
+[Quiz zum Thema "Rekursion"](jupyterquiz/quiz_recursion)
 ```
 
 <!--## Download Vorlesungsfolien-->
