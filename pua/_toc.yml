@@ -21,7 +21,7 @@ parts:
   - file: content/vorlesung_3.md
     sections:
     - file: content/jupyterquiz/quiz_conditions
-#    - file: content/jupyterquiz/quiz_control
+    - file: content/jupyterquiz/quiz_control
 #    - file: content/jupyterquiz/quiz_recursion
 #
 #  - file: content/vorlesung_4.md

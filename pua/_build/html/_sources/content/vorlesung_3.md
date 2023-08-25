@@ -6,7 +6,7 @@
 
 [Quiz zum Thema "Kontrollstrukturen"](jupyterquiz/quiz_control)
 
-[Quiz zum Thema "Rekursion"](jupyterquiz/quiz_recursion)
+<!--[Quiz zum Thema "Rekursion"](jupyterquiz/quiz_recursion)-->
 ```
 
 <!--## Download Vorlesungsfolien-->
@@ -15,6 +15,13 @@
 
 
 ## Was Sie wissen sollten
+
+* Mit boolschen Bedingungen (`=`, `!=`, `>`, `<`, `>=`, `<=`) und logischen Bedingungen (`and`, `or`, `not`) testen Sie Argumente auf True oder False
+* Mit `if-elif-else` Kontrollstrukturen kontrollieren sie, welche Teile ihres Codes unter welchen Bedingungen ausgeführt wird
+* Mit der Kontrollstrukturen `while` durchlaufen sie eine Schleife solange bis eine Abbruchbedingung erfüllt ist
+* Mit der Kontrollstrukturen `for` führen sie eine Schleife einmal pro Datenobjekt aus (sog. Iteration)
+* Rekursive Funktionen rufen sich selbst auf bis eine Abbruchbedingung erfüllt ist
+* Prüfen sie Funkionsparameter und User-Eingaben: Easier to Ask Forgiveness Than Permission
 
 <!--## Videos to watch...-->
 <!--::::{grid}-->

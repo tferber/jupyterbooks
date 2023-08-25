@@ -171,6 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_3.html">Vorlesung 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz Kontrollstrukturen</a></li>
 </ul>
 </li>
 </ul>
@@ -476,14 +477,14 @@ document.write(`
 <span class="sd">    int: The nth Fibonacci number.</span>
 
 <span class="sd">    Raises:</span>
-<span class="sd">    ValueError: If n is negative.</span>
 <span class="sd">    TypeError: If n is not an integer.</span>
+<span class="sd">    ValueError: If n is negative.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
 
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;n must be a integer.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
     
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -520,14 +521,14 @@ document.write(`
 <span class="sd">    int: The nth Fibonacci number.</span>
 
 <span class="sd">    Raises:</span>
-<span class="sd">    ValueError: If n is negative.</span>
 <span class="sd">    TypeError: If n is not an integer.</span>
+<span class="sd">    ValueError: If n is negative.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
 
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;n must be a integer.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n must be a positive number.&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>

@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_conditions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Jupyter Notebooks" href="../extra.html" />
+    <link rel="next" title="Quiz Kontrollstrukturen" href="quiz_control.html" />
     <link rel="prev" title="Vorlesung 3" href="../vorlesung_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,6 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_3.html">Vorlesung 3</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_control.html">Quiz Kontrollstrukturen</a></li>
 </ul>
 </li>
 </ul>
@@ -450,13 +451,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="EjOvBCYNmlML" data-shufflequestions="False"
+<div class="output text_html"><div id="jszYLJNQCuPM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#EjOvBCYNmlML {
+#jszYLJNQCuPM {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -626,7 +627,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsEjOvBCYNmlML=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print((True or False) and (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch!"}, {"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsjszYLJNQCuPM=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print((True or False) and (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch!"}, {"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1375,8 +1376,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("EjOvBCYNmlML")) {
-            show_questions(questionsEjOvBCYNmlML,  EjOvBCYNmlML); 
+          if(document.getElementById("jszYLJNQCuPM")) {
+            show_questions(questionsjszYLJNQCuPM,  jszYLJNQCuPM); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1385,18 +1386,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("EjOvBCYNmlML");
-        // console.log(document.getElementById("EjOvBCYNmlML"));
+        //console.log("jszYLJNQCuPM");
+        // console.log(document.getElementById("jszYLJNQCuPM"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="wWxIJVFPTtbc" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="dJqRuHvaUmtd" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#wWxIJVFPTtbc {
+#dJqRuHvaUmtd {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1566,7 +1567,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswWxIJVFPTtbc=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(not (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch! `not` negiert die Bedingung in Klammern."}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsdJqRuHvaUmtd=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(not (False and True))", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch! `not` negiert die Bedingung in Klammern."}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2315,8 +2316,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("wWxIJVFPTtbc")) {
-            show_questions(questionswWxIJVFPTtbc,  wWxIJVFPTtbc); 
+          if(document.getElementById("dJqRuHvaUmtd")) {
+            show_questions(questionsdJqRuHvaUmtd,  dJqRuHvaUmtd); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2325,18 +2326,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("wWxIJVFPTtbc");
-        // console.log(document.getElementById("wWxIJVFPTtbc"));
+        //console.log("dJqRuHvaUmtd");
+        // console.log(document.getElementById("dJqRuHvaUmtd"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="bavhmXuaDAtI" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="XiHaYFxyNpiR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#bavhmXuaDAtI {
+#XiHaYFxyNpiR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2506,7 +2507,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsbavhmXuaDAtI=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ny = 20\nprint(x == y or x != y)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsXiHaYFxyNpiR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ny = 20\nprint(x == y or x != y)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch! Der Datentyp nach einer Bedingungsoperation ist i.A. vom Type `bool`"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3255,8 +3256,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("bavhmXuaDAtI")) {
-            show_questions(questionsbavhmXuaDAtI,  bavhmXuaDAtI); 
+          if(document.getElementById("XiHaYFxyNpiR")) {
+            show_questions(questionsXiHaYFxyNpiR,  XiHaYFxyNpiR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3265,18 +3266,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("bavhmXuaDAtI");
-        // console.log(document.getElementById("bavhmXuaDAtI"));
+        //console.log("XiHaYFxyNpiR");
+        // console.log(document.getElementById("XiHaYFxyNpiR"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="pklJBQhZfEKi" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="VFFxmPogJlKi" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#pklJBQhZfEKi {
+#VFFxmPogJlKi {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3446,7 +3447,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionspklJBQhZfEKi=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(2 and True)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch!"}, {"answer": "2", "correct": false, "feedback": "Falsch! Die Reihenfolge der Argumente spielt hier eine wichtige Rolle!"}]}];
+</style></div><script type="application/javascript">var questionsVFFxmPogJlKi=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(2 and True)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Richtig!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch!"}, {"answer": "2", "correct": false, "feedback": "Falsch! Die Reihenfolge der Argumente spielt hier eine wichtige Rolle!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4195,8 +4196,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("pklJBQhZfEKi")) {
-            show_questions(questionspklJBQhZfEKi,  pklJBQhZfEKi); 
+          if(document.getElementById("VFFxmPogJlKi")) {
+            show_questions(questionsVFFxmPogJlKi,  VFFxmPogJlKi); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4205,18 +4206,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("pklJBQhZfEKi");
-        // console.log(document.getElementById("pklJBQhZfEKi"));
+        //console.log("VFFxmPogJlKi");
+        // console.log(document.getElementById("VFFxmPogJlKi"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="hJLvTIzMgfRR" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="FraSFLYzXwqb" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#hJLvTIzMgfRR {
+#FraSFLYzXwqb {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -4386,7 +4387,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshJLvTIzMgfRR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(True and 2)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch! Die Reihenfolge der Argumente spielt hier eine wichtige Rolle!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch!"}, {"answer": "2", "correct": true, "feedback": "Richtig!"}]}];
+</style></div><script type="application/javascript">var questionsFraSFLYzXwqb=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "print(True and 2)", "type": "multiple_choice", "answers": [{"answer": "True", "correct": false, "feedback": "Falsch! Die Reihenfolge der Argumente spielt hier eine wichtige Rolle!"}, {"answer": "False", "correct": false, "feedback": "Falsch!"}, {"answer": "None", "correct": false, "feedback": "Falsch!"}, {"answer": "2", "correct": true, "feedback": "Richtig!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -5135,8 +5136,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("hJLvTIzMgfRR")) {
-            show_questions(questionshJLvTIzMgfRR,  hJLvTIzMgfRR); 
+          if(document.getElementById("FraSFLYzXwqb")) {
+            show_questions(questionsFraSFLYzXwqb,  FraSFLYzXwqb); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -5145,8 +5146,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("hJLvTIzMgfRR");
-        // console.log(document.getElementById("hJLvTIzMgfRR"));
+        //console.log("FraSFLYzXwqb");
+        // console.log(document.getElementById("FraSFLYzXwqb"));
 
         try_show();
         }
@@ -5195,11 +5196,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../extra.html"
+       href="quiz_control.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Jupyter Notebooks</p>
+        <p class="prev-next-title">Quiz Kontrollstrukturen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
