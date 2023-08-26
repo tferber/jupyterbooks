@@ -23,8 +23,12 @@ parts:
     - file: content/jupyterquiz/quiz_conditions
     - file: content/jupyterquiz/quiz_control
     - file: content/jupyterquiz/quiz_recursion
-#
-#  - file: content/vorlesung_4.md
+
+  - file: content/vorlesung_4.md
+    sections:
+    - file: content/jupyterquiz/quiz_listen
+    - file: content/jupyterquiz/quiz_datenstrukturen_und_funktionen
+    - file: content/jupyterquiz/quiz_dictionaries
 
 - caption: Jupyter Notebooks 🐍
   chapters:
@@ -33,3 +37,4 @@ parts:
     - file: content/2_bytecode
     - file: content/3_bedingungen
     - file: content/3_fibonacci
+    - file: content/4_nestedlistcomprehension

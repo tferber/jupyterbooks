@@ -2,7 +2,9 @@
 
 Hier werden Jupyter-Notebooks zur Verfügung gestellt um einige Aspekte der Vorlesung zu vertiefen oder um weitere Beispiele zu verdeutlichen.
 
-Jupyter-Notebooks  sofort ausprobieren: Klicken sie oben auf die Rakete und dann auf *Colab*. Es sollte ich nun eine interaktive Umgebung im Browser öffnen, in der das Jupyter-Notebook auf Google Colab gestartet wird. Die Rakete erscheint nur auf den Seiten, die als Jupyter-Notebooks hinterlegt sind. 
+Jupyter-Notebooks  sofort ausprobieren: Klicken sie oben auf die Rakete und dann auf *JupyterHub* Es sollte ich nun eine interaktive Umgebung im Browser öffnen, in der das Jupyter-Notebook auf dem Jupyterserver der Fakultät für Physik gestartet wird. Loggen sie sich mit ihrer Nutzerkennung ein und wählen sie *Python 3.11* aus.
+Alternativ klicken sie auf *Colab*. Es öffnet sich eine Interaktive Umgebung auf Google Colab Servern (ausserhalb des KIT).
+Die Rakete erscheint nur auf den Seiten, die als Jupyter-Notebooks hinterlegt sind. 
 
 ## Videos to watch...
 ::::{grid}

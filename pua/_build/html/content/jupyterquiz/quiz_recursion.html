@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_recursion';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Jupyter Notebooks" href="../extra.html" />
+    <link rel="next" title="Vorlesung 4" href="../vorlesung_4.html" />
     <link rel="prev" title="Quiz Kontrollstrukturen" href="quiz_control.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,13 +176,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Rekursion</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_4.html">Vorlesung 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_listen.html">Quiz Listen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_datenstrukturen_und_funktionen.html">Quiz Datenstrukturen und Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_dictionaries.html">Quiz Dictionaries</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_nestedlistcomprehension.html">Nested list comprehension</a></li>
 </ul>
 </li>
 </ul>
@@ -452,13 +459,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PWmMmyncVsrC" data-shufflequestions="False"
+<div class="output text_html"><div id="QxWLucZJIwvD" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PWmMmyncVsrC {
+#QxWLucZJIwvD {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -628,7 +635,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPWmMmyncVsrC=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsQxWLucZJIwvD=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1377,8 +1384,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PWmMmyncVsrC")) {
-            show_questions(questionsPWmMmyncVsrC,  PWmMmyncVsrC); 
+          if(document.getElementById("QxWLucZJIwvD")) {
+            show_questions(questionsQxWLucZJIwvD,  QxWLucZJIwvD); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1387,18 +1394,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PWmMmyncVsrC");
-        // console.log(document.getElementById("PWmMmyncVsrC"));
+        //console.log("QxWLucZJIwvD");
+        // console.log(document.getElementById("QxWLucZJIwvD"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="kRCGdnftquYY" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="AoyhdYecRKUn" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#kRCGdnftquYY {
+#AoyhdYecRKUn {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1568,7 +1575,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionskRCGdnftquYY=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if n == 0:\n        return 1\n    else:\n        return n * funktion2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsAoyhdYecRKUn=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if n == 0:\n        return 1\n    else:\n        return n * funktion2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2317,8 +2324,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("kRCGdnftquYY")) {
-            show_questions(questionskRCGdnftquYY,  kRCGdnftquYY); 
+          if(document.getElementById("AoyhdYecRKUn")) {
+            show_questions(questionsAoyhdYecRKUn,  AoyhdYecRKUn); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2327,18 +2334,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("kRCGdnftquYY");
-        // console.log(document.getElementById("kRCGdnftquYY"));
+        //console.log("AoyhdYecRKUn");
+        // console.log(document.getElementById("AoyhdYecRKUn"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="ryigDYzrgvLp" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="oNGCaAtNrqBR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ryigDYzrgvLp {
+#oNGCaAtNrqBR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2508,7 +2515,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsryigDYzrgvLp=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function3(n):\n    if n > 100:\n        return n\n    else:\n        return function3(tricky_recursion(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "100", "correct": false, "feedback": "Falsch!"}, {"answer": "101", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig!"}]}];
+</style></div><script type="application/javascript">var questionsoNGCaAtNrqBR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function3(n):\n    if n > 100:\n        return n\n    else:\n        return function3(function3(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "100", "correct": false, "feedback": "Falsch!"}, {"answer": "101", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3257,8 +3264,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ryigDYzrgvLp")) {
-            show_questions(questionsryigDYzrgvLp,  ryigDYzrgvLp); 
+          if(document.getElementById("oNGCaAtNrqBR")) {
+            show_questions(questionsoNGCaAtNrqBR,  oNGCaAtNrqBR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3267,8 +3274,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ryigDYzrgvLp");
-        // console.log(document.getElementById("ryigDYzrgvLp"));
+        //console.log("oNGCaAtNrqBR");
+        // console.log(document.getElementById("oNGCaAtNrqBR"));
 
         try_show();
         }
@@ -3317,11 +3324,11 @@ if (typeof version == 'undefined') {
       </div>
     </a>
     <a class="right-next"
-       href="../extra.html"
+       href="../vorlesung_4.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Jupyter Notebooks</p>
+        <p class="prev-next-title">Vorlesung 4</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
