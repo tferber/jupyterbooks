@@ -2,12 +2,10 @@
 
 Jede Vorlesung besteht aus einem pdf-Dokument mit den Slides die auf Ilias jede Woche finden können.
 Ihr Wissen können sie mit den verschiedenen Quizes testen - denken sie nach und kopieren sie nicht einfach nur den Code in the Python Interpreter. Manche Dinge in den Quizes wurden in den Vorlesungen nur am Rande erwähnt - das ist Absicht.
-Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks die sie direkt selbst ausprobieren können. Sie müssen jede Vorlesung nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen.
-Am Ende jeder Seite finden sie einen Block "Was sie wissen sollten" - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet: In den Zusammenhang einordnung, theoretische Hintergründe verinnerlichen, als Python-Code umsetzen können und auch konzeptionell so verstanden haben dass sie es auf andere Probleme anwenden können.
+Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks (Sie erfahren in Vorlesung 2 was das ist) die sie direkt selbst ausprobieren können. Sie müssen jede Vorlesung nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen.
+Am Ende jeder Seite finden sie einen Block **"Was sie wissen sollten"** - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet: In den Zusammenhang einordnen, theoretische Hintergründe verinnerlichen, als Python-Code umsetzen können und auch konzeptionell so verstanden haben, dass sie es auf andere Probleme anwenden können.
 Manchmal finden sie auf den Vorlesungsseiten auch Videos zum Thema - diese ersetzen keine Nachbereitung sondern dienen meist der Motivation oder der Einordnung eines Themas in einen größeren Zusammenhang.
 
-
-Was Sie wissen sollten
 
 ```{admonition} Hier geht zu den Quizes...
 :class: tip

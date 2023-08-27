@@ -11,10 +11,11 @@
 
 ```{admonition} Beispiele und Vertiefung
 :class: seealso
-[Jupyter Notebook zum Thema "Bedingungen"](3_bedingungen.ipynb)
+[Einführung in Jupyter Notebooks](extra.md)
 
-[Jupyter Notebook zum Thema "Fibonacci-Zahlen"](3_fibonacci.ipynb)
+[Jupyter Notebook zum Thema "ByteCode"](2_bytecode.ipynb)
 ```
+
 
 <!--## Download Vorlesungsfolien-->
 <!---->
