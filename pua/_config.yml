@@ -5,6 +5,11 @@ title: Programmieren und Algorithmen
 author: Torben Ferber
 logo: logo.png
 
+
+sphinx:
+  html_context:
+    default_mode: light
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:

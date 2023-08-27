@@ -1,4 +1,4 @@
-# Vorlesung 2
+# Vorlesung 2: Variablen, Funktionen, Dokumentation
 
 ```{admonition} Hier geht zum Quiz...
 :class: tip
@@ -7,6 +7,13 @@
 [Quiz zum Thema "f-strings"](jupyterquiz/quiz_fstrings.ipynb)
 
 [Quiz zum Thema "void-Funktionen"](jupyterquiz/quiz_funktionen_1.ipynb)
+```
+
+```{admonition} Beispiele und Vertiefung
+:class: seealso
+[Jupyter Notebook zum Thema "Bedingungen"](3_bedingungen.ipynb)
+
+[Jupyter Notebook zum Thema "Fibonacci-Zahlen"](3_fibonacci.ipynb)
 ```
 
 <!--## Download Vorlesungsfolien-->
@@ -59,6 +66,15 @@ Facts and Myths about Python names and values - PyCon 2015 (Ned Batchelder)
 The PEP 8 Song (Leon Sandøy)
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/hgI0p1zf31k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+
+:::{grid-item-card}
+:columns: 5
+:class-header: bg-light
+The magic of Fibonacci numbers (Arthur Benjamin)
+
+<iframe width="200" height="113" src="https://www.youtube.com/embed/SjSHVDfXHQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
 

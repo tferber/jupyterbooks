@@ -1,4 +1,4 @@
-# Vorlesung 3
+# Vorlesung 3: Konditionen, Iteration, Rekursion
 
 ```{admonition} Hier geht zum Quiz...
 :class: tip
@@ -7,6 +7,13 @@
 [Quiz zum Thema "Kontrollstrukturen"](jupyterquiz/quiz_control)
 
 [Quiz zum Thema "Rekursion"](jupyterquiz/quiz_recursion)
+```
+
+```{admonition} Beispiele und Vertiefung
+:class: seealso
+[Einführung in Jupyter Notebooks](extra.md)
+
+[Jupyter Notebook zum Thema "ByteCode"](2_bytecode.ipynb)
 ```
 
 <!--## Download Vorlesungsfolien-->

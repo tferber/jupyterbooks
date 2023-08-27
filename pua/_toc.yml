@@ -29,6 +29,10 @@ parts:
     - file: content/jupyterquiz/quiz_listen
     - file: content/jupyterquiz/quiz_datenstrukturen_und_funktionen
     - file: content/jupyterquiz/quiz_dictionaries
+    
+  - file: content/vorlesung_5.md
+    
+  - file: content/vorlesung_6.md
 
 - caption: Jupyter Notebooks 🐍
   chapters:
@@ -38,3 +42,7 @@ parts:
     - file: content/3_bedingungen
     - file: content/3_fibonacci
     - file: content/4_nestedlistcomprehension
+    - file: content/4_listcomparison
+    - file: content/4_reverselookup
+    - file: content/4_global
+    - file: content/4_set_operations
