@@ -42,4 +42,5 @@ html:
   use_repository_button: true
   use_edit_page_button: true
   comments:
-    hypothesis: true
+    utterances:
+      repo: "ferber/jupyterbooks/pua"

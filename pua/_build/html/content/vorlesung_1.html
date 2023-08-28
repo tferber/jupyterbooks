@@ -53,7 +53,40 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ferber/jupyterbooks/pua");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -423,11 +456,13 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-1-einleitung">
 <h1>Vorlesung 1: Einleitung<a class="headerlink" href="#vorlesung-1-einleitung" title="Permalink to this heading">#</a></h1>
-<p>Jede Vorlesung besteht aus einem pdf-Dokument mit den Slides die auf Ilias jede Woche finden können.
-Ihr Wissen können sie mit den verschiedenen Quizes testen - denken sie nach und kopieren sie nicht einfach nur den Code in the Python Interpreter. Manche Dinge in den Quizes wurden in den Vorlesungen nur am Rande erwähnt - das ist Absicht.
-Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks (Sie erfahren in Vorlesung 2 was das ist) die sie direkt selbst ausprobieren können. Sie müssen jede Vorlesung nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen.
-Am Ende jeder Seite finden sie einen Block <strong>“Was sie wissen sollten”</strong> - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet: In den Zusammenhang einordnen, theoretische Hintergründe verinnerlichen, als Python-Code umsetzen können und auch konzeptionell so verstanden haben, dass sie es auf andere Probleme anwenden können.
-Manchmal finden sie auf den Vorlesungsseiten auch Videos zum Thema - diese ersetzen keine Nachbereitung sondern dienen meist der Motivation oder der Einordnung eines Themas in einen größeren Zusammenhang.</p>
+<p>Jede Vorlesung besteht aus einem pdf-Dokument mit den Slides die auf Ilias jede Woche vor Beginn der Vorlesung finden können.
+Laden Sie sich diese Slides runter, machen sie sich Notizen (direkt in den pdfs oder auf einem Blatt Papier) und notieren sie sich schon während der Vorlesung alle Fragen und Unklarheiten - sie können diese jederzeit in meinen Vorlesungen fragen oder mir nach der Vorlesung per Mail zukommen lassen.</p>
+<p>Ihr Wissen können sie jede Woche mit den verschiedenen Quizes auf dieser Website testen - denken sie nach und kopieren sie nicht einfach nur den Code in the Python Interpreter. Manche Dinge in den Quizes wurden in den Vorlesungen nur am Rande erwähnt - das ist Absicht.
+Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks (Sie erfahren auf der Website zur Vorlesung 2 was das ist) die sie direkt selbst ausprobieren können.</p>
+<p>Anders als in der Schule müssen Sie jede Vorlesung eigenverantwortlich nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen. Meine Veranstaltungen sind i.A. so angelegt, dass sie die doppelte Zeit die sie in der Vorlesung verbringen (etwa 2h/Woche) zum Vorberereiten und Nachbereiten (etwa 4h/Woche) aufwenden sollten. Die Nachbereitungszeit schließt das Anfertigen der Übungsaufgaben (etwa 1h/Woche) ein. Die Vorlesung definiert hierbei den Umfang des Stoff und gibt ihnen einen Rahmen und das Tempo vor.</p>
+<p>Am Ende der Website zu jeder Vorlesung finden sie einen Block <strong>“Was sie wissen sollten”</strong> - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet hier mehr als nur auswendig lernen: In den Zusammenhang einordnen können, theoretische Hintergründe verinnerlicht haben, als Python-Code umsetzen können und es auch konzeptionell so verstanden haben, dass sie es auf andere Probleme anwenden können.</p>
+<p>Manchmal finden sie auf den Websites zu den Vorlesungen auch Videos zum Thema - diese ersetzen keine eigene Nachbereitung sondern dienen meist der Motivation oder der Einordnung eines Themas in einen größeren Zusammenhang. Heute finden sie dabei auch ein Video zum Thema “Study smarter, not harder” das Ihnen mit Tipps zum selbstständigen arbeiten helfen kann.</p>
 <div class="tip admonition">
 <p class="admonition-title">Hier geht zu den Quizes…</p>
 <p><a class="reference internal" href="jupyterquiz/quiz_syntax.html"><span class="doc std std-doc">Quiz zum Thema “Python Syntax”</span></a></p>
@@ -480,6 +515,14 @@ Manchmal finden sie auf den Vorlesungsseiten auch Videos zum Thema - diese erset
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Exact Instructions Challenge (Josh Darnit)</p>
 <iframe width="200" height="113" src="https://www.youtube.com/embed/cDA3_5982h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Study Smarter, Not Harder (Kiki Fan)</p>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/BRTqeAEga5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
 </div>

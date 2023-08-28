@@ -53,7 +53,40 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ferber/jupyterbooks/pua");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -465,13 +498,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="dtDeoYbKKhwD" data-shufflequestions="False"
+<div class="output text_html"><div id="WEYIaCRugvUg" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#dtDeoYbKKhwD {
+#WEYIaCRugvUg {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -641,7 +674,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsdtDeoYbKKhwD=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def print_square(n):\n    print(n ** 2)\n\nprint_square(4)", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": true, "feedback": "Richtig! Es ist erlaubt innerhalb einer Funktion (z.B. print_square()) eine weitere Funktion (z.B. print()) aufzurufen und in dieser sogar eine Berechnung durchzuf\u00fchren."}, {"answer": "8", "correct": false, "feedback": "Falsch! ** ist der Exponentiationsoperator, nicht der Multiplikatiosnoperator."}]}];
+</style></div><script type="application/javascript">var questionsWEYIaCRugvUg=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def print_square(n):\n    print(n ** 2)\n\nprint_square(4)", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": true, "feedback": "Richtig! Es ist erlaubt innerhalb einer Funktion (z.B. print_square()) eine weitere Funktion (z.B. print()) aufzurufen und in dieser sogar eine Berechnung durchzuf\u00fchren."}, {"answer": "8", "correct": false, "feedback": "Falsch! ** ist der Exponentiationsoperator, nicht der Multiplikatiosnoperator."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1390,8 +1423,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("dtDeoYbKKhwD")) {
-            show_questions(questionsdtDeoYbKKhwD,  dtDeoYbKKhwD); 
+          if(document.getElementById("WEYIaCRugvUg")) {
+            show_questions(questionsWEYIaCRugvUg,  WEYIaCRugvUg); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1400,18 +1433,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("dtDeoYbKKhwD");
-        // console.log(document.getElementById("dtDeoYbKKhwD"));
+        //console.log("WEYIaCRugvUg");
+        // console.log(document.getElementById("WEYIaCRugvUg"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="omhdCoMTYboe" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="VOhvgNfWHtyn" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#omhdCoMTYboe {
+#VOhvgNfWHtyn {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1581,7 +1614,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsomhdCoMTYboe=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ndef change_x():\n    x = 20\n    print(x)\n\nchange_x()\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt. "}, {"answer": "20", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt."}, {"answer": "20, dann 20", "correct": false, "feedback": "Falsch! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}, {"answer": "20, dann 10", "correct": true, "feedback": "Richtig! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}]}];
+</style></div><script type="application/javascript">var questionsVOhvgNfWHtyn=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\ndef change_x():\n    x = 20\n    print(x)\n\nchange_x()\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt. "}, {"answer": "20", "correct": false, "feedback": "Falsch! Das print() innerhalb der Funktion wird zuerst ausgef\u00fchrt."}, {"answer": "20, dann 20", "correct": false, "feedback": "Falsch! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}, {"answer": "20, dann 10", "correct": true, "feedback": "Richtig! Die Variable `x` in der Funktion ist lokal und \u00e4ndert nicht die \u00e4ussere Variable `x`."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2330,8 +2363,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("omhdCoMTYboe")) {
-            show_questions(questionsomhdCoMTYboe,  omhdCoMTYboe); 
+          if(document.getElementById("VOhvgNfWHtyn")) {
+            show_questions(questionsVOhvgNfWHtyn,  VOhvgNfWHtyn); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2340,18 +2373,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("omhdCoMTYboe");
-        // console.log(document.getElementById("omhdCoMTYboe"));
+        //console.log("VOhvgNfWHtyn");
+        // console.log(document.getElementById("VOhvgNfWHtyn"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="vasMOJqhtMMO" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="FgahcxLGpZRq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#vasMOJqhtMMO {
+#FgahcxLGpZRq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2521,7 +2554,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsvasMOJqhtMMO=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def tricky():\n    print(x)\n    x = 10\n\ntricky()", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. "}, {"answer": "0", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat nicht den Wert null."}, {"answer": "Eine zuf\u00e4llige Zahl.", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat keinen zuf\u00e4lligen Wert."}, {"answer": "Eine Fehlermeldung.", "correct": true, "feedback": "Richtig! Genauer der Fehler \"UnboundLocalError local variable 'x' referenced before assignment\"."}]}];
+</style></div><script type="application/javascript">var questionsFgahcxLGpZRq=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def tricky():\n    print(x)\n    x = 10\n\ntricky()", "type": "multiple_choice", "answers": [{"answer": "10", "correct": false, "feedback": "Falsch! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. "}, {"answer": "0", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat nicht den Wert null."}, {"answer": "Eine zuf\u00e4llige Zahl.", "correct": false, "feedback": "Falsch (aber Sie sind auf der richtigen Spur)! print(x) wird ausgef\u00fchrt bevor die Variable `x` erzeugt wird. Eine nicht definierte Variable hat keinen zuf\u00e4lligen Wert."}, {"answer": "Eine Fehlermeldung.", "correct": true, "feedback": "Richtig! Genauer der Fehler \"UnboundLocalError local variable 'x' referenced before assignment\"."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3270,8 +3303,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("vasMOJqhtMMO")) {
-            show_questions(questionsvasMOJqhtMMO,  vasMOJqhtMMO); 
+          if(document.getElementById("FgahcxLGpZRq")) {
+            show_questions(questionsFgahcxLGpZRq,  FgahcxLGpZRq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3280,8 +3313,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("vasMOJqhtMMO");
-        // console.log(document.getElementById("vasMOJqhtMMO"));
+        //console.log("FgahcxLGpZRq");
+        // console.log(document.getElementById("FgahcxLGpZRq"));
 
         try_show();
         }

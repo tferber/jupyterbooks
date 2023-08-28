@@ -1,10 +1,16 @@
 # Vorlesung 1: Einleitung
 
-Jede Vorlesung besteht aus einem pdf-Dokument mit den Slides die auf Ilias jede Woche finden können.
-Ihr Wissen können sie mit den verschiedenen Quizes testen - denken sie nach und kopieren sie nicht einfach nur den Code in the Python Interpreter. Manche Dinge in den Quizes wurden in den Vorlesungen nur am Rande erwähnt - das ist Absicht.
-Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks (Sie erfahren in Vorlesung 2 was das ist) die sie direkt selbst ausprobieren können. Sie müssen jede Vorlesung nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen.
-Am Ende jeder Seite finden sie einen Block **"Was sie wissen sollten"** - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet: In den Zusammenhang einordnen, theoretische Hintergründe verinnerlichen, als Python-Code umsetzen können und auch konzeptionell so verstanden haben, dass sie es auf andere Probleme anwenden können.
-Manchmal finden sie auf den Vorlesungsseiten auch Videos zum Thema - diese ersetzen keine Nachbereitung sondern dienen meist der Motivation oder der Einordnung eines Themas in einen größeren Zusammenhang.
+Jede Vorlesung besteht aus einem pdf-Dokument mit den Slides die auf Ilias jede Woche vor Beginn der Vorlesung finden können.
+Laden Sie sich diese Slides runter, machen sie sich Notizen (direkt in den pdfs oder auf einem Blatt Papier) und notieren sie sich schon während der Vorlesung alle Fragen und Unklarheiten - sie können diese jederzeit in meinen Vorlesungen fragen oder mir nach der Vorlesung per Mail zukommen lassen.
+
+Ihr Wissen können sie jede Woche mit den verschiedenen Quizes auf dieser Website testen - denken sie nach und kopieren sie nicht einfach nur den Code in the Python Interpreter. Manche Dinge in den Quizes wurden in den Vorlesungen nur am Rande erwähnt - das ist Absicht.
+Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks (Sie erfahren auf der Website zur Vorlesung 2 was das ist) die sie direkt selbst ausprobieren können. 
+
+Anders als in der Schule müssen Sie jede Vorlesung eigenverantwortlich nachbereiten und sich selbst weiterführende Informationen aus Büchern oder dem Internet beschaffen. Meine Veranstaltungen sind i.A. so angelegt, dass sie die doppelte Zeit die sie in der Vorlesung verbringen (etwa 2h/Woche) zum Vorberereiten und Nachbereiten (etwa 4h/Woche) aufwenden sollten. Die Nachbereitungszeit schließt das Anfertigen der Übungsaufgaben (etwa 1h/Woche) ein. Die Vorlesung definiert hierbei den Umfang des Stoff und gibt ihnen einen Rahmen und das Tempo vor.
+
+Am Ende der Website zu jeder Vorlesung finden sie einen Block **"Was sie wissen sollten"** - dies sind Dinge die sie, sie ahnen es, wissen sollten. Wissen bedeutet hier mehr als nur auswendig lernen: In den Zusammenhang einordnen können, theoretische Hintergründe verinnerlicht haben, als Python-Code umsetzen können und es auch konzeptionell so verstanden haben, dass sie es auf andere Probleme anwenden können.
+
+Manchmal finden sie auf den Websites zu den Vorlesungen auch Videos zum Thema - diese ersetzen keine eigene Nachbereitung sondern dienen meist der Motivation oder der Einordnung eines Themas in einen größeren Zusammenhang. Heute finden sie dabei auch ein Video zum Thema "Study smarter, not harder" das Ihnen mit Tipps zum selbstständigen arbeiten helfen kann.
 
 
 ```{admonition} Hier geht zu den Quizes...
@@ -44,6 +50,14 @@ Manchmal finden sie auf den Vorlesungsseiten auch Videos zum Thema - diese erset
 Exact Instructions Challenge (Josh Darnit)
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/cDA3_5982h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+:::{grid-item-card}
+:columns: 5
+:class-header: bg-light
+Study Smarter, Not Harder (Kiki Fan)
+
+<iframe width="200" height="113" src="https://www.youtube.com/embed/BRTqeAEga5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
 

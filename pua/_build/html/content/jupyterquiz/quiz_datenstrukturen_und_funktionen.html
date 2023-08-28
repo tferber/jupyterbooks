@@ -53,7 +53,40 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ferber/jupyterbooks/pua");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -465,13 +498,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="AqxlsQRASUiR" data-shufflequestions="False"
+<div class="output text_html"><div id="rFwNJDyNQHCR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#AqxlsQRASUiR {
+#rFwNJDyNQHCR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -641,7 +674,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsAqxlsQRASUiR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def foo(i, x=[]):\n    x.append(i)\n    return x\n\nfor i in range(3):\n    print(foo(i))\n", "type": "multiple_choice", "answers": [{"answer": "[0] [1] [2]", "correct": false, "feedback": "Das h\u00e4tten sie wohl gerne! Aber sie sind nicht alleine: Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0] [0, 1] [0, 1, 2]", "correct": true, "feedback": "Richtig! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0, 1, 2] [0, 1, 2] [0, 1, 2]", "correct": false, "feedback": "Falsch! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsrFwNJDyNQHCR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def foo(i, x=[]):\n    x.append(i)\n    return x\n\nfor i in range(3):\n    print(foo(i))\n", "type": "multiple_choice", "answers": [{"answer": "[0] [1] [2]", "correct": false, "feedback": "Das h\u00e4tten sie wohl gerne! Aber sie sind nicht alleine: Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0] [0, 1] [0, 1, 2]", "correct": true, "feedback": "Richtig! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0, 1, 2] [0, 1, 2] [0, 1, 2]", "correct": false, "feedback": "Falsch! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1390,8 +1423,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("AqxlsQRASUiR")) {
-            show_questions(questionsAqxlsQRASUiR,  AqxlsQRASUiR); 
+          if(document.getElementById("rFwNJDyNQHCR")) {
+            show_questions(questionsrFwNJDyNQHCR,  rFwNJDyNQHCR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1400,18 +1433,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("AqxlsQRASUiR");
-        // console.log(document.getElementById("AqxlsQRASUiR"));
+        //console.log("rFwNJDyNQHCR");
+        // console.log(document.getElementById("rFwNJDyNQHCR"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="yoxodFFetrbt" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="HVimleIcLwXx" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#yoxodFFetrbt {
+#HVimleIcLwXx {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1581,7 +1614,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsyoxodFFetrbt=[{"question": "Welche der folgenden Operation f\u00fcgen einer Liste `t` eine Ganzzahl `x` als Element hinzu?", "code": "A: t.append(x)\nB: t += [x]\nC: t.append([x])\nD: t = t + x", "type": "multiple_choice", "answers": [{"answer": "A und B", "correct": true, "feedback": "Richtig!"}, {"answer": "A und C", "correct": false, "feedback": "Falsch! C ist erlaubt, f\u00fcgt der Liste aber Liste mit dem Wert x hinzu."}, {"answer": "B und D", "correct": false, "feedback": "Falsch! Addition von Listen (t) und Werten (x) ist ein SyntaxError."}, {"answer": "Alle", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsHVimleIcLwXx=[{"question": "Welche der folgenden Operation f\u00fcgen einer Liste `t` eine Ganzzahl `x` als Element hinzu?", "code": "A: t.append(x)\nB: t += [x]\nC: t.append([x])\nD: t = t + x", "type": "multiple_choice", "answers": [{"answer": "A und B", "correct": true, "feedback": "Richtig!"}, {"answer": "A und C", "correct": false, "feedback": "Falsch! C ist erlaubt, f\u00fcgt der Liste aber Liste mit dem Wert x hinzu."}, {"answer": "B und D", "correct": false, "feedback": "Falsch! Addition von Listen (t) und Werten (x) ist ein SyntaxError."}, {"answer": "Alle", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2330,8 +2363,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("yoxodFFetrbt")) {
-            show_questions(questionsyoxodFFetrbt,  yoxodFFetrbt); 
+          if(document.getElementById("HVimleIcLwXx")) {
+            show_questions(questionsHVimleIcLwXx,  HVimleIcLwXx); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2340,18 +2373,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("yoxodFFetrbt");
-        // console.log(document.getElementById("yoxodFFetrbt"));
+        //console.log("HVimleIcLwXx");
+        // console.log(document.getElementById("HVimleIcLwXx"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="XyusNxsMlrAM" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="GuMseAflQddm" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#XyusNxsMlrAM {
+#GuMseAflQddm {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2521,7 +2554,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXyusNxsMlrAM=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, 4, ]\ndef entferne_erste_zeile(meine_liste):\n\n    meine_liste = meine_liste[1:]\n\nentferne_letzte_zeile(meine_liste)\nprint(meine_liste)", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 4]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3, 4]", "correct": true, "feedback": "Richtig! Die Funktion hat keinerlei Effekt auf die urspr\u00fcngliche Liste."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsGuMseAflQddm=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, 4, ]\ndef entferne_erste_zeile(meine_liste):\n\n    meine_liste = meine_liste[1:]\n\nentferne_letzte_zeile(meine_liste)\nprint(meine_liste)", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 4]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3, 4]", "correct": true, "feedback": "Richtig! Die Funktion hat keinerlei Effekt auf die urspr\u00fcngliche Liste."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3270,8 +3303,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("XyusNxsMlrAM")) {
-            show_questions(questionsXyusNxsMlrAM,  XyusNxsMlrAM); 
+          if(document.getElementById("GuMseAflQddm")) {
+            show_questions(questionsGuMseAflQddm,  GuMseAflQddm); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3280,8 +3313,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("XyusNxsMlrAM");
-        // console.log(document.getElementById("XyusNxsMlrAM"));
+        //console.log("GuMseAflQddm");
+        // console.log(document.getElementById("GuMseAflQddm"));
 
         try_show();
         }
