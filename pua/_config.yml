@@ -43,4 +43,4 @@ html:
   use_edit_page_button: true
   comments:
     utterances:
-      repo: "tferber/jupyterbooks"
+      repo: "https://github.com/tferber/jupyterbooks/"
