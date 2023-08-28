@@ -43,4 +43,4 @@ html:
   use_edit_page_button: true
   comments:
     utterances:
-      repo: "ferber/jupyterbooks/pua"
+      repo: "ferber/jupyterbooks"
