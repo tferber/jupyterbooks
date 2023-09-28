@@ -418,7 +418,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -434,6 +436,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -445,16 +455,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-5-klassen-und-objekte">
 <h1>Vorlesung 5: Klassen und Objekte<a class="headerlink" href="#vorlesung-5-klassen-und-objekte" title="Permalink to this heading">#</a></h1>
-<!--```{admonition} Hier geht zum Quiz...-->
-<!--:class: tip-->
-<!--[Quiz zum Thema "Listen"](jupyterquiz/quiz_listen)-->
-<!---->
-<!--[Quiz zum Thema "Dictionaries"](jupyterquiz/quiz_dictionaries)-->
-<!---->
-<!--[Quiz zum Thema "Datenstrukturen und Funktionen"](jupyterquiz/quiz_datastrukturen_und_funktionen)-->
-<!---->
-<!--```-->
-<!---->
+<div class="tip admonition">
+<p class="admonition-title">Hier geht zum Quiz…</p>
+<p><a class="reference internal" href="jupyterquiz/quiz_classes.html"><span class="doc std std-doc">Quiz zum Thema “Klassen und Methoden”</span></a></p>
+</div>
 <!--```{admonition} Beispiele und Vertiefung-->
 <!--:class: seealso-->
 <!--[Jupyter Notebook zum Thema "Verschachtelte Listen"](4_nestedlistcomprehension.ipynb)-->
@@ -464,7 +468,39 @@ document.write(`
 <!--## Download Vorlesungsfolien-->
 <!---->
 <!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
-<!--## Was Sie wissen sollten-->
+<section id="was-sie-wissen-sollten">
+<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Die meisten modernen Programmiersprachen wie Python unterstützen “Funktionale Programmierung” und “Objekt-orientierte Programmierung (OOP)”</p>
+<ul>
+<li><p>Reine Funktionen sind das zentrale Element der “Funktionalen Programmierung”</p>
+<ul>
+<li><p>Was genau sind reine Funktionen? Wie unterscheiden sie sich von anderen Funktionen? Warum ist es manchmal wichtig, reine Funktionen zu schreiben?</p></li>
+</ul>
+</li>
+<li><p>Klassen und deren Interaktionen sind das zentrale Element der “Objekt-orientierten Programmierung”</p>
+<ul>
+<li><p>Was genau sind Klassen und wie kann eine Klasse interagieren? Schließen sich Objekt-orientierten Programmierung und Funktionale Programmierung aus?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Attribute repräsentieren Datenobjekte der Klasse oder der Instanz. Auf sie kann mit der dot-Notation zugegriffen werden.</p>
+<ul>
+<li><p>Was genau ist die dot-Notation? Woher kennen sie diese Notation noch? Wie kann man einer Klasse Attribute zuweisen? Was kann alles ein Attribut einer Klasse sein? Wie kopiert man Klassen und worauf muss man achten? Warum gibt es shallow und deep copies?</p></li>
+</ul>
+</li>
+<li><p>Methoden sind eine Funktion, die für ein bestimmtes Objekt aufgrund des Objekttyps verfügbar ist.</p>
+<ul>
+<li><p>Wie definieren sie Methoden? Was unterscheidet sie von Funktionen?</p></li>
+</ul>
+</li>
+<li><p>Es existieren bestimmte magische Funktionen die mit zwei Unterstrichen begonnen und beendet werden. Die Wichtigsten sind <code class="docutils literal notranslate"><span class="pre">__init__</span></code> und <code class="docutils literal notranslate"><span class="pre">__str__</span></code>.</p>
+<ul>
+<li><p>Wo finden sie eine Auflistung aller magischer Funktionen? Was passiert wenn sie nur einen Unterstrich verwenden? Oder drei? Oder eine ungleiche Zahl zum Beginnen und Beenden?</p></li>
+</ul>
+</li>
+</ul>
 <!--## Videos to watch...-->
 <!--::::{grid}-->
 <!--:class-container: text-center-->
@@ -488,6 +524,7 @@ document.write(`
 <!---->
 <!---->
 <!--::::-->
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -548,6 +585,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
