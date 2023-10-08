@@ -215,12 +215,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_classes.html">Quiz Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_inheritance.html">Quiz Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_overloading.html">Quiz Overloading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -229,6 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4_global.html">Globale Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_inheritance.html">Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
+
+
+
+
+
 </ul>
 </li>
 </ul>
@@ -442,6 +457,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-vorlesungsfolien">Download Vorlesungsfolien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
 </ul>
             </nav>
@@ -502,9 +518,10 @@ Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks 
 </ul>
 </li>
 </ul>
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+</section>
+<section id="download-vorlesungsfolien">
+<h2>Download Vorlesungsfolien<a class="headerlink" href="#download-vorlesungsfolien" title="Permalink to this heading">#</a></h2>
+<p><a class="reference download external" download="" href="https://bwsyncandshare.kit.edu/s/Ek5AZ47nYr8eBXy"><code class="xref download docutils literal notranslate"><span class="pre">Hier</span></code></a> können sie die Vorlesungsfolien zur Vorlesung 1 herunterladen.</p>
 </section>
 <section id="videos-to-watch">
 <h2>Videos to watch…<a class="headerlink" href="#videos-to-watch" title="Permalink to this heading">#</a></h2>
@@ -601,6 +618,7 @@ Zu vielen Vorlesungen finden sie weiterführende Beispiele als Jupter-Notebooks 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-vorlesungsfolien">Download Vorlesungsfolien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to watch…</a></li>
 </ul>
   </nav></div>

@@ -35,9 +35,9 @@ Manchmal finden sie auf den Websites zu den Vorlesungen auch Videos zum Thema - 
     * Wie erstellen sie ein Datenobjekt des Typs `string`? Was ist der Unterschied zwischen einfachen und doppelten Anführungszeichen? Wie stellen sie ein Anführungszeichen selbst in einer Zeichenketten dar?
 
 
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V1.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+## Download Vorlesungsfolien
+
+{Download}`Hier <https://bwsyncandshare.kit.edu/s/Ek5AZ47nYr8eBXy>` können sie die Vorlesungsfolien zur Vorlesung 1 herunterladen.
 
 ## Videos to watch...
 ::::{grid}

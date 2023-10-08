@@ -1,0 +1,1404 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Lyanna und die Orks 🧝‍♂️ &#8212; Programmieren und Algorithmen</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/tferber/jupyterbooks/");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/lyanna_und_die_orks';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Vererbung" href="6_inheritance.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Programmieren und und Algorithmen
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1: Einleitung</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_2.html">Vorlesung 2: Variablen, Funktionen, Dokumentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_variablen.html">Quiz Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_fstrings.html">Quiz f-strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_funktionen_1.html">Quiz void-Funktionen</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_3.html">Vorlesung 3: Konditionen, Iteration, Rekursion</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz Kontrollstrukturen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_recursion.html">Quiz Rekursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_4.html">Vorlesung 4: Datenstrukturen</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_listen.html">Quiz Listen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_datenstrukturen_und_funktionen.html">Quiz Datenstrukturen und Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_classes.html">Quiz Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_inheritance.html">Quiz Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_overloading.html">Quiz Overloading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_nestedlistcomprehension.html">Nested list comprehension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_listcomparison.html">List comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_reverselookup.html">Reverse lookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_global.html">Globale Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_inheritance.html">Vererbung</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Lyanna und die Orks 🧝‍♂️</a></li>
+
+
+
+
+
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/lyanna_und_die_orks.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/lyanna_und_die_orks.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/lyanna_und_die_orks.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/lyanna_und_die_orks.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/lyanna_und_die_orks.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lyanna und die Orks 🧝‍♂️</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lyanna und die Orks 🧝‍♂️</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#story">Story</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemstellung">Problemstellung</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#attribute">Attribute</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methoden">Methoden</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementierung-ohne-objektorientierung">Implementierung ohne Objektorientierung</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attack">attack</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loot">loot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heal">heal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#der-erste-kampf">Der erste Kampf!</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementierung-mit-objektorientierung">Implementierung mit Objektorientierung</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-class-character">base class “character”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spieler-innen-character-lyana">Spieler*innen-character Lyana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orks-brumbatz">Orks: Brumbatz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orks-olmur">Orks: Olmur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fight">FIGHT!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#round-2">Round 2!</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lyanna-und-die-orks">
+<h1>Lyanna und die Orks 🧝‍♂️<a class="headerlink" href="#lyanna-und-die-orks" title="Permalink to this heading">#</a></h1>
+<p>Basierend auf “Functional vs Object-Oriented Programming - A showcase” (<a class="github reference external" href="https://github.com/joelbarmettlerUZH/Functional_vs_OOP_Showcase">joelbarmettlerUZH/Functional_vs_OOP_Showcase</a>), angepasst und übersetzt von Torben Ferber, Illustrationen von Lea Reuter</p>
+<section id="story">
+<h2>Story<a class="headerlink" href="#story" title="Permalink to this heading">#</a></h2>
+<p>Vor langer Zeit lebte im mystischen Land Etepenia eine tapferer Heldin namens <strong>Lyanna</strong>. <strong>Lyanna</strong> war im ganzen Reich für ihren unerschütterlichen Mut und ihren unbeugsamen Charakter bekannt. Sie hatte ein Herz aus Gold und den brennenden Wunsch, die Einwohner*innen vor dem Bösen zu schützen.
+Auf der anderen Seite von Etepenia, im Tückischen Wald der Verzweiflung, herrschte ein furchterregender Ork namens <strong>Omugug</strong>. <strong>Omugug</strong> war der König der Orks, ein Kämpfer von ungeheurer Stärke. Er war berüchtigt für seine rücksichtslose Art und seinen unstillbaren Hunger nach Macht - und Pfannkuchen, aber das wissen die Wenigsten.
+Eines schicksalhaften Tages erhielt <strong>Lyanna</strong> die Nachricht, dass Omugug das berühmte <strong>Tuch von Eldoria</strong> gestohlen hatte, ein Relikt, das unvorstellbare Macht besitzen sollte (das war völliger Quatsch, aber auch das wussten die Wenigsten). Entschlossen, das Tuch zurückzuholen und den Frieden im Land wiederherzustellen, begab sich <strong>Lyanna</strong> auf eine gefährliche Reise, um ihren Erzfeind zu stellen.
+Auf dem Weg traf <strong>Lyanna</strong> auf Wiederstand: Orks. Viele Orks. Große und Kleine. Mit Keulen und Äxten. Mit Rüstungen oder ohne. Erst nach vielen Tagen und Kämpfen traf Lyanna auf <strong>Omugug</strong>. Der Kampf würde die Grundfesten von Eldoria erschütterte. <strong>Omugugs</strong> rohe Kraft traf auf <strong>Lyannas</strong> unvergleichliches Geschick mit der Klinge. Funken flogen, als sich ihre Waffen kreuzten. Und in jedem Schlag schwang das Schicksal von Etepenia mit.</p>
+<p><img alt="A4BBF8D2-975F-42F2-A2E6-7C3FA475ADF9.jpg" src="content/attachment:ca3aa3b9-e2c8-43fe-ae46-1d6663d5fe65.jpg" /></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="problemstellung">
+<h1>Problemstellung<a class="headerlink" href="#problemstellung" title="Permalink to this heading">#</a></h1>
+<p>Wir werden ein textbasiertes Computerspiel entwickeln und dabei funktionale und objektorientierte Programmierung nutzen. Wir werden zunächst nur Funktionen und Datenstrukturen verwenden, wie sie in älteren, nicht objektorientierten Programmiersprachen wie C wahrscheinlich implementiert würden. Dann werden wir die gleichen Funktionen implementieren, aber mit einem objektorientierten Ansatz. Sie werden ein gutes Verständnis dafür entwickeln, wie Objektorientierung mehr Flexibilität und eine klarere Architektur bietet.</p>
+<p>Lassen Sie uns zunächst den Umfang unseres Spiels festlegen. Wir wollen es einfach halten: Wir wollen ein Spiel entwickeln, in dem wir Lyanna spielen. Wir, Lyanna, können mit einem Orc kämpfen und ihn mit unserer Waffe töten. Orcs ihrerseits können uns leider mit ihrer Waffe auch töten. Wenn Lyanna den Kampf gewinnt, kann er den Ork ausplündern (engl. loot), d.h. die Waffe mitnehmen und im nächsten Kampf verwenden. Um mit dem Spiel fortzufahren, kann Lyanna sich mit einem Heiltrank heilen. Die Gegner werden immer schwieriger indem sie mit besseren Waffen, mehr Trefferpunkten, oder gar schweren Rüstungen anreten.</p>
+<p>So weit, so gut. Lassen Sie uns die Informationen, die wir erhalten haben, abstrahieren (d.h. in eine Form bringen, die wir in Python ausdrücken können). Wir unterscheiden zwischen zwei Kategorien: Attribute und Methoden. Oder, allgemein gesprochen: Werte, die den Zustand unseres Charakters und der Orcs beschreiben, und Aktionen, die sie ausführen können.</p>
+<p>Wie in der Softwareentwicklung üblich werden wir englische Begriffe für Variablen und die Dokumentation verwenden.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="attribute">
+<h1>Attribute<a class="headerlink" href="#attribute" title="Permalink to this heading">#</a></h1>
+<p>Die Attribute unseres Characters sind ihr Name, die Anzahl der Lebenspunkte (engl. hitpoints oder HP), ihre aktuelle Waffe (engl. weapon) und wie viele Heiltränke (engl. healing potion) sie noch hat. Unser Gegner hat auch einen Namen (ja, auch Orcs haben eine Familie!), seine Lebenspunkte und er hat auch eine Waffe. Um das ganze etwas spannender zu machen, haben die Waffen einen Namen, einen Schaden, und einen Typ. Als Textbeschreibung würde unser Character also wie folgt klingen:</p>
+<p><strong>Spieler*in: Lyanna (Aktuelle Trefferpunkte sind 100, ihre Waffe vom Typ “Dolch” heißt “Blutschnitzer”, der Schaden ist 12, sie hat 3 Heiltränke die jeweils 50 HP heilen.)</strong></p>
+<p>Der erst, noch sehr schwache, Ork auf den Lyanna trifft klingt wie folgt:</p>
+<p><strong>Gegner: Brumbatz (Aktuelle Trefferpunkte sind 20, seine Waffe vom Typ “Keule” heißt “Hoffnungsbrecher”, der Schaden ist 15.5.)</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="methoden">
+<h1>Methoden<a class="headerlink" href="#methoden" title="Permalink to this heading">#</a></h1>
+<p>Nun sind die Methoden, wie beschrieben, die Dinge, die ein Charakter oder Gegner tun kann. Unser Hauptcharakter Lyanna hat zunächst die Fähigkeit, jemanden anzugreifen (engl. <em>attack</em>), sich zu heilen (engl. <em>heal</em>) oder einen toten Feind zu plündern (engl. <em>loot</em>), während der einfache Ork nur jemanden angreifen kann (das Leben kann so einfach sein). Einfache Orks können nicht plündern und sich auch nicht heilen (ein ziemlich langweiliges und tödliches Leben). Die beiden Gegener*innen sollen sich abwechseln angreifen.</p>
+<p>Ein typischer Kampf soll so aussehen:</p>
+<ul class="simple">
+<li><p>Runde 1: Lyanna attacks Brumbatz → Brumbatz HP decreases by 12 HP</p></li>
+<li><p>Runde 2: Brumbatz attacks Lyanna → Lyanna HP decreases by 15.5 HP</p></li>
+<li><p>Runde 3: Lyanna attacks Brumbatz → Brumbatz HP decreases by 12 HP. Brumbatz is dead.</p></li>
+<li><p>Runde 4: Lyanna loots Brumbatz → Lyanna gets Brumbatzs weapon “Hoffnungsbrecher” of type “Mace”</p></li>
+<li><p>Runde 5: Lyanna heals → Lyanna health is increased by (up to) 50 to her maximum of 100, amount of healing potions decreases by 1</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="implementierung-ohne-objektorientierung">
+<h1>Implementierung ohne Objektorientierung<a class="headerlink" href="#implementierung-ohne-objektorientierung" title="Permalink to this heading">#</a></h1>
+<p>Beginnen wir mit der Implementierung und abstrahieren wir die Textbausteine in Python-Code. Zuerst brauchen wir eine Möglichkeit, die Characteratribute zu speichern. Python bietet dafür die sehr vielseiting Datenstruktur eines Wörterbuchs (engl. <em>dictionary</em>), die es uns erlaubt, Paare aus einen Namen und einen Wert zu geben (engl. <em>key/value-pair</em>). Das scheint der perfekte Weg zu sein, um unsere Characterattribute zu repräsentieren. Wir erstellen zwei Wörterbücher, eines für jeden Character, und füllen die Startwerte entsprechend vor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define two dictionaries that hold all character and enemy attributes</span>
+<span class="n">character_lyanna</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Lyanna&quot;</span><span class="p">,</span> <span class="s2">&quot;HP&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Dagger&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s2">&quot;Piekser&quot;</span><span class="p">),</span> <span class="s2">&quot;Potions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">50</span><span class="p">]}</span>
+<span class="n">enemy_brumbatz</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Brumbatz&quot;</span><span class="p">,</span> <span class="s2">&quot;HP&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Mace&quot;</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">,</span> <span class="s2">&quot;Hoffnungsbrecher&quot;</span><span class="p">)}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das key/value-pair für die <em>weapon</em> ist etwas anders als die anderen: Als Wert übergeben wir ein Tuple - sie erinnern sich sicherlich noch was der Unterschied zu einer Liste ist.
+Auch das key/value-pair für die <em>potions</em> ist etwas anders als die anderen: Als Wert übergeben wir ein Liste…</p>
+<p>Als nächstes definieren wir die Funktionen, die wir in für unser Spiel benötigen. Neben den bereits beschriebenen Funktionen attack, heal und loot, führen wir eine weitere Funktion print_character ein, die den aktuellen Zustand des Charakters auf der Konsole ausgibt. Wir schreiben zunächst eine leere Funktionsstruktur (engl. <em>skeleton</em>), um ein Gefühl für die Funktion zu bekommen - dies ist eine oft verwendetete Technik beim Programmieren!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_characters</span><span class="p">(</span><span class="n">character</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prints information about the specified character.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        character (Character): The character to be printed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">attack</span><span class="p">(</span><span class="n">attacker</span><span class="p">,</span> <span class="n">attacked</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Initiates an attack from the attacker character to the attacked character.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        attacker (Character): The character initiating the attack.</span>
+<span class="sd">        attacked (Character): The character being attacked.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">character</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Restores the health of the specified character.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        character (Character): The character to be healed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">loot</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Allows the specified character to loot items from a defeated enemy&#39;s body.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        character (Character): The character looting the items.</span>
+<span class="sd">        body (Enemy): The defeated enemy&#39;s body to be looted.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nun beginnen wir mit der Implementierung der eigentlichen Funktionen basierend auf unseren <em>skeletons</em>. Wir beginnen mit der einfachsten: Die <code class="docutils literal notranslate"><span class="pre">print_character</span></code>-Funktionen. Wenn wir darüber nachdenken, wie die <code class="docutils literal notranslate"><span class="pre">print</span></code>-Anweisung aussehen soll, stellen wir schnell fest, dass die Darstellung von Lyanna anders aussehen soll als die Darstellung der Orcs: Das liegt daran, dass Lyanna ein Hauptcharakter ist und daher einen Heiltränke hat, die bei der Darstellung von Lyanna berücksichtigt werden müssen. Wir passen die Characterattribute entsprechend an und fügen dem existierenden Dictionary ein neues <em>key/value</em>-Paar hinzu:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># augment the dictionaries with another *key/value-pair*</span>
+<span class="n">character_lyanna</span><span class="p">[</span><span class="s2">&quot;Maincharacter&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">enemy_brumbatz</span><span class="p">[</span><span class="s2">&quot;Maincharacter&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In unserer  <code class="docutils literal notranslate"><span class="pre">print_character</span></code> Funktion nutzen wir den <em>key</em> <code class="docutils literal notranslate"><span class="pre">Maincharacter</span></code> um in der Ausgabe zwischen Lyanna und einem Orc zu unterscheiden. In weiser Voraussicht unterscheiden wir ausserdem den Fall, dass der Gegner keine Waffe hat (weil wir sie dem Ork weggenommen haben!).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_character</span><span class="p">(</span><span class="n">character</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prints information about the specified character.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        character (Character): The character to be printed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Maincharacter&quot;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">. Weapon: </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage). Potions: </span><span class="si">{}</span><span class="s2"> (Level: </span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">character</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Potions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Potions&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">. Weapon: </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage).&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">character</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">character</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Alle Änderungen oder Erweiterungen testen wir immer direkt:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Lyanna. HP: 100. Weapon: Dagger (12 damage). Potions: 3 (Level: 50)
+Name: Brumbatz. HP: 20. Weapon: Mace (15.5 damage).
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das sieht sehr gut aus - wenn Ihnen hier etwas noch nicht gefällt, passen sie die <code class="docutils literal notranslate"><span class="pre">print_character</span></code>-Funktion oder die Dictionaries entsprechend an.</p>
+<section id="attack">
+<h2>attack<a class="headerlink" href="#attack" title="Permalink to this heading">#</a></h2>
+<p>Die Angriffsmethode <em>attack</em> ist einfach: wir reduzieren einfach die Angriffspunkte des/der Angegriffenen um die Waffenstärke, die der/die Angreifer*in hat. Nachdem wir die Angriffspunkte reduziert haben, überprüfen wir, ob der/die angegriffene Charakter*in tot ist (die Waffenstärke ist auf 0 oder weniger gesunken) und geben die entsprechende Meldung aus. Wir haben die Wahl dies als <em>pure function</em> zu implementieren (siehe VL 5) oder als normale Funktion. Die folgende Implementierung ist keine <em>pure function</em> - versuchen sie aber doch als Übung einmal die <em>attack</em> Funktionalität als <em>pure function</em> zu implementieren.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is not a pure function: it directly modfies the argument ```attacked``` </span>
+<span class="c1"># and it prints out information on the screen</span>
+
+<span class="k">def</span> <span class="nf">attack</span><span class="p">(</span><span class="n">attacker</span><span class="p">,</span> <span class="n">attacked</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> attacked </span><span class="si">{}</span><span class="s2"> with </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attacker</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span><span class="n">attacked</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span><span class="n">attacker</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">2</span><span class="p">]))</span>
+    <span class="n">attacked</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]</span> <span class="o">-=</span> <span class="n">attacker</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">attacked</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is dead!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attacked</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test the implementation</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">,</span> <span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Brumbatz attacked Lyanna with Hoffnungsbrecher!
+Name: Lyanna. HP: 84.5. Weapon: Dagger (12 damage). Potions: 3 (Level: 50)
+Lyanna attacked Brumbatz with Piekser!
+Name: Brumbatz. HP: 8. Weapon: Mace (15.5 damage).
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loot">
+<h2>loot<a class="headerlink" href="#loot" title="Permalink to this heading">#</a></h2>
+<p>Jemanden zu plündern ist eine Prozedur, die nur mit einem/einer Hauptcharakter*in aufgerufen werden sollte, da Orks überhaupt nicht plündern können. Wir brauchen also zuerst eine <code class="docutils literal notranslate"><span class="pre">if</span></code>-Anweisung, um zu prüfen, ob der als Argument angegebene Charakter wirklich ein/e Hauptcharakter/*in ist. Dann prüfen wir, ob der/die Charakter*in, den wir plündern wollen, tatsächlich tot ist, denn ein lebender Ork wird uns höchstwahrscheinlich nicht plündern lassen. Denken sie daran, dass sie dem geplünderten Character die Waffe auch wegnehmen müssen (auch wenn er tot ist).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is not a pure function: it directly modfies the argument ```character```</span>
+<span class="c1"># and it prints out information on the screen</span>
+
+<span class="k">def</span> <span class="nf">loot</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Maincharacter&quot;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> looted </span><span class="si">{}</span><span class="s2">. New weapon found: </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2"> with strengh </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">character</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span> <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="n">body</span><span class="p">[</span><span class="s2">&quot;Weapon&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1">#take away the weapon from the body</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> has no weapon to loot!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">body</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Looting not possible - </span><span class="si">{}</span><span class="s2"> is not dead yet!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">body</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Denken sie daran: Nur tote Orks sind gute Orks. Und nur tote Orks können sie <em>looten</em>. Wir greifen sicherheitshalb nochmal an…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test the implementation</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">loot</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Lyanna attacked Brumbatz with Piekser!
+Brumbatz is dead!
+Lyanna looted Brumbatz. New weapon found: Mace Hoffnungsbrecher with strengh 15.5
+Name: Lyanna. HP: 84.5. Weapon: Mace (15.5 damage). Potions: 3 (Level: 50)
+Name: Brumbatz. HP: -4.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-info">  
+Wir wollen hier künftig sicher noch etwas nachbessern: Will Lyanna wirklich immer die neue Waffe des Orks benutzen oder wollen wir dem/der Spieler*\in vielleicht eine aktive Wahl lassen? Sollten wir nicht besser testen ob Lyanna auch lebt bevor wir einen Ork looten?</div></section>
+<section id="heal">
+<h2>heal<a class="headerlink" href="#heal" title="Permalink to this heading">#</a></h2>
+<p>Wie auch schon <code class="docutils literal notranslate"><span class="pre">loot</span></code> ist <code class="docutils literal notranslate"><span class="pre">heal</span></code>eine Aktion, die nur mit einem/einer Hauptcharakter*in aufgerufen werden kann, da Orks keine Potions besitzen. Wir brauchen also wieder zuerst eine <code class="docutils literal notranslate"><span class="pre">if</span></code>-Anweisung, um zu prüfen, ob der als Argument angegebene Charakter wirklich ein/e Hauptcharakter/*in ist. Dann prüfen wir, ob der/die Charakter*in die wir heilen wollen noch Potions verfügbar hat. Dann erhöhen wir die HP um 50. Diesen Wert sollten wir aber im Dictionary festlegen und nicht als sog. <em>magic number</em> im Code verstecken - wir passen Lyanna also nochmal an, der Ork kann bleiben wie er/sie ist.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">character</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Maincharacter&quot;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Potions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Potions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">character</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;Potions&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&#39;s health is increased to </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">character</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span> <span class="n">character</span><span class="p">[</span><span class="s2">&quot;HP&quot;</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No potions left! :(&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Can not heal this character.... is it an Ork?&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">character</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test the implementation</span>
+<span class="n">heal</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Lyanna&#39;s health is increased to 134.5!
+Name: Lyanna. HP: 134.5. Weapon: Mace (15.5 damage). Potions: 2 (Level: 50)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-info">  
+Auch hier gibt es noch Arbeit für die Zukunft: Wollen wir es erlauben, dass Lyanna sich beliebig heilt oder soll es maximale HP geben?</section>
+<section id="der-erste-kampf">
+<h2>Der erste Kampf!<a class="headerlink" href="#der-erste-kampf" title="Permalink to this heading">#</a></h2>
+<p>Wir haben Lyanna und unseren ersten Ork implementiert, wir haben Funktionen für <em>attack</em>, <em>heal</em>, und <em>loot</em> geschrieben - es wird Zeit das alles zu testen. Bevor wir loslegen, setzen wir die HP und Waffen unserer beiden Charactere wieder auf die ursprünglichen Werte. Der Kampf geht auf Leben und Tod, let’s go!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">character_lyanna</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Lyanna&quot;</span><span class="p">,</span> <span class="s2">&quot;HP&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Dagger&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s2">&quot;Piekser&quot;</span><span class="p">),</span> <span class="s2">&quot;Potions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span> <span class="s2">&quot;Maincharacter&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">}</span>
+<span class="n">enemy_brumbatz</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Brumbatz&quot;</span><span class="p">,</span> <span class="s2">&quot;HP&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Mace&quot;</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">,</span> <span class="s2">&quot;Hoffnungsbrecher&quot;</span><span class="p">),</span> <span class="s2">&quot;Maincharacter&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">,</span> <span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">attack</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">loot</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">,</span> <span class="n">enemy_brumbatz</span><span class="p">)</span>
+<span class="n">heal</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">character_lyanna</span><span class="p">)</span>
+<span class="n">print_character</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Lyanna. HP: 100. Weapon: Dagger (12 damage). Potions: 3 (Level: 50)
+Name: Brumbatz. HP: 20. Weapon: Mace (15.5 damage).
+Lyanna attacked Brumbatz with Piekser!
+Brumbatz attacked Lyanna with Hoffnungsbrecher!
+Lyanna attacked Brumbatz with Piekser!
+Brumbatz is dead!
+Name: Lyanna. HP: 84.5. Weapon: Dagger (12 damage). Potions: 3 (Level: 50)
+Lyanna looted Brumbatz. New weapon found: Mace Hoffnungsbrecher with strengh 15.5
+Lyanna&#39;s health is increased to 134.5!
+Name: Lyanna. HP: 134.5. Weapon: Mace (15.5 damage). Potions: 2 (Level: 50)
+Name: Brumbatz. HP: -4.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das war der Erste Kampf - doch der nächste wartet schon! Wir fügen also einen neuen Charakter zu unserem Spiel hinzu: <strong>Olmur</strong>. Sie ist eine besondere Art von Ork, die auch eine Rüstung trägt, die sie vor Schaden schützt, solange die Waffenstärke des Angreifers geringer ist als ihre Rüstungspunkte.</p>
+<p><img alt="Screenshot 2023-10-07 at 11.35.24.png" src="content/attachment:db235c6f-aecc-4a30-bd9d-c07854f5192a.png" /></p>
+<p>Puh.</p>
+<p>Lassen Sie uns kurz über die Änderungen nachdenken, die wir vornehmen müssten, um unser Programm an die neuen Anforderungen anzupassen. Zunächst müssten wir eine weitere <em>if</em>-Anweisung zu den Prozeduren <code class="docutils literal notranslate"><span class="pre">print_character</span></code> hinzufügen - nervig aber machbar. Dann müsste aber auch die <code class="docutils literal notranslate"><span class="pre">attack</span></code> Funktion geändert werden, jetzt auch unter Berücksichtigung der Tatsache, dass es einige Charaktere gibt, die Rüstungen tragen. Aber wir sind noch nicht fertig. Wir müssen eigentlich unsere gesamten Charakter-<em>dictionaries</em> ändern, denn wir haben jetzt einen dritten Charaktertyp. Da wir nun drei Charaktertypen eingeführt haben, können wir den key <code class="docutils literal notranslate"><span class="pre">Maincharacter</span></code> nicht mehr mit einer boolschen <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code> Variable verwenden. Also müssen wir das in eine ganze Zahl ändern: 0 = <code class="docutils literal notranslate"><span class="pre">Maincharacter</span></code>, 1 = <code class="docutils literal notranslate"><span class="pre">Orc</span></code>, 2 = <code class="docutils literal notranslate"><span class="pre">Ork-with-armor</span></code>. Aber dann müssen wir auch alle unsere vorher geschriebenen <code class="docutils literal notranslate"><span class="pre">if</span></code>-Anweisungen neu schreiben. Es ist klar, dass wir eine Menge Code hinzufügen und umschreiben müssten, nur um eine kleine Änderung in den Spielanforderungen einzuführen.</p>
+<p>Stellen wir uns nun ein größeres Spiel vor, bei dem es noch mehr Abhängigkeiten zwischen den verschiedenen Charakteren und Funktionen gibt. Wir würden unsere Funktionen schnell mit sehr vielen<code class="docutils literal notranslate"><span class="pre">if</span></code>-s neuen <em>dictionary</em>-Repräsentationen unserer Charaktere überfüllen und unüberschtlich machen.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="implementierung-mit-objektorientierung">
+<h1>Implementierung mit Objektorientierung<a class="headerlink" href="#implementierung-mit-objektorientierung" title="Permalink to this heading">#</a></h1>
+<p>Auch wenn funktionales Programmieren einen wichtigen Platz in der Programmierung besitzt, ist dieses Computerspiel ein perfektes Beispiel, bei dem Objektorientierung viel besser ist. Wenn wir eine Software auf objektorientierte Weise entwerfen, verwenden wir Klassen. Jede Klasse, die wir entwerfen, repräsentiert ein Objekt im Spiel. Jede Klasse besteht dann aus Attributen und Methoden, die das Objekt beschreiben, das sie repräsentiert.</p>
+<p>In unserem Spielbeispiel ist es recht einfach, unsere ersten Objekte zu identifizieren: Lyanna (Hauptcharakter), Brumbatz, und Olmur. Diese beiden Objekte ergeben jeweils eine Klasse. Lyanna wird wieder Attribute für <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> sowie die Anzahl und Stärke der <code class="docutils literal notranslate"><span class="pre">potions</span></code>, die sie noch hat, haben. Ihre Methoden sind weiterhin <code class="docutils literal notranslate"><span class="pre">attack</span></code>, <code class="docutils literal notranslate"><span class="pre">heal</span></code> und <code class="docutils literal notranslate"><span class="pre">loot</span></code>. Orkan hat immer noch die Attribute <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> und nur eine Methode <code class="docutils literal notranslate"><span class="pre">attack</span></code>, während Olmur zusätzlich eine Rüstung trägt.</p>
+<p>Aber warum sollte die Strukturierung der Attribute und Methoden in Klassen unsere Probleme lösen? Der Trick besteht darin, eine abstrakte Klasse zu verwenden, die die Attribute und Methoden bündelt, die sowohl Lyanna als auch die Orks gemeinsam haben. Wenn man Lyanna und und die Orks vergleicht, sieht man deutlich, dass sie die meisten Eigenschaften gemeinsam haben - aber eben nicht alle. Wir werden nun ein neues Objekt in unser Spiel einführen, ein so genanntes abstraktes Objekt oder eine abstrakte Klasse. Eine abstrakte Klasse ist eine Klasse, die nicht direkt verwendet/instanziiert werden darf, sondern die nur als Vorlage für andere Klassen dient.</p>
+<p><img alt="Screenshot 2023-10-07 at 11.31.33.png" src="content/attachment:b6b93a62-fa7a-4b51-9635-986fe481672e.png" /></p>
+<section id="base-class-character">
+<h2>base class “character”<a class="headerlink" href="#base-class-character" title="Permalink to this heading">#</a></h2>
+<p>Beginnen wir mit der Erstellung unserer abstrakten Klasse. Unsere Klasse soll Felder (Instanzvariablen) für <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> sowie die Methode <code class="docutils literal notranslate"><span class="pre">attack</span></code> haben. Dieses Mal führen wir auch eine neue Methode namens <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> ein, die wir vorher nicht implementiert haben. Und warum? Weil HP ein privates Attribut sein soll, niemand soll die HP eines Charakters direkt verändern können, außer dem Charakter selbst. Als Faustregel gilt, dass auf private Variablen niemals direkt zugegriffen werden darf, sondern nur über Methoden. Anders als z.B. C++ kennt Python das Konzept von privaten Variablen allerdings nicht explizt sondern verlässt sich darauf, dass Nutzer*innen verantwortungsvoll mit dem Code umgehen. Wir kennzeichnen solche Variablen mit einem Unterstrich - dies ist nur ein Hinweis, aber kein expliziter Schutz dagegen, dass die Variablen nicht verändert werden sollen.</p>
+<p>Erinnern sie sich ausserdem an die Best practice: Wann immer sie eine neue Klasse definieren, implementieren sie immer zuerst die <code class="docutils literal notranslate"><span class="pre">__init__</span></code> und die <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Methoden!</p>
+<p>Wenn wir eine neue Instanz des Charakters erstellen, wollen wir einen bestimmten Namen und eine bestimmte Waffe festlegen. Die HP wollen wir nicht manuell setzen, da die Klasse selbst bestimmt, wie viel HP ein Charakter bekommen soll. Zum Beispiel wird unser Hauptcharakter immer 100 HP haben, und unsere Orks abhängig davon welchen Ork wir gerade als Gegener haben. Wir übergeben das HP-Argument also nicht manuell, sondern berechnen/setzen es später im Konstruktor (der <code class="docutils literal notranslate"><span class="pre">___init___</span></code> Methode).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Character</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class to represent a character in a game.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">        name of the character</span>
+<span class="sd">    HP : int</span>
+<span class="sd">        hit points of the character</span>
+<span class="sd">    weapon : str</span>
+<span class="sd">        weapon of the character</span>
+
+<span class="sd">    Methods</span>
+<span class="sd">    -------</span>
+<span class="sd">    __init__(self, Name, Weapon):</span>
+<span class="sd">        Initializes the Character with a name, health points, and a weapon.</span>
+<span class="sd">        </span>
+<span class="sd">    __str__(self):</span>
+<span class="sd">        Returns a string representation of the Character.</span>
+<span class="sd">        </span>
+<span class="sd">    attack(self, enemy):</span>
+<span class="sd">        Makes the Character attack an enemy.</span>
+<span class="sd">        </span>
+<span class="sd">    reduceHealth(self, enemy):</span>
+<span class="sd">        Reduces the health of the Character when attacked by an enemy.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the Character with a name, hit points, and a weapon.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        name : str</span>
+<span class="sd">        name of the character</span>
+<span class="sd">        weapon : tuple</span>
+<span class="sd">        weapon of the character</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="n">Character</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; can not be directly instanced. Please use subclasses.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">#not set in base class constructor, but in inherited classes later</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_type</span> <span class="o">=</span> <span class="n">weapon</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_strength</span> <span class="o">=</span> <span class="n">weapon</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_name</span> <span class="o">=</span> <span class="n">weapon</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a string representation of the Character.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        str</span>
+<span class="sd">        a string representation of the Character</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">. Weapon: </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage).&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_strength</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">get_hp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#for experts: this is not the pythonic way for such simple attributes, use properties instead</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns current HP of the Character.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        float</span>
+<span class="sd">        HP of the character</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span>
+    
+    <span class="k">def</span> <span class="nf">attack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enemy</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Makes the Character attack an enemy.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        enemy : Character</span>
+<span class="sd">        the enemy to be attacked by the Character</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">enemy</span><span class="o">.</span><span class="n">reduce_health</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">reduce_health</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enemy</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Reduces the health of the Character when attacked by an enemy.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        enemy : Character</span>
+<span class="sd">        the enemy who attacks the Character</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">enemy</span><span class="o">.</span><span class="n">_weapon_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">damage</span> <span class="o">=</span> <span class="n">enemy</span><span class="o">.</span><span class="n">_weapon_strength</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">-=</span> <span class="n">damage</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> attacked </span><span class="si">{}</span><span class="s2"> with </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage)!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">enemy</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">enemy</span><span class="o">.</span><span class="n">_weapon_name</span><span class="p">,</span> <span class="n">damage</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is dead!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Was macht die <code class="docutils literal notranslate"><span class="pre">if</span></code>-Anweisung im <code class="docutils literal notranslate"><span class="pre">___init___</span></code>?</p>
+<ul>
+<li><p>Unsere Klasse soll abstrakt sein, also ist keine Instanziierung erlaubt. Wir wollen nicht, dass irgendein Objekt direkt vom Typ “Charakter” ist. Was würde das überhaupt bedeuten? Man ist entweder ein Ork oder ein Hobbit, aber wie könnte man einfach ein allgemeiner Charakter sein? Der erste Mechanismus, um die Instanzierung der Klasse selbst zu verbieten, besteht also darin, im Konstruktor eine Ausnahme zu erzeugen, wenn jemand versucht, eine Instanz vom Typ “Charakter” zu erzeugen. Dies wird nicht zu Problemen führen, wenn wir später von Character erben, da die geerbten Objekte neue Namen haben werden. Sollte jemand versuchen eine Instanz der “Character”-Klasse zu erzeugen, funktioniert das nun nichtmehr so einfach und führt zu einer Fehlermeldung:</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">character_lyanna</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s1">&#39;Lyanna&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;dagger&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;Piekser&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">Exception</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">character_lyanna</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s1">&#39;Lyanna&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;dagger&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;Piekser&#39;</span><span class="p">))</span>
+
+<span class="nn">Cell In[14], line 42,</span> in <span class="ni">Character.__init__</span><span class="nt">(self, name, weapon)</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span><span class="sd"> Initializes the Character with a name, hit points, and a weapon.</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span><span class="sd"> weapon of the character</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="n">Character</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">42</span>     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; can not be directly instanced. Please use subclasses.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">#not set in base class constructor, but in inherited classes later</span>
+
+<span class="ne">Exception</span>: &lt;class &#39;__main__.Character&#39;&gt; can not be directly instanced. Please use subclasses.
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Warum setzen wir die HP auf -1, ist der Charakter dann nicht schon bei der Erstellung tot?</p>
+<ul>
+<li><p>Wir setzen den HP auf einen negativen Wert, um unsere Unterklassen zu zwingen, ihn zu überschreiben. Wenn wir vergessen würden, die HP zu überschreiben, würde der neu instanziierte Charakter - wie du gesagt hast - direkt sterben und wir würden sehen, dass es ein Problem gibt, aber unser Spiel würde nicht sofort abstürzen. Man kann die Absturzvermeidung als gut oder schlecht ansehen - oftmals ist es aber auch besser schnell und sicher abzustürzen als später Probleme zu finden und nicht zu wissen woher sie kommen.</p></li>
+</ul>
+</li>
+</ul>
+<p>Was ist mit der Angriffsfunktion? Denken Sie daran, dass das Objekt selbst nicht mehr dafür verantwortlich ist, dem Feind Schaden zuzufügen, wir rufen nur die Methode <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> des Feindes auf und er wird entsprechend handeln. Warum sollten wir nicht direkt in der Angreiferklasse agieren, sondern eine neue Methode einführen? Nun, der Angreifer sollte sich wirklich nicht darum kümmern, wie er für jeden möglichen Charaktertyp Schaden austeilen kann. Wie genau der Schaden genommen wird, ist eine Information, die der/die Angreifer*in gar nicht kennt. Der/die Angreifer*in sagt einfach: “Ich füge dir Schade zu, reduziere deine Gesundheit”. Dann schaut sich die <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code>-Methode den Angreifer an und reduziert seine Gesundheit entsprechend der Waffe des Angreifers. <strong>Brumbatz</strong> wird so reagieren: “Oh, ich werde mit einem Dolch angegriffen, also reduziere ich meine Gesundheit um die Angriffspunkte des Dolches”, aber <strong>Olmur</strong> anders: “Was, du greifst mich mit so einem kleinen Dolch an? Meine Rüstung wird diesen Treffer verkraften, und ich werde meine Lebenspunkte nicht sehr reduzieren”. Es ist die Aufgabe von <strong>Olmur</strong> zu wissen, dass sie weniger Schaden nimmt, wenn die Waffe zu schwach ist, nicht <strong>Lyana’s</strong>.</p>
+<p>Sie sehen hier etwas Besonderes: Die Attribute der Methoden <code class="docutils literal notranslate"><span class="pre">attack</span></code> und <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> sind beide vom Typ <code class="docutils literal notranslate"><span class="pre">enemy</span></code> - wir übergeben ein ganzes Objekt an diese Methoden! Unsere Angriffsfunktion weiß also, welcher Feind angegriffen werden soll (<code class="docutils literal notranslate"><span class="pre">enemy</span></code>) und ruft ihn auf, um seine Lebenspunkte zu reduzieren, <code class="docutils literal notranslate"><span class="pre">enemy.reduce_health(self)</span></code>. Das <code class="docutils literal notranslate"><span class="pre">self</span></code>, das als Parameter übergeben wird, ist das aktuelle Objekt selbst, das Objekt, in dessen Methode wir uns gerade befinden, also der Angreifer. Wenn wir also <code class="docutils literal notranslate"><span class="pre">lyana.attack(olmur)</span></code> aufrufen, gelangen wir in <strong>Lyana’s</strong> Angriffsmethode und dann weiter zu <strong>Olmur’s</strong> <code class="docutils literal notranslate"><span class="pre">recude_health</span></code>-Methode mit <strong>Lyana</strong> als Argument: <code class="docutils literal notranslate"><span class="pre">olmur.reduce_health(lyana)</span></code>. In der <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> Methode reduzieren wir normalerweise die HP des Gegners um die Waffenstärke des Angreifers. Wenn wir dieses <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> später anders implementieren wollen um z.B. Rüstungen zu berücksichtigen, können wir es einfach in unseren Unterklassen überschreiben.</p>
+</section>
+<section id="spieler-innen-character-lyana">
+<h2>Spieler*innen-character Lyana<a class="headerlink" href="#spieler-innen-character-lyana" title="Permalink to this heading">#</a></h2>
+<p>Gut, wir sind mit der Implementierung von der <code class="docutils literal notranslate"><span class="pre">base</span> <span class="pre">class</span></code> <code class="docutils literal notranslate"><span class="pre">Character</span></code> fertig. Nun implementieren wir den Spieler*innencharakter als Unterklasse von <code class="docutils literal notranslate"><span class="pre">Character</span></code>. Wir erstellen wieder einen leeren Klassenkörper <code class="docutils literal notranslate"><span class="pre">Player</span></code>. Beachten Sie, dass wir nichts von dem, was wir erben, nochmal implementieren, d.h. die Methoden für <code class="docutils literal notranslate"><span class="pre">attack</span></code> und <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> sind nicht in der Klasse <code class="docutils literal notranslate"><span class="pre">Player</span></code> zu finden, sondern werden geerbt. Dasselbe gilt für die Instanzvariablen: Wir definieren <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code> und <code class="docutils literal notranslate"><span class="pre">weapon</span></code>  nicht noch einmal, das haben wir bereits in der abstrakten Klasse getan. Was wir hier implementieren, ist alles, was entweder neu ist oder nicht mehr von der abstrakten Klasse <code class="docutils literal notranslate"><span class="pre">Character</span></code> gilt:</p>
+<ul class="simple">
+<li><p>das HP-Attribut (wir wollen natürlich, dass Player eine Gesundheit größer als -1 hat)</p></li>
+<li><p>neue Attribute <code class="docutils literal notranslate"><span class="pre">_number_of_potions</span></code> und <code class="docutils literal notranslate"><span class="pre">_potions_level</span></code>. Mit dem einfachen Unterstrich weisen wir darauf hin, dass diese Variablen nicht von aussen geandert werden sollen.</p></li>
+<li><p>die <code class="docutils literal notranslate"><span class="pre">___str___</span></code>-Methode (wir wollen eine andere String-Repräsentation für Player haben, also werden wir diese überschreiben)</p></li>
+<li><p>die neue Methode <code class="docutils literal notranslate"><span class="pre">heal</span></code></p></li>
+<li><p>die neue Methode <code class="docutils literal notranslate"><span class="pre">loot</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">Character</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span> <span class="c1"># calls ___init___ method of parent class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">=</span> <span class="mi">100</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_number_of_potions</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_potions_level</span> <span class="o">=</span> <span class="mi">50</span>
+ 
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">. Weapon: </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage). Potions: </span><span class="si">{}</span><span class="s2"> (Level: </span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span><span class="p">,</span> 
+                                                                                          <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_strength</span><span class="p">,</span> 
+                                                                                          <span class="bp">self</span><span class="o">.</span><span class="n">_number_of_potions</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_potions_level</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_of_potions</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_number_of_potions</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_potions_level</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&#39;s health is increased to </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No potions left! :(&quot;</span><span class="p">)</span>
+
+            
+    <span class="k">def</span> <span class="nf">loot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">body</span><span class="o">.</span><span class="n">_weapon_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_type</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">_weapon_type</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_strength</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">_weapon_strength</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">_weapon_name</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> looted </span><span class="si">{}</span><span class="s2">. New weapon found: </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2"> with strenght </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">body</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> 
+                                                                                 <span class="n">body</span><span class="o">.</span><span class="n">_weapon_type</span><span class="p">,</span> <span class="n">body</span><span class="o">.</span><span class="n">_weapon_name</span><span class="p">,</span><span class="n">body</span><span class="o">.</span><span class="n">_weapon_strength</span><span class="p">))</span>
+            <span class="n">body</span><span class="o">.</span><span class="n">_weapon_strength</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1">#take away the weapon from the body!</span>
+            <span class="n">body</span><span class="o">.</span><span class="n">_weapon_type</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1">#take away the weapon from the body!</span>
+            <span class="n">body</span><span class="o">.</span><span class="n">_weapon_name</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1">#take away the weapon from the body!</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> has no weapon to loot!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">body</span><span class="o">.</span><span class="n">_name</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">player_lyanna</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="s1">&#39;Lyanna&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;dagger&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;Piekser&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">player_lyanna</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Lyanna. HP: 100. Weapon: dagger (12 damage). Potions: 3 (Level: 50)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="orks-brumbatz">
+<h2>Orks: Brumbatz<a class="headerlink" href="#orks-brumbatz" title="Permalink to this heading">#</a></h2>
+<p>Jetzt, wo wir die Klasse <code class="docutils literal notranslate"><span class="pre">Player</span></code> implementiert haben, ist es wirklich einfach, das Gleiche mit den Orks zu tun - zumindest solange wir die Rüstung aussen vor lassen. Warum? Weil sie eigentlich alles von der abstrakten Klasse Character direkt erben können, ohne irgendeine Änderung oder Ergänzung. Nun, das ist nicht 100% wahr, wir müssen eine Änderung vornehmen, nämlich die HP überschreiben. Aber das war’s dann auch schon. Wie wird diese Klasse dann aussehen? Nun, ziemlich leer…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Ork</span><span class="p">(</span><span class="n">Character</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">):</span>
+        <span class="n">Character</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">=</span> <span class="mi">20</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">enemy_brumbatz</span> <span class="o">=</span> <span class="n">Ork</span><span class="p">(</span><span class="s1">&#39;Brumbatz&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;mace&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="s1">&#39;Hoffnungsbrecher&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">enemy_brumbatz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Brumbatz. HP: 20. Weapon: mace (15 damage).
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="orks-olmur">
+<h2>Orks: Olmur<a class="headerlink" href="#orks-olmur" title="Permalink to this heading">#</a></h2>
+<p>Wir erinnern uns: Die Motivation OOP zu benutzen, war <strong>Olmur</strong>, die Ork mit einer Rüstung. <strong>Olmur</strong> hat ausserdem mehr HP als <strong>Brumbatz</strong>. Wir müssen also die <code class="docutils literal notranslate"><span class="pre">___init___</span></code> Funktion anpassen um die HP und die Rüstung hinzuzufügen. Ausserdem braucht <strong>Olmur</strong>* eine andere <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> Funktion und sollte auch in der <code class="docutils literal notranslate"><span class="pre">___str___</span></code> Methode die Rüstung anzeigen. Beachten sie: Wir müssen gar nichts am Playercharakter ändern - der/die Angegriffene ist verantwortlich den Schaden richtig zu reduzieren.</p>
+<p>Für die HP führen wir ein <em>level</em> für die Orks ein - je höher das Level, desto mehr HP hat der Ork.</p>
+<p>Anstatt eine eigene Ork-Klasse für Orks mit Rüstungen einzuführen, bekommen jetzt alle Orks das Attribute <code class="docutils literal notranslate"><span class="pre">armor</span></code> - <strong>Brumbatz</strong> hat eben einfach keine Rüstung..</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Ork</span><span class="p">(</span><span class="n">Character</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">armor</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">Character</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">=</span> <span class="n">level</span><span class="o">*</span><span class="mi">20</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">_armor_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_armor_strength</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">armor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_armor_type</span> <span class="o">=</span> <span class="n">armor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_armor_strength</span> <span class="o">=</span> <span class="n">armor</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            
+    <span class="k">def</span> <span class="nf">reduce_health</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enemy</span><span class="p">):</span>
+        
+        <span class="n">damage_reduction</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_armor_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">damage_reduction</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_armor_strength</span>
+            
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">damage</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">enemy</span><span class="o">.</span><span class="n">_weapon_strength</span> <span class="o">-</span> <span class="n">damage_reduction</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1">#we should never gain HP in an attack</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">-=</span> <span class="n">damage</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> attacked </span><span class="si">{}</span><span class="s2"> with </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage)!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">enemy</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">enemy</span><span class="o">.</span><span class="n">_weapon_name</span><span class="p">,</span> <span class="n">damage</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is dead!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">))</span>
+            
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        
+        <span class="n">armor</span> <span class="o">=</span> <span class="s1">&#39;No armor.&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_armor_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">armor</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Armor: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_armor_type</span><span class="si">}</span><span class="s1"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_armor_strength</span><span class="si">}</span><span class="s1"> strength)&#39;</span>
+            
+        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">. HP: </span><span class="si">{}</span><span class="s2">. Weapon: </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2"> damage). </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_HP</span><span class="p">,</span> 
+                                                                                          <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weapon_strength</span><span class="p">,</span>
+                                                                                          <span class="n">armor</span><span class="p">))</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fight">
+<h2>FIGHT!<a class="headerlink" href="#fight" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="s1">&#39;Lyanna&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;dagger&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;Piekser&#39;</span><span class="p">))</span>
+<span class="n">enemy</span> <span class="o">=</span> <span class="n">Ork</span><span class="p">(</span><span class="s1">&#39;Brumbatz&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;mace&#39;</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">,</span> <span class="s1">&#39;Hoffnungsbrecher&#39;</span><span class="p">),</span> <span class="n">level</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+
+<span class="c1">#The attacks are distinguished by who calls attack on who</span>
+<span class="n">player</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+<span class="n">enemy</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="n">player</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+      
+<span class="c1">#only Lyana has loot and Heal because he is of type Player</span>
+<span class="n">player</span><span class="o">.</span><span class="n">loot</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+<span class="n">player</span><span class="o">.</span><span class="n">heal</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>      
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Lyanna. HP: 100. Weapon: dagger (12 damage). Potions: 3 (Level: 50)
+Name: Brumbatz. HP: 20. Weapon: mace (15.5 damage). No armor.
+Lyanna attacked Brumbatz with Piekser (12.0 damage)!
+Brumbatz attacked Lyanna with Hoffnungsbrecher (15.5 damage)!
+Lyanna attacked Brumbatz with Piekser (12.0 damage)!
+Brumbatz is dead!
+Name: Lyanna. HP: 84.5. Weapon: dagger (12 damage). Potions: 3 (Level: 50)
+Lyanna looted Brumbatz. New weapon found: mace Hoffnungsbrecher with strenght 15.5
+Lyanna&#39;s health is increased to 134.5!
+Name: Lyanna. HP: 134.5. Weapon: mace (15.5 damage). Potions: 2 (Level: 50)
+Name: Brumbatz. HP: -4.0. Weapon: None (None damage). No armor.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="round-2">
+<h2>Round 2!<a class="headerlink" href="#round-2" title="Permalink to this heading">#</a></h2>
+<p><strong>Brumbatz</strong> ist besiegt… doch <strong>Olmur</strong> wartet schon auf Ihre Chance. Wir instanziieren <strong>Lyana</strong> nicht neu - sie geht mit einer <em>potion</em> weniger und der von <strong>Brumbatz</strong> geplünderten Waffe in den Kampf.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">enemy</span> <span class="o">=</span> <span class="n">Ork</span><span class="p">(</span><span class="s1">&#39;Olmur&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;axe&#39;</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="s1">&#39;Ohrenknapser&#39;</span><span class="p">),</span> <span class="n">armor</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;leather&#39;</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span> <span class="n">level</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">player</span><span class="o">.</span><span class="n">get_hp</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">enemy</span><span class="o">.</span><span class="n">get_hp</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">player</span><span class="o">.</span><span class="n">get_hp</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># lyana attacks if she is not dead!</span>
+        <span class="n">player</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+
+    <span class="k">if</span> <span class="n">enemy</span><span class="o">.</span><span class="n">get_hp</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># olmur attacks if she is not dead!</span>
+        <span class="n">enemy</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+    
+<span class="n">player</span><span class="o">.</span><span class="n">loot</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">enemy</span><span class="p">)</span>      
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: Lyanna. HP: 134.5. Weapon: mace (15.5 damage). Potions: 2 (Level: 50)
+Name: Olmur. HP: 40. Weapon: axe (20.0 damage). Armor: leather (9 strength)
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur attacked Lyanna with Ohrenknapser (20.0 damage)!
+Lyanna attacked Olmur with Hoffnungsbrecher (6.5 damage)!
+Olmur is dead!
+Lyanna looted Olmur. New weapon found: axe Ohrenknapser with strenght 20.0
+Name: Lyanna. HP: 14.5. Weapon: axe (20.0 damage). Potions: 2 (Level: 50)
+Name: Olmur. HP: -5.5. Weapon: None (None damage). Armor: leather (9 strength)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das war knapp! Zum Glück hat Lyanna noch Heiltränke… und jetzt auch eine ziemliche gute Axt!</p>
+<div class="alert alert-block alert-info">  
+Und jetzt? Was passiert wenn Lyanna auch eine Rüstung plündern will? Und wie geben wir dem/der Spieler*in die Chance eine geplünderte Waffe oder Rüstung nicht zu benutzen? Wie wäre es, wenn der Schaden der Waffe eine Zufallskomponente bekommt wie es in fast allen Computerspielen umgesetzt ist? Oder eine Rüstung die für bestimmte Waffentypen komplette Immunität liefert? Oder sie verschiedene Heiltränke zur Verfügung stellen... werden sie kreativ!<p>Sie haben nun viele Vorteile von OOP gesehen, besonders wenn es um Design, Struktur und Erweiterbarkeit geht. OOP hat noch mehr zu bieten als das, was ich Ihnen gerade gezeigt habe, aber Sie sollten jetzt sehen, dass es eine großartige Sache ist, sich an OOP zu gewöhnen und Klassen zu verwenden.</p>
+<p>Die erste Umstellung von Funktionalem Programieren auf OOP ist manchmal schwer, und oft fängt man einfach an, ein paar Funktionen zu schreiben und merkt dann plötzlich, dass man wieder dieser schlechten Angewohnheit folgt. Versuchen Sie, Ihr Programm so zu bauen, wie wir unser Spiel gebaut haben: Fragen Sie sich zunächst, ob und welche Klassen benötigt werden, entscheiden Sie dann, welche Eigenschaften einige der Klassen gemeinsam haben, und führen Sie abstrakte Klassen für sie ein. Dann entwerfen Sie eine leere Klassenstruktur und bilden die Vererbung. Als letzten Schritt implementieren Sie dann die Methoden.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="6_inheritance.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Vererbung</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lyanna und die Orks 🧝‍♂️</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#story">Story</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemstellung">Problemstellung</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#attribute">Attribute</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methoden">Methoden</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementierung-ohne-objektorientierung">Implementierung ohne Objektorientierung</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attack">attack</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loot">loot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heal">heal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#der-erste-kampf">Der erste Kampf!</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementierung-mit-objektorientierung">Implementierung mit Objektorientierung</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-class-character">base class “character”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spieler-innen-character-lyana">Spieler*innen-character Lyana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orks-brumbatz">Orks: Brumbatz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orks-olmur">Orks: Olmur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fight">FIGHT!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#round-2">Round 2!</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Torben Ferber
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

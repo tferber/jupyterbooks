@@ -31,8 +31,16 @@ parts:
     - file: content/jupyterquiz/quiz_dictionaries
     
   - file: content/vorlesung_5.md
-    
+    sections:
+    - file: content/jupyterquiz/quiz_classes
+
   - file: content/vorlesung_6.md
+    sections:
+    - file: content/jupyterquiz/quiz_inheritance
+    - file: content/jupyterquiz/quiz_overloading
+
+  - file: content/vorlesung_7.md
+    
 
 - caption: Jupyter Notebooks 🐍
   chapters:
@@ -46,3 +54,5 @@ parts:
     - file: content/4_reverselookup
     - file: content/4_global
     - file: content/4_set_operations
+    - file: content/6_inheritance
+    - file: content/lyanna_und_die_orks

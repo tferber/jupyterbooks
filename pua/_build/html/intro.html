@@ -214,12 +214,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="content/jupyterquiz/quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterquiz/quiz_classes.html">Quiz Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterquiz/quiz_inheritance.html">Quiz Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterquiz/quiz_overloading.html">Quiz Overloading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="content/extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="content/2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content/3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content/3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -228,6 +236,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="content/4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content/4_global.html">Globale Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content/4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/6_inheritance.html">Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
+
+
+
+
+
 </ul>
 </li>
 </ul>
@@ -448,10 +463,10 @@ document.write(`
 <p>Python, bekannt für seine (relative) Einfachheit und gute Lesbarkeit, ist eine der beliebtesten Programmiersprachen der Welt. Sie wird in einer Vielzahl von Bereichen eingesetzt, von der Webentwicklung, über künstliche Intelligen bis hin zur Datenanalyse, was sie zu einer wertvollen Fähigkeit im heutigen digitalen Zeitalter macht. In der Experimentalphysik ist sie die weitverbreitetste Programmiersprache zur Datenanalyse. In der Vorlesung “Computergestützte Datenauswertung (CgDA)” im 2. Semester werden sie lernen wie man Python zur Datenauswertung und für Grundlagen der Statistik verwendet. In Praktika werden sie Python zur Auswertung von Messdaten verwenden.</p>
 <p>Algorithmen hingegen sind Schritt-für-Schritt-Verfahren zur Lösung von Problemen oder zur Bewältigung von Aufgaben. Sie bilden das Herzstück der Informatik und sind entscheidend für die Entwicklung effizienter Software.</p>
 <p>In diesem Kurs lernen Sie nicht nur, wie man Python-Code schreibt, sondern auch, wie man algorithmisch denkt und komplexe Probleme löst. Wir behandeln alles von der grundlegenden Python-Syntax über Objekt-Orientierung bis hin zu algorithmischen Techniken.</p>
-<div class="tip admonition">
-<p class="admonition-title">Feedback zur Website</p>
-<p>Sie können Feedback zur Website mithilfe von <a class="reference external" href="http://hypothes.is">hypothes.is</a> direkt auf der jeweiligen Website</p>
-</div>
+<!--```{admonition} Feedback zur Website-->
+<!--:class: tip-->
+<!--Sie können Feedback zur Website mithilfe von hypothes.is direkt auf der jeweiligen Website -->
+<!--```-->
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Dieses <em>PuA Jupyterbook</em> befindet sich aktuell im Aufbau und Sie können sich noch nicht auf Vollständigkeit verlassen.</p>
@@ -465,6 +480,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_4.html">Vorlesung 4: Datenstrukturen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a></li>
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">

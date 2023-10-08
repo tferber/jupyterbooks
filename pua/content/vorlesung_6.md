@@ -1,29 +1,31 @@
 # Vorlesung 6: Vererbung und Polymorphismus
 
-<!--```{admonition} Hier geht zum Quiz...-->
-<!--:class: tip-->
-<!--[Quiz zum Thema "Listen"](jupyterquiz/quiz_listen)-->
-<!---->
-<!--[Quiz zum Thema "Dictionaries"](jupyterquiz/quiz_dictionaries)-->
-<!---->
-<!--[Quiz zum Thema "Datenstrukturen und Funktionen"](jupyterquiz/quiz_datastrukturen_und_funktionen)-->
-<!---->
-<!--```-->
-<!---->
-<!--```{admonition} Beispiele und Vertiefung-->
-<!--:class: seealso-->
-<!--[Jupyter Notebook zum Thema "Verschachtelte Listen"](4_nestedlistcomprehension.ipynb)-->
-<!---->
-<!--[Jupyter Notebook zum Thema "Bedingungen und Listen"](4_listcomparison.ipynb)-->
-<!--```-->
+```{admonition} Hier geht zum Quiz...
+:class: tip
+[Quiz zum Thema "Vererbung"](jupyterquiz/quiz_inheritance)
 
+[Quiz zum Thema "Overloading"](jupyterquiz/quiz_overloading)
 
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
+```
+
+```{admonition} Beispiele und Vertiefung
+:class: seealso
+[Jupyter Notebook zum Thema "Lyanna und die Orks!"](lyanna_und_die_orks.ipynb)
+
+[Jupyter Notebook zum Thema "Vererbung"](6_inheritance.ipynb)
+```
+
 
 
 <!--## Was Sie wissen sollten-->
+* Python erlaubt es alle gängigen Operatoren (wie z.B. “+”) auch fuer User-defined Klassen mithilfe von operator overloading zu nutzen
+* Funktionen können je nach input-Parametern unterschiedliches Verhalten implementieren. Dies ist oft mit operator overloading kombiniert.
+* Polymorphism bezeichnet die Kontext-Ahaengigkeit von Methoden
+* Objekt-orientierte Programmierung nutzt (Multi)-Inheritance um neue Klassen auf Basis bestehender Klassen zu erstellen. Diese ermöglichst fördert die Wiederverwendbarkeit und Lesbarkeit des Codes.
+
+## Download Vorlesungsfolien
+
+{Download}`Hier <https://bwsyncandshare.kit.edu/s/GkK9tpP5bSbDSdF>` können sie die Vorlesungsfolien zur Vorlesung 6 herunterladen.
 
 
 <!--## Videos to watch...-->

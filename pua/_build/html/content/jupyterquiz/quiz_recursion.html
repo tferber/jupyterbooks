@@ -215,12 +215,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_classes.html">Quiz Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_inheritance.html">Quiz Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_overloading.html">Quiz Overloading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -229,6 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_global.html">Globale Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../6_inheritance.html">Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
+
+
+
+
+
 </ul>
 </li>
 </ul>
@@ -498,13 +513,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="rXfGdCqJymzw" data-shufflequestions="False"
+<div class="output text_html"><div id="kwmXIYYQhZgN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#rXfGdCqJymzw {
+#kwmXIYYQhZgN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -674,7 +689,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsrXfGdCqJymzw=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionskwmXIYYQhZgN=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1423,8 +1438,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("rXfGdCqJymzw")) {
-            show_questions(questionsrXfGdCqJymzw,  rXfGdCqJymzw); 
+          if(document.getElementById("kwmXIYYQhZgN")) {
+            show_questions(questionskwmXIYYQhZgN,  kwmXIYYQhZgN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1433,18 +1448,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("rXfGdCqJymzw");
-        // console.log(document.getElementById("rXfGdCqJymzw"));
+        //console.log("kwmXIYYQhZgN");
+        // console.log(document.getElementById("kwmXIYYQhZgN"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="rHcQcvsUJgBf" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="vgOCgMUiLPsU" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#rHcQcvsUJgBf {
+#vgOCgMUiLPsU {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1614,7 +1629,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsrHcQcvsUJgBf=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if n == 0:\n        return 1\n    else:\n        return n * funktion2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsvgOCgMUiLPsU=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if n == 0:\n        return 1\n    else:\n        return n * funktion2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2363,8 +2378,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("rHcQcvsUJgBf")) {
-            show_questions(questionsrHcQcvsUJgBf,  rHcQcvsUJgBf); 
+          if(document.getElementById("vgOCgMUiLPsU")) {
+            show_questions(questionsvgOCgMUiLPsU,  vgOCgMUiLPsU); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2373,18 +2388,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("rHcQcvsUJgBf");
-        // console.log(document.getElementById("rHcQcvsUJgBf"));
+        //console.log("vgOCgMUiLPsU");
+        // console.log(document.getElementById("vgOCgMUiLPsU"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="PHVFqdGRhHsZ" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="RDeFTKKIQmkb" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PHVFqdGRhHsZ {
+#RDeFTKKIQmkb {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2554,7 +2569,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPHVFqdGRhHsZ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function3(n):\n    if n > 100:\n        return n\n    else:\n        return function3(function3(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "100", "correct": false, "feedback": "Falsch!"}, {"answer": "101", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig!"}]}];
+</style></div><script type="application/javascript">var questionsRDeFTKKIQmkb=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function3(n):\n    if n > 100:\n        return n\n    else:\n        return function3(function3(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "100", "correct": false, "feedback": "Falsch!"}, {"answer": "101", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3303,8 +3318,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PHVFqdGRhHsZ")) {
-            show_questions(questionsPHVFqdGRhHsZ,  PHVFqdGRhHsZ); 
+          if(document.getElementById("RDeFTKKIQmkb")) {
+            show_questions(questionsRDeFTKKIQmkb,  RDeFTKKIQmkb); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3313,8 +3328,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PHVFqdGRhHsZ");
-        // console.log(document.getElementById("PHVFqdGRhHsZ"));
+        //console.log("RDeFTKKIQmkb");
+        // console.log(document.getElementById("RDeFTKKIQmkb"));
 
         try_show();
         }

@@ -52,10 +52,6 @@
 * Sets unterstützen keine Indizierung oder Slicing.
 * Sets werden definiert, indem die Elemente in geschweifte Klammern {} eingeschlossen und durch Kommata getrennt werden. Alternativ können Sie auch die Funktion set() verwenden, um eine Set zu erstellen.
 Typischer Anwendungsfall: Verwenden Sie Sets, wenn Sie mehrere Elemente in einer einzigen Variablen speichern möchten und wenn Sie sich um die Einzigartigkeit der Elemente und nicht um ihre Reihenfolge kümmern.
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
-
 
 ## Was Sie wissen sollten
 * Datenstrukturen erlaubten die effiziente Anordnung von Werten und Operationen mit diesen
@@ -69,6 +65,10 @@ Typischer Anwendungsfall: Verwenden Sie Sets, wenn Sie mehrere Elemente in einer
     * Welche Vor- und Nachteile sind das?
 * Verwenden sie NIEMALS mutable Datenobjekte als optionale Funktionsargumente!
     * Warum ist es riskant mutable Datenobjekte als optionale Funktionsargumente zu verwenden? In welcher Reihenfolge müssen optionale Funktionsargumente angebenen werden? Wie funktionert \* gather von Argumenten?
+
+## Download Vorlesungsfolien
+
+{Download}`Hier <https://bwsyncandshare.kit.edu/s/Tb76b4TiLKi3qKw>` können sie die Vorlesungsfolien zur Vorlesung 4 herunterladen.
 
 <!--## Videos to watch...-->
 <!--::::{grid}-->

@@ -8,10 +8,10 @@ Algorithmen hingegen sind Schritt-für-Schritt-Verfahren zur Lösung von Problem
 
 In diesem Kurs lernen Sie nicht nur, wie man Python-Code schreibt, sondern auch, wie man algorithmisch denkt und komplexe Probleme löst. Wir behandeln alles von der grundlegenden Python-Syntax über Objekt-Orientierung bis hin zu algorithmischen Techniken.
 
-```{admonition} Feedback zur Website
-:class: tip
-Sie können Feedback zur Website mithilfe von hypothes.is direkt auf der jeweiligen Website 
-```
+<!--```{admonition} Feedback zur Website-->
+<!--:class: tip-->
+<!--Sie können Feedback zur Website mithilfe von hypothes.is direkt auf der jeweiligen Website -->
+<!--```-->
 
 ```{warning} 
 Dieses *PuA Jupyterbook* befindet sich aktuell im Aufbau und Sie können sich noch nicht auf Vollständigkeit verlassen. 

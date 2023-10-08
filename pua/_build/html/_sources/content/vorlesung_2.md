@@ -16,11 +16,6 @@
 [Jupyter Notebook zum Thema "ByteCode"](2_bytecode.ipynb)
 ```
 
-
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
-
 ## Warum sollten Sie Code dokumentieren und kommentieren?
 * Lesbarkeit: 
     * Kommentare verbessern die Lesbarkeit Ihres Codes, indem sie Kontext liefern und erklären, was jeder Teil des Codes tut. Dies ist besonders hilfreich bei komplexen Algorithmen oder komplizierter Logik.
@@ -48,6 +43,10 @@
 * Code muss so dokumentiert, dass die Intention klar ist. Jede Funktion (Modul, Klasse, Methode) muss mit einem docstring versehen sein.
     * Gute Dokumentation braucht Erfahrung - dokumentieren sie am Anfang eher zu viel als zu wenig.
 
+## Download Vorlesungsfolien
+
+{Download}`Hier <https://bwsyncandshare.kit.edu/s/EKdEyKCxnatdQ6G>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.
+
 ## Videos to watch...
 ::::{grid}
 :class-container: text-center
@@ -69,14 +68,6 @@ The PEP 8 Song (Leon Sandøy)
 <iframe width="200" height="113" src="https://www.youtube.com/embed/hgI0p1zf31k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
-
-:::{grid-item-card}
-:columns: 5
-:class-header: bg-light
-The magic of Fibonacci numbers (Arthur Benjamin)
-
-<iframe width="200" height="113" src="https://www.youtube.com/embed/SjSHVDfXHQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-:::
 
 
 ::::
