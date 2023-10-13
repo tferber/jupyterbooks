@@ -9,6 +9,7 @@
 ```{admonition} Beispiele und Vertiefung
 :class: seealso
 [Jupyter Notebook zum Thema "Generators and Data Pipelines"](7_generators_datapipeline.ipynb)
+[Jupyter Notebook zum Thema "Generators Expressions"](7_generator_expression.ipynb)
 ```
 
 <!--## Was Sie wissen sollten-->

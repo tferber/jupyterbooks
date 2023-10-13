@@ -224,7 +224,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_overloading.html">Quiz Overloading</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_generators.html">Quiz Variablen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
@@ -234,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -251,6 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l2"><a class="reference internal" href="../7_generators_datapipeline.html">Generators Data Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../7_generator_expression.html">Generator expression vs. list comprehension</a></li>
 </ul>
 </li>
 </ul>
@@ -520,13 +524,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="IltRlCHTOdgJ" data-shufflequestions="False"
+<div class="output text_html"><div id="IdGIhBeIHCMN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#IltRlCHTOdgJ {
+#IdGIhBeIHCMN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +700,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIltRlCHTOdgJ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "my_list = [1, 2, 3, 4]\nprint(len(my_list))", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "2", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "3", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "4", "correct": true, "feedback": "Richtig!  len() gibt die Zahl der Elemente der Liste zur\u00fcck."}]}];
+</style></div><script type="application/javascript">var questionsIdGIhBeIHCMN=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "my_list = [1, 2, 3, 4]\nprint(len(my_list))", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "2", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "3", "correct": false, "feedback": "Falsch! len() gibt die Zahl der Elemente der Liste zur\u00fcck."}, {"answer": "4", "correct": true, "feedback": "Richtig!  len() gibt die Zahl der Elemente der Liste zur\u00fcck."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1449,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("IltRlCHTOdgJ")) {
-            show_questions(questionsIltRlCHTOdgJ,  IltRlCHTOdgJ); 
+          if(document.getElementById("IdGIhBeIHCMN")) {
+            show_questions(questionsIdGIhBeIHCMN,  IdGIhBeIHCMN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,18 +1459,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("IltRlCHTOdgJ");
-        // console.log(document.getElementById("IltRlCHTOdgJ"));
+        //console.log("IdGIhBeIHCMN");
+        // console.log(document.getElementById("IdGIhBeIHCMN"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="umEuItHZKPkT" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="yqJOhxQJDZAF" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#umEuItHZKPkT {
+#yqJOhxQJDZAF {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1636,7 +1640,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsumEuItHZKPkT=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, ]\nmeine_liste.append('Katze')\nmeine_liste.pop(2)", "type": "multiple_choice", "answers": [{"answer": "[1, 2, 'Katze']", "correct": true, "feedback": "Richtig!"}, {"answer": "[1, 2, 3, 'Katze']", "correct": false, "feedback": "Falsch! pop(2) entfernt den dritten Eintrag mit dem Index 2."}, {"answer": "[1, 3, 'Katze']", "correct": false, "feedback": "Falsch! pop(2) entfernt den Index 2, nicht den Wert 2, daf\u00fcr nutzen sie remove(2)."}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
+</style></div><script type="application/javascript">var questionsyqJOhxQJDZAF=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, ]\nmeine_liste.append('Katze')\nmeine_liste.pop(2)", "type": "multiple_choice", "answers": [{"answer": "[1, 2, 'Katze']", "correct": true, "feedback": "Richtig!"}, {"answer": "[1, 2, 3, 'Katze']", "correct": false, "feedback": "Falsch! pop(2) entfernt den dritten Eintrag mit dem Index 2."}, {"answer": "[1, 3, 'Katze']", "correct": false, "feedback": "Falsch! pop(2) entfernt den Index 2, nicht den Wert 2, daf\u00fcr nutzen sie remove(2)."}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Diese Operation ist g\u00fcltiger Python Code."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2385,8 +2389,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("umEuItHZKPkT")) {
-            show_questions(questionsumEuItHZKPkT,  umEuItHZKPkT); 
+          if(document.getElementById("yqJOhxQJDZAF")) {
+            show_questions(questionsyqJOhxQJDZAF,  yqJOhxQJDZAF); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2395,18 +2399,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("umEuItHZKPkT");
-        // console.log(document.getElementById("umEuItHZKPkT"));
+        //console.log("yqJOhxQJDZAF");
+        // console.log(document.getElementById("yqJOhxQJDZAF"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="cEWBcdcGhbTm" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="uAHvptKuNfdS" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#cEWBcdcGhbTm {
+#uAHvptKuNfdS {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2576,7 +2580,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionscEWBcdcGhbTm=[{"question": "Wiederholung: Was ist `b` am Ende des Codeblocks?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
+</style></div><script type="application/javascript">var questionsuAHvptKuNfdS=[{"question": "Wiederholung: Was ist `b` am Ende des Codeblocks?", "code": "a=1\nb=a\na=4", "type": "multiple_choice", "answers": [{"answer": "b=4", "correct": false, "feedback": "Falsch! Variablen referenzieren immer einen Wert, in diesem Fall referenziert `b` welchen Wert?"}, {"answer": "b=1", "correct": true, "feedback": "Richtig!"}, {"answer": "b=None", "correct": false, "feedback": "Falsch! `None` ist reserviert f\u00fcr Datenobjekte ohne Typ. `b` referenziert allerdings ein Datenobjekt mit einem definierten Typ."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3325,8 +3329,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("cEWBcdcGhbTm")) {
-            show_questions(questionscEWBcdcGhbTm,  cEWBcdcGhbTm); 
+          if(document.getElementById("uAHvptKuNfdS")) {
+            show_questions(questionsuAHvptKuNfdS,  uAHvptKuNfdS); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3335,18 +3339,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("cEWBcdcGhbTm");
-        // console.log(document.getElementById("cEWBcdcGhbTm"));
+        //console.log("uAHvptKuNfdS");
+        // console.log(document.getElementById("uAHvptKuNfdS"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="vrDInFooLPSv" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="dqAXHNGhxpGK" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#vrDInFooLPSv {
+#dqAXHNGhxpGK {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3516,7 +3520,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsvrDInFooLPSv=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[1, 2, 3, ]\nb=a\na[-2]=5\nprint(b[1])", "type": "multiple_choice", "answers": [{"answer": "b=2", "correct": false, "feedback": "Falsch! Python lists sind `mutable`!"}, {"answer": "b=5", "correct": true, "feedback": "Richtig! Python lists sind `mutable`!"}, {"answer": "b=1", "correct": false, "feedback": "Falsch! a[-2] ist das vorletzte Element der Liste `a`, a[-1] das letzte."}]}];
+</style></div><script type="application/javascript">var questionsdqAXHNGhxpGK=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[1, 2, 3, ]\nb=a\na[-2]=5\nprint(b[1])", "type": "multiple_choice", "answers": [{"answer": "b=2", "correct": false, "feedback": "Falsch! Python lists sind `mutable`!"}, {"answer": "b=5", "correct": true, "feedback": "Richtig! Python lists sind `mutable`!"}, {"answer": "b=1", "correct": false, "feedback": "Falsch! a[-2] ist das vorletzte Element der Liste `a`, a[-1] das letzte."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4265,8 +4269,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("vrDInFooLPSv")) {
-            show_questions(questionsvrDInFooLPSv,  vrDInFooLPSv); 
+          if(document.getElementById("dqAXHNGhxpGK")) {
+            show_questions(questionsdqAXHNGhxpGK,  dqAXHNGhxpGK); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4275,18 +4279,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("vrDInFooLPSv");
-        // console.log(document.getElementById("vrDInFooLPSv"));
+        //console.log("dqAXHNGhxpGK");
+        // console.log(document.getElementById("dqAXHNGhxpGK"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="VRiTiwZfHJFX" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="eSxWqmZSYLhY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#VRiTiwZfHJFX {
+#eSxWqmZSYLhY {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -4456,7 +4460,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsVRiTiwZfHJFX=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[1, 3, 2, ]\nprint(a.reverse())", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 1]", "correct": false, "feedback": "Falsch! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}, {"answer": "None", "correct": true, "feedback": "Richtig! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}]}];
+</style></div><script type="application/javascript">var questionseSxWqmZSYLhY=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[1, 3, 2, ]\nprint(a.reverse())", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 1]", "correct": false, "feedback": "Falsch! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}, {"answer": "None", "correct": true, "feedback": "Richtig! reverse() ist eine void Funktion und hat den R\u00fcckgabewert None!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -5205,8 +5209,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VRiTiwZfHJFX")) {
-            show_questions(questionsVRiTiwZfHJFX,  VRiTiwZfHJFX); 
+          if(document.getElementById("eSxWqmZSYLhY")) {
+            show_questions(questionseSxWqmZSYLhY,  eSxWqmZSYLhY); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -5215,18 +5219,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("VRiTiwZfHJFX");
-        // console.log(document.getElementById("VRiTiwZfHJFX"));
+        //console.log("eSxWqmZSYLhY");
+        // console.log(document.getElementById("eSxWqmZSYLhY"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="cVOuisLTGVXO" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="AkaRYGeGwhVO" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#cVOuisLTGVXO {
+#AkaRYGeGwhVO {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -5396,7 +5400,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionscVOuisLTGVXO=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[3, 2, 4, 1, ]\na = a.sort\nprint(a[0])", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch! sort() ist eine void Funktion mit None als R\u00fcckgabewert. Das erste Element (a[0]) ist kein g\u00fcltiger Type."}, {"answer": "1", "correct": false, "feedback": "Falsch - allerdings haben sie richtig gedachte, dass sort() aufsteigend sortiert! sort() ist eine void Funktion mit None als R\u00fcckgabewert. Das erste Element (a[0]) ist kein g\u00fcltiger Type."}, {"answer": "TypeError", "correct": true, "feedback": "Richtig! sort() ist eine void Funktion und hat den R\u00fcckgabewert None. Die folgende Operation a[0] ist dann nicht mehr erlaubt!"}]}];
+</style></div><script type="application/javascript">var questionsAkaRYGeGwhVO=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "a=[3, 2, 4, 1, ]\na = a.sort\nprint(a[0])", "type": "multiple_choice", "answers": [{"answer": "4", "correct": false, "feedback": "Falsch! sort() ist eine void Funktion mit None als R\u00fcckgabewert. Das erste Element (a[0]) ist kein g\u00fcltiger Type."}, {"answer": "1", "correct": false, "feedback": "Falsch - allerdings haben sie richtig gedachte, dass sort() aufsteigend sortiert! sort() ist eine void Funktion mit None als R\u00fcckgabewert. Das erste Element (a[0]) ist kein g\u00fcltiger Type."}, {"answer": "TypeError", "correct": true, "feedback": "Richtig! sort() ist eine void Funktion und hat den R\u00fcckgabewert None. Die folgende Operation a[0] ist dann nicht mehr erlaubt!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -6145,8 +6149,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("cVOuisLTGVXO")) {
-            show_questions(questionscVOuisLTGVXO,  cVOuisLTGVXO); 
+          if(document.getElementById("AkaRYGeGwhVO")) {
+            show_questions(questionsAkaRYGeGwhVO,  AkaRYGeGwhVO); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -6155,8 +6159,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("cVOuisLTGVXO");
-        // console.log(document.getElementById("cVOuisLTGVXO"));
+        //console.log("AkaRYGeGwhVO");
+        // console.log(document.getElementById("AkaRYGeGwhVO"));
 
         try_show();
         }

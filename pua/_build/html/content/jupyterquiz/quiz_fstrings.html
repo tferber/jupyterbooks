@@ -224,7 +224,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_overloading.html">Quiz Overloading</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_generators.html">Quiz Variablen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
@@ -234,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -251,6 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l2"><a class="reference internal" href="../7_generators_datapipeline.html">Generators Data Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../7_generator_expression.html">Generator expression vs. list comprehension</a></li>
 </ul>
 </li>
 </ul>
@@ -520,13 +524,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="elPAlloQWZqx" data-shufflequestions="False"
+<div class="output text_html"><div id="YuUBvkPxLsav" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#elPAlloQWZqx {
+#YuUBvkPxLsav {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +700,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionselPAlloQWZqx=[{"question": "Was ist ein f-string in Python?", "type": "multiple_choice", "answers": [{"answer": "Ein string der mit dem Buchstaben f beginnt", "correct": false, "feedback": "Falsch! Ein f-string beginnt zwar mit einem f, es ist aber nicht Teil des strings!"}, {"answer": "Die empfohlene string-Formatierung in modernem Python", "correct": true, "feedback": "Richtig! f-strings wurden erst in python 3.6 eingef\u00fchrt und sind die empfohlene Methode strings mit Zahlen darzustellen."}, {"answer": "Eine Methode eine Gleitkommazahl (`float`) in einen string umzuwandeln.", "correct": false, "feedback": "Falsch! Eine Gleitkommazahl `x` wandeln sie durch explizite Type-Konvertierung str(x) in einen string um."}]}];
+</style></div><script type="application/javascript">var questionsYuUBvkPxLsav=[{"question": "Was ist ein f-string in Python?", "type": "multiple_choice", "answers": [{"answer": "Ein string der mit dem Buchstaben f beginnt", "correct": false, "feedback": "Falsch! Ein f-string beginnt zwar mit einem f, es ist aber nicht Teil des strings!"}, {"answer": "Die empfohlene string-Formatierung in modernem Python", "correct": true, "feedback": "Richtig! f-strings wurden erst in python 3.6 eingef\u00fchrt und sind die empfohlene Methode strings mit Zahlen darzustellen."}, {"answer": "Eine Methode eine Gleitkommazahl (`float`) in einen string umzuwandeln.", "correct": false, "feedback": "Falsch! Eine Gleitkommazahl `x` wandeln sie durch explizite Type-Konvertierung str(x) in einen string um."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1449,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("elPAlloQWZqx")) {
-            show_questions(questionselPAlloQWZqx,  elPAlloQWZqx); 
+          if(document.getElementById("YuUBvkPxLsav")) {
+            show_questions(questionsYuUBvkPxLsav,  YuUBvkPxLsav); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,18 +1459,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("elPAlloQWZqx");
-        // console.log(document.getElementById("elPAlloQWZqx"));
+        //console.log("YuUBvkPxLsav");
+        // console.log(document.getElementById("YuUBvkPxLsav"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="IexmQZoXRTDs" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="XHDMkfGqJGsZ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#IexmQZoXRTDs {
+#XHDMkfGqJGsZ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1636,7 +1640,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIexmQZoXRTDs=[{"question": "Wie w\u00fcrden sie eine Variable `x=42.0` in einem f-string benutzen?", "type": "multiple_choice", "answers": [{"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {x}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is %f\" % x", "correct": false, "feedback": "Falsch! Dies ist die veraltete %-Formatierung."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {}\".format(x)", "correct": false, "feedback": "Falsch! Dies ist das veraltete str.format()."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is\" + x", "correct": false, "feedback": "Falsch! Sie k\u00f6nnen einen `string` und eine Gleitkommazahl nicht mit einer Additionsoperation verbinden."}]}];
+</style></div><script type="application/javascript">var questionsXHDMkfGqJGsZ=[{"question": "Wie w\u00fcrden sie eine Variable `x=42.0` in einem f-string benutzen?", "type": "multiple_choice", "answers": [{"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {x}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is %f\" % x", "correct": false, "feedback": "Falsch! Dies ist die veraltete %-Formatierung."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is {}\".format(x)", "correct": false, "feedback": "Falsch! Dies ist das veraltete str.format()."}, {"answer": "f\"The answer to the Ultimate Question of Life, the Universe, and Everything is\" + x", "correct": false, "feedback": "Falsch! Sie k\u00f6nnen einen `string` und eine Gleitkommazahl nicht mit einer Additionsoperation verbinden."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2385,8 +2389,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("IexmQZoXRTDs")) {
-            show_questions(questionsIexmQZoXRTDs,  IexmQZoXRTDs); 
+          if(document.getElementById("XHDMkfGqJGsZ")) {
+            show_questions(questionsXHDMkfGqJGsZ,  XHDMkfGqJGsZ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2395,18 +2399,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("IexmQZoXRTDs");
-        // console.log(document.getElementById("IexmQZoXRTDs"));
+        //console.log("XHDMkfGqJGsZ");
+        // console.log(document.getElementById("XHDMkfGqJGsZ"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="SFrVWeuuqaHl" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="EtCdqnghZTBt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SFrVWeuuqaHl {
+#EtCdqnghZTBt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2576,7 +2580,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSFrVWeuuqaHl=[{"question": "Wie w\u00fcrden sie einen f-string so verwenden, dass `x` mit zwei Dezimalstellen angezeigt wird?", "type": "multiple_choice", "answers": [{"answer": "f\"{number:.2}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number:.2f}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"{number:2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number.2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist ein Syntaxfehler, auf eine Gleitkommazahl muss ein Doppelpunkt folgen um weitere Formatierungsoptionen anzugeben."}]}];
+</style></div><script type="application/javascript">var questionsEtCdqnghZTBt=[{"question": "Wie w\u00fcrden sie einen f-string so verwenden, dass `x` mit zwei Dezimalstellen angezeigt wird?", "type": "multiple_choice", "answers": [{"answer": "f\"{number:.2}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number:.2f}\"", "correct": true, "feedback": "Richtig!"}, {"answer": "f\"{number:2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist zwar kein Syntaxfehler, hat aber keine Wirkung."}, {"answer": "f\"{number.2f}\"", "correct": false, "feedback": "Falsch! Diese Formatierung ist ein Syntaxfehler, auf eine Gleitkommazahl muss ein Doppelpunkt folgen um weitere Formatierungsoptionen anzugeben."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3325,8 +3329,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SFrVWeuuqaHl")) {
-            show_questions(questionsSFrVWeuuqaHl,  SFrVWeuuqaHl); 
+          if(document.getElementById("EtCdqnghZTBt")) {
+            show_questions(questionsEtCdqnghZTBt,  EtCdqnghZTBt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3335,8 +3339,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SFrVWeuuqaHl");
-        // console.log(document.getElementById("SFrVWeuuqaHl"));
+        //console.log("EtCdqnghZTBt");
+        // console.log(document.getElementById("EtCdqnghZTBt"));
 
         try_show();
         }

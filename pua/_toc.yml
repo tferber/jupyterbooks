@@ -40,6 +40,9 @@ parts:
     - file: content/jupyterquiz/quiz_overloading
 
   - file: content/vorlesung_7.md
+    sections:
+    - file: content/jupyterquiz/quiz_generators
+
   - file: content/vorlesung_8.md
   - file: content/vorlesung_9.md
   - file: content/vorlesung_10.md
@@ -63,3 +66,4 @@ parts:
     - file: content/6_inheritance
     - file: content/lyanna_und_die_orks
     - file: content/7_generators_datapipeline
+    - file: content/7_generator_expression

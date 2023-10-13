@@ -224,7 +224,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_overloading.html">Quiz Overloading</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_generators.html">Quiz Variablen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
@@ -234,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -251,6 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l2"><a class="reference internal" href="../7_generators_datapipeline.html">Generators Data Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../7_generator_expression.html">Generator expression vs. list comprehension</a></li>
 </ul>
 </li>
 </ul>
@@ -520,13 +524,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="rsUQaSgRnbla" data-shufflequestions="False"
+<div class="output text_html"><div id="STxcWciUUVxw" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#rsUQaSgRnbla {
+#STxcWciUUVxw {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +700,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsrsUQaSgRnbla=[{"question": "Welche der folgenden Zeichenketten sind erlaubt?", "type": "multiple_choice", "answers": [{"answer": "\"Haus\"", "correct": true, "feedback": "Richtig! Das ist eine ganz normale, langweilige Zeichenkennte mit einem Wort."}, {"answer": "\"Haus@See\"", "correct": true, "feedback": "Richtig! Die Zeichenkette enth\u00e4lt zwar ein Sonderzeichen, aber das ist erlaubt."}, {"answer": "\"493.330\"", "correct": true, "feedback": "Richtig! Das ist eine erlaubte Zeichenkette - sie beschreibt aber keine Gleitkommazahl, obwohl sie so aussieht."}, {"answer": "\"Haus'", "correct": false, "feedback": "Falsch! Diese Zeichenkette ist mit anderen Anf\u00fchrungszeichen beendet als begonnen. Dies f\u00fchrt zu einem SyntaxError (unterminated string literal)."}, {"answer": "\"Haus am See\"", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}, {"answer": "'Haus am See'", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}]}];
+</style></div><script type="application/javascript">var questionsSTxcWciUUVxw=[{"question": "Welche der folgenden Zeichenketten sind erlaubt?", "type": "multiple_choice", "answers": [{"answer": "\"Haus\"", "correct": true, "feedback": "Richtig! Das ist eine ganz normale, langweilige Zeichenkennte mit einem Wort."}, {"answer": "\"Haus@See\"", "correct": true, "feedback": "Richtig! Die Zeichenkette enth\u00e4lt zwar ein Sonderzeichen, aber das ist erlaubt."}, {"answer": "\"493.330\"", "correct": true, "feedback": "Richtig! Das ist eine erlaubte Zeichenkette - sie beschreibt aber keine Gleitkommazahl, obwohl sie so aussieht."}, {"answer": "\"Haus'", "correct": false, "feedback": "Falsch! Diese Zeichenkette ist mit anderen Anf\u00fchrungszeichen beendet als begonnen. Dies f\u00fchrt zu einem SyntaxError (unterminated string literal)."}, {"answer": "\"Haus am See\"", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}, {"answer": "'Haus am See'", "correct": true, "feedback": "Richtig! Diese Zeichenkette enth\u00e4lt zwar Leerzeichen, aber das ist erlaubt. Zeichenketten k\u00f6nnen durch einfache oder doppelte Anf\u00fchrungszeichen gekennzeichnet werden."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1449,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("rsUQaSgRnbla")) {
-            show_questions(questionsrsUQaSgRnbla,  rsUQaSgRnbla); 
+          if(document.getElementById("STxcWciUUVxw")) {
+            show_questions(questionsSTxcWciUUVxw,  STxcWciUUVxw); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,18 +1459,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("rsUQaSgRnbla");
-        // console.log(document.getElementById("rsUQaSgRnbla"));
+        //console.log("STxcWciUUVxw");
+        // console.log(document.getElementById("STxcWciUUVxw"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="oDuIIlxJHIGy" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="FGGauDDYsMkj" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#oDuIIlxJHIGy {
+#FGGauDDYsMkj {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1636,7 +1640,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsoDuIIlxJHIGy=[{"question": "Was ist type(5)?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": true, "feedback": "Richtig! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "float", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "string", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}]}];
+</style></div><script type="application/javascript">var questionsFGGauDDYsMkj=[{"question": "Was ist type(5)?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": true, "feedback": "Richtig! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "float", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}, {"answer": "string", "correct": false, "feedback": "Falsch! 5 ist eine ganze Zahl, in Python durch das Datenobjekt `int` beschrieben."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2385,8 +2389,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("oDuIIlxJHIGy")) {
-            show_questions(questionsoDuIIlxJHIGy,  oDuIIlxJHIGy); 
+          if(document.getElementById("FGGauDDYsMkj")) {
+            show_questions(questionsFGGauDDYsMkj,  FGGauDDYsMkj); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2395,18 +2399,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("oDuIIlxJHIGy");
-        // console.log(document.getElementById("oDuIIlxJHIGy"));
+        //console.log("FGGauDDYsMkj");
+        // console.log(document.getElementById("FGGauDDYsMkj"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="zGIaGQEIcDeP" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="EJdDzBxNtuHN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#zGIaGQEIcDeP {
+#EJdDzBxNtuHN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2576,7 +2580,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszGIaGQEIcDeP=[{"question": "Was ist type(\"26.3\")?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl (die durch `float` beschrieben w\u00fcrde), ist aber keine."}, {"answer": "float", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl, ist aber keine."}, {"answer": "string", "correct": true, "feedback": "Richtig! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird."}]}];
+</style></div><script type="application/javascript">var questionsEJdDzBxNtuHN=[{"question": "Was ist type(\"26.3\")?", "type": "multiple_choice", "answers": [{"answer": "int", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl (die durch `float` beschrieben w\u00fcrde), ist aber keine."}, {"answer": "float", "correct": false, "feedback": "Falsch! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird. Es sieht aus wie eine Gleitkommazahl, ist aber keine."}, {"answer": "string", "correct": true, "feedback": "Richtig! \"26.3\" ist eine Zeichenkette da sie durch Anf\u00fchrungszeichen begrenzt wird."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3325,8 +3329,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("zGIaGQEIcDeP")) {
-            show_questions(questionszGIaGQEIcDeP,  zGIaGQEIcDeP); 
+          if(document.getElementById("EJdDzBxNtuHN")) {
+            show_questions(questionsEJdDzBxNtuHN,  EJdDzBxNtuHN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3335,8 +3339,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("zGIaGQEIcDeP");
-        // console.log(document.getElementById("zGIaGQEIcDeP"));
+        //console.log("EJdDzBxNtuHN");
+        // console.log(document.getElementById("EJdDzBxNtuHN"));
 
         try_show();
         }

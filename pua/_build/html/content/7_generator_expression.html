@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Operationen auf Sets &#8212; Programmieren und Algorithmen</title>
+    <title>Generator expression vs. list comprehension &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -95,11 +95,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/4_set_operations';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/7_generator_expression';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Vererbung" href="6_inheritance.html" />
-    <link rel="prev" title="Globale Variablen" href="4_global.html" />
+    <link rel="prev" title="Generators Data Pipeline" href="7_generators_datapipeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -245,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="4_listcomparison.html">List comparison</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4_global.html">Globale Variablen</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_set_operations.html">Operationen auf Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="6_inheritance.html">Vererbung</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
 
@@ -254,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l2"><a class="reference internal" href="7_generators_datapipeline.html">Generators Data Pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="7_generator_expression.html">Generator expression vs. list comprehension</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Generator expression vs. list comprehension</a></li>
 </ul>
 </li>
 </ul>
@@ -311,7 +310,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/4_set_operations.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/7_generator_expression.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +328,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/4_set_operations.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/7_generator_expression.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +376,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/4_set_operations.ipynb" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/7_generator_expression.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -394,7 +393,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/4_set_operations.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/7_generator_expression.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -424,7 +423,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/4_set_operations.ipynb" target="_blank"
+      <li><a href="../_sources/content/7_generator_expression.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -493,9 +492,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -506,20 +503,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Operationen auf Sets</h1>
+    <h1>Generator expression vs. list comprehension</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplizierteres-beispiel">Komplizierteres Beispiel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entfernen-von-duplikaten">Entfernen von Duplikaten</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -529,73 +517,77 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="operationen-auf-sets">
-<h1>Operationen auf Sets<a class="headerlink" href="#operationen-auf-sets" title="Permalink to this heading">#</a></h1>
-<p>Sets werden in der Regel verwendet, um mathematische Mengenoperationen wie Vereinigung, Schnittmenge usw. durchzuführen und um doppelte Werte aus einer Liste zu entfernen</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="generator-expression-vs-list-comprehension">
+<h1>Generator expression vs. list comprehension<a class="headerlink" href="#generator-expression-vs-list-comprehension" title="Permalink to this heading">#</a></h1>
+<p>Angenommen, Sie möchten eine Folge der ersten 10 geraden Zahlen erstellen. Dazu können Sie entweder eine <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> oder eine <code class="docutils literal notranslate"><span class="pre">generator</span> <span class="pre">expression</span></code>  verwenden, aber beide haben unterschiedliche Vor- und Nachteile.</p>
+<p>Eine <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> ist ein syntaktisches Konstrukt, das eine Liste aus einem iterierbaren Ausdruck erzeugt. Eine Liste ist eine endliche und geordnete Sammlung von Elementen, auf die über einen Index zugegriffen werden kann. Eine <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> hat die folgende Syntax: <code class="docutils literal notranslate"><span class="pre">[Ausdruck</span> <span class="pre">für</span> <span class="pre">Element</span> <span class="pre">in</span> <span class="pre">iterable</span> <span class="pre">if</span> <span class="pre">Bedingung]</span></code></p>
+<p>Sie können zum Beispiel eine <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> verwenden, um eine Liste der ersten 10 geraden Zahlen wie folgt zu erstellen:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use a list comprehension to create a list of the first 10 even numbers</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="c1"># [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Die Vorteile der Verwendung einer <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> sind:</p>
 <ul class="simple">
-<li><p>Vereinigung (engl. union) (|): Die Vereinigung zweier Mengen ist eine neue Menge, die alle Elemente aus beiden Mengen enthält. Zum Beispiel: <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2}</span> <span class="pre">|</span> <span class="pre">{2,</span> <span class="pre">3}</span></code> ergibt <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2,</span> <span class="pre">3}</span></code>.</p></li>
-<li><p>Schnittmenge (engl. intersection) (&amp;): Die Schnittmenge zweier Mengen ist eine neue Menge, die alle Elemente enthält, die in beiden Mengen enthalten sind. Zum Beispiel: <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2}</span> <span class="pre">&amp;</span> <span class="pre">{2,</span> <span class="pre">3}</span></code> ergibt <code class="docutils literal notranslate"><span class="pre">{2}</span></code>.</p></li>
-<li><p>Differenz (engl. difference) (-): Die Differenz von zwei Mengen ist eine neue Menge, die alle Elemente der ersten Menge enthält, die nicht in der zweiten Menge enthalten sind. Zum Beispiel: <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2}</span> <span class="pre">-</span> <span class="pre">{2,</span> <span class="pre">3}</span></code> ergibt <code class="docutils literal notranslate"><span class="pre">{1}</span></code>.</p></li>
-<li><p>Symmetrische Differenz (engl. symmetric difference) (^): Die symmetrische Differenz zweier Mengen ist eine neue Menge, die alle Elemente enthält, die in einer der beiden Mengen enthalten sind, aber nicht in beiden. Zum Beispiel: <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2}</span> <span class="pre">^</span> <span class="pre">{2,</span> <span class="pre">3}</span></code> ergibt <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">3}</span></code>.</p></li>
+<li><p>Sie ist elegant, da keine <code class="docutils literal notranslate"><span class="pre">for</span></code>-Schleife geschrieben werden muss und keine Elemente an eine leere Liste angehängt werden müssen.</p></li>
+<li><p>Sie ist schnell und effizient, da die Liste in einem Durchgang erstellt und im Speicher abgelegt wird.</p></li>
+<li><p>Sie kann mehrfach verwendet werden, da das Listenobjekt nach seiner Erstellung bestehen bleibt.</p></li>
 </ul>
-<section id="komplizierteres-beispiel">
-<h2>Komplizierteres Beispiel<a class="headerlink" href="#komplizierteres-beispiel" title="Permalink to this heading">#</a></h2>
+<p>Die Nachteile der Verwendung einer <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> sind:</p>
+<ul class="simple">
+<li><p>Sie kann viel Speicherplatz beanspruchen, insbesondere wenn die Liste groß ist oder komplexe Objekte enthält.</p></li>
+<li><p>Sie kann langsam sein oder es kann unmöglich sein, sie zu erstellen, wenn der iterierbare Ausdruck unendlich oder sehr groß ist.</p></li>
+</ul>
+<p>Ein Generatorausdruck ist eine knappe Art, um einen Generator zu erstellen, der eine ähnliche Syntax wie die <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> verwendet. Ein Generator ist eine Funktion, die einen Iterator zurückgibt, also ein Objekt, das bei Bedarf eine Folge von Werten erzeugen kann. Eine <code class="docutils literal notranslate"><span class="pre">generator</span> <span class="pre">expression</span></code> verwendet Klammern anstelle von Klammern, und er erstellt keine Liste im Speicher. Sie können zum Beispiel eine <code class="docutils literal notranslate"><span class="pre">generator</span> <span class="pre">expression</span></code> verwenden, um einen Iterator der ersten 10 geraden Zahlen wie folgt zu erstellen:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define three sets</span>
-<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
-<span class="n">set3</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use a generator expression to create an iterator of the first 10 even numbers</span>
+<span class="n">gen</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gen</span><span class="p">)</span> <span class="c1"># &lt;generator object &lt;genexpr&gt; at 0x000001F9C7F3EBA0&gt;</span>
 
-<span class="c1"># Find the union of all three sets</span>
-<span class="n">union_set</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">|</span> <span class="n">set2</span> <span class="o">|</span> <span class="n">set3</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Union of all sets: </span><span class="si">{</span><span class="n">union_set</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Find the intersection of all three sets</span>
-<span class="n">intersection_set</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">&amp;</span> <span class="n">set2</span> <span class="o">&amp;</span> <span class="n">set3</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Intersection of all sets: </span><span class="si">{</span><span class="n">intersection_set</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Find the elements that are unique to set1 (compared to set2 and set3)</span>
-<span class="n">difference_set</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">-</span> <span class="n">set2</span> <span class="o">-</span> <span class="n">set3</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Elements unique to set1: </span><span class="si">{</span><span class="n">difference_set</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Find the elements that are in set1 and set2 but not in set3</span>
-<span class="n">symmetric_difference_set</span> <span class="o">=</span> <span class="p">(</span><span class="n">set1</span> <span class="o">^</span> <span class="n">set2</span><span class="p">)</span> <span class="o">-</span> <span class="n">set3</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Elements in set1 and set2 but not in set3: </span><span class="si">{</span><span class="n">symmetric_difference_set</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1"># to print the full list of values</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">gen</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Union of all sets: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-Intersection of all sets: {4}
-Elements unique to set1: {1, 2, 3}
-Elements in set1 and set2 but not in set3: {1, 2, 3, 6}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;generator object &lt;genexpr&gt; at 0x111f971d0&gt;
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="entfernen-von-duplikaten">
-<h2>Entfernen von Duplikaten<a class="headerlink" href="#entfernen-von-duplikaten" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Elements in list: </span><span class="si">{</span><span class="n">list1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Convert list to set to remove all duplicates from list1</span>
-<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Elements in set (duplicates removed): </span><span class="si">{</span><span class="n">set1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements in list: [1, 2, 3, 4, 4, 4, 1, 6, 7]
-Elements in set (duplicates removed): {1, 2, 3, 4, 6, 7}
-</pre></div>
-</div>
-</div>
-</div>
-</section>
+<p>Die Vorteile der Verwendung einer <code class="docutils literal notranslate"><span class="pre">generator</span> <span class="pre">expression</span></code> sind:</p>
+<ul class="simple">
+<li><p>Sie ist speichereffizient, da sie nur Werte erzeugt, wenn sie benötigt werden, und sie nicht im Speicher ablegt.</p></li>
+<li><p>Sie kann unendliche oder sehr große Sequenzen verarbeiten, da sie nicht versucht, sie alle auf einmal zu erzeugen.</p></li>
+<li><p>Sie kann mit anderen Generatoren oder Funktionen verwendet werden, die Iteratoren akzeptieren, wie z. B. <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, usw.</p></li>
+</ul>
+<p>Die Nachteile der Verwendung einer <code class="docutils literal notranslate"><span class="pre">generator</span> <span class="pre">expression</span></code> sind:</p>
+<ul class="simple">
+<li><p>Sie kann nur einmal durchlaufen werden, da er die von ihm erzeugten Werte nicht speichert.</p></li>
+<li><p>Sie kann langsamer sein als eine <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code>, da sie jeden Wert im laufenden Betrieb berechnen muss.</p></li>
+<li><p>Sie kann nicht indiziert oder gesliced werden, da er keinen zufälligen Zugriff unterstützt.</p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -630,22 +622,13 @@ Elements in set (duplicates removed): {1, 2, 3, 4, 6, 7}
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="4_global.html"
+       href="7_generators_datapipeline.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Globale Variablen</p>
+        <p class="prev-next-title">Generators Data Pipeline</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="6_inheritance.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Vererbung</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -656,21 +639,6 @@ Elements in set (duplicates removed): {1, 2, 3, 4, 6, 7}
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplizierteres-beispiel">Komplizierteres Beispiel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entfernen-von-duplikaten">Entfernen von Duplikaten</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
