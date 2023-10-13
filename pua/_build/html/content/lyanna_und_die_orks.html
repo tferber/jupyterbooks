@@ -98,6 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/lyanna_und_die_orks';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Generators Data Pipeline" href="7_generators_datapipeline.html" />
     <link rel="prev" title="Vererbung" href="6_inheritance.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -224,6 +225,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_12.html">Vorlesung 12: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="current nav bd-sidenav">
@@ -243,6 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="7_generators_datapipeline.html">Generators Data Pipeline</a></li>
 </ul>
 </li>
 </ul>
@@ -554,7 +562,8 @@ Auf dem Weg traf <strong>Lyanna</strong> auf Wiederstand: Orks. Viele Orks. Gro�
 <section class="tex2jax_ignore mathjax_ignore" id="problemstellung">
 <h1>Problemstellung<a class="headerlink" href="#problemstellung" title="Permalink to this heading">#</a></h1>
 <p>Wir werden ein textbasiertes Computerspiel entwickeln und dabei funktionale und objektorientierte Programmierung nutzen. Wir werden zunächst nur Funktionen und Datenstrukturen verwenden, wie sie in älteren, nicht objektorientierten Programmiersprachen wie C wahrscheinlich implementiert würden. Dann werden wir die gleichen Funktionen implementieren, aber mit einem objektorientierten Ansatz. Sie werden ein gutes Verständnis dafür entwickeln, wie Objektorientierung mehr Flexibilität und eine klarere Architektur bietet.</p>
-<p>Lassen Sie uns zunächst den Umfang unseres Spiels festlegen. Wir wollen es einfach halten: Wir wollen ein Spiel entwickeln, in dem wir Lyanna spielen. Wir, Lyanna, können mit einem Orc kämpfen und ihn mit unserer Waffe töten. Orcs ihrerseits können uns leider mit ihrer Waffe auch töten. Wenn Lyanna den Kampf gewinnt, kann er den Ork ausplündern (engl. loot), d.h. die Waffe mitnehmen und im nächsten Kampf verwenden. Um mit dem Spiel fortzufahren, kann Lyanna sich mit einem Heiltrank heilen. Die Gegner werden immer schwieriger indem sie mit besseren Waffen, mehr Trefferpunkten, oder gar schweren Rüstungen anreten.</p>
+<p>Lassen Sie uns zunächst den Umfang unseres Spiels festlegen. Wir wollen es einfach halten: Wir wollen ein Spiel entwickeln, in dem wir <strong>Lyanna</strong> spielen (sie dürfen ihre*n Held*in natürlich gerne auch anders nennen). Wir, <strong>Lyanna</strong>, können mit einem Ork kämpfen und den Ork mit unserer Waffe töten.</p>
+<p>Orcs ihrerseits können uns leider mit ihrer Waffe auch töten. Wenn Lyanna den Kampf gewinnt, kann er den Ork ausplündern (engl. loot), d.h. die Waffe mitnehmen und im nächsten Kampf verwenden. Um mit dem Spiel fortzufahren, kann <strong>Lyanna</strong> sich mit einem Heiltrank heilen. Die Gegner werden immer schwieriger indem sie mit besseren Waffen, mehr Trefferpunkten, oder gar schweren Rüstungen anreten.</p>
 <p>So weit, so gut. Lassen Sie uns die Informationen, die wir erhalten haben, abstrahieren (d.h. in eine Form bringen, die wir in Python ausdrücken können). Wir unterscheiden zwischen zwei Kategorien: Attribute und Methoden. Oder, allgemein gesprochen: Werte, die den Zustand unseres Charakters und der Orcs beschreiben, und Aktionen, die sie ausführen können.</p>
 <p>Wie in der Softwareentwicklung üblich werden wir englische Begriffe für Variablen und die Dokumentation verwenden.</p>
 </section>
@@ -875,7 +884,10 @@ Name: Brumbatz. HP: -4.
 <p>In unserem Spielbeispiel ist es recht einfach, unsere ersten Objekte zu identifizieren: Lyanna (Hauptcharakter), Brumbatz, und Olmur. Diese beiden Objekte ergeben jeweils eine Klasse. Lyanna wird wieder Attribute für <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> sowie die Anzahl und Stärke der <code class="docutils literal notranslate"><span class="pre">potions</span></code>, die sie noch hat, haben. Ihre Methoden sind weiterhin <code class="docutils literal notranslate"><span class="pre">attack</span></code>, <code class="docutils literal notranslate"><span class="pre">heal</span></code> und <code class="docutils literal notranslate"><span class="pre">loot</span></code>. Orkan hat immer noch die Attribute <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> und nur eine Methode <code class="docutils literal notranslate"><span class="pre">attack</span></code>, während Olmur zusätzlich eine Rüstung trägt.</p>
 <p>Aber warum sollte die Strukturierung der Attribute und Methoden in Klassen unsere Probleme lösen? Der Trick besteht darin, eine abstrakte Klasse zu verwenden, die die Attribute und Methoden bündelt, die sowohl Lyanna als auch die Orks gemeinsam haben. Wenn man Lyanna und und die Orks vergleicht, sieht man deutlich, dass sie die meisten Eigenschaften gemeinsam haben - aber eben nicht alle. Wir werden nun ein neues Objekt in unser Spiel einführen, ein so genanntes abstraktes Objekt oder eine abstrakte Klasse. Eine abstrakte Klasse ist eine Klasse, die nicht direkt verwendet/instanziiert werden darf, sondern die nur als Vorlage für andere Klassen dient.</p>
 <p><img alt="Screenshot 2023-10-07 at 11.31.33.png" src="content/attachment:b6b93a62-fa7a-4b51-9635-986fe481672e.png" /></p>
-<section id="base-class-character">
+<figure>
+<img src="https://etpwww.etp.kit.edu/~ferber/vorlesungen/programmieren_und_algorithmen/html/_static/logo.png" width="200"/>
+<figcaption>xxx</figcaption>
+</figure><section id="base-class-character">
 <h2>base class “character”<a class="headerlink" href="#base-class-character" title="Permalink to this heading">#</a></h2>
 <p>Beginnen wir mit der Erstellung unserer abstrakten Klasse. Unsere Klasse soll Felder (Instanzvariablen) für <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">hitpoints</span></code>, <code class="docutils literal notranslate"><span class="pre">weapon</span></code> sowie die Methode <code class="docutils literal notranslate"><span class="pre">attack</span></code> haben. Dieses Mal führen wir auch eine neue Methode namens <code class="docutils literal notranslate"><span class="pre">reduce_health</span></code> ein, die wir vorher nicht implementiert haben. Und warum? Weil HP ein privates Attribut sein soll, niemand soll die HP eines Charakters direkt verändern können, außer dem Charakter selbst. Als Faustregel gilt, dass auf private Variablen niemals direkt zugegriffen werden darf, sondern nur über Methoden. Anders als z.B. C++ kennt Python das Konzept von privaten Variablen allerdings nicht explizt sondern verlässt sich darauf, dass Nutzer*innen verantwortungsvoll mit dem Code umgehen. Wir kennzeichnen solche Variablen mit einem Unterstrich - dies ist nur ein Hinweis, aber kein expliziter Schutz dagegen, dass die Variablen nicht verändert werden sollen.</p>
 <p>Erinnern sie sich ausserdem an die Best practice: Wann immer sie eine neue Klasse definieren, implementieren sie immer zuerst die <code class="docutils literal notranslate"><span class="pre">__init__</span></code> und die <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Methoden!</p>
@@ -1305,6 +1317,15 @@ Und jetzt? Was passiert wenn Lyanna auch eine Rüstung plündern will? Und wie g
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Vererbung</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="7_generators_datapipeline.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Generators Data Pipeline</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   

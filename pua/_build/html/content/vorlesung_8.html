@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Vorlesung 8: Zeichenketten, Debugging and Algorithm-Complexity &#8212; Programmieren und Algorithmen</title>
+    <title>Vorlesung 8: Zeichenketten und Debugging &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -98,6 +98,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/vorlesung_8';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Algorithmen 1: Sortieren und numerische Integration" href="vorlesung_9.html" />
+    <link rel="prev" title="Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden" href="vorlesung_7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,7 +191,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1: Einleitung</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
@@ -223,6 +225,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vorlesung 8: Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_9.html">Algorithmen 1: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_12.html">Algorithmen 2: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
@@ -442,7 +450,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vorlesung 8: Zeichenketten, Debugging and Algorithm-Complexity</h1>
+    <h1>Vorlesung 8: Zeichenketten und Debugging</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -456,53 +464,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-8-zeichenketten-debugging-and-algorithm-complexity">
-<h1>Vorlesung 8: Zeichenketten, Debugging and Algorithm-Complexity<a class="headerlink" href="#vorlesung-8-zeichenketten-debugging-and-algorithm-complexity" title="Permalink to this heading">#</a></h1>
-<!--```{admonition} Hier geht zum Quiz...-->
-<!--:class: tip-->
-<!--[Quiz zum Thema "Listen"](jupyterquiz/quiz_inheritance)-->
-<!---->
-<!--[Quiz zum Thema "Listen"](jupyterquiz/quiz_overloading)-->
-<!---->
-<!--```-->
-<!---->
-<!--```{admonition} Beispiele und Vertiefung-->
-<!--:class: seealso-->
-<!--[Jupyter Notebook zum Thema "Lyanna und die Orks!"](lyanna_und_die_orks.ipynb)-->
-<!---->
-<!--[Jupyter Notebook zum Thema "Vererbung"](inheritance.ipynb)-->
-<!--```-->
-<!--## Download Vorlesungsfolien-->
-<!---->
-<!--{Download}`Hier<slides/V2.pdf>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.-->
-<!--## Was Sie wissen sollten-->
-<!--* Python erlaubt es alle gängigen Operatoren (wie z.B. “+”) auch fuer User-defined Klassen mithilfe von operator overloading zu nutzen-->
-<!--* Funktionen können je nach input-Parametern unterschiedliches Verhalten implementieren. Dies ist oft mit operator overloading kombiniert.-->
-<!--* Polymorphism bezeichnet die Kontext-Ahaengigkeit von Methoden-->
-<!--* Objekt-orientierte Programmierung nutzt (Multi)-Inheritance um neue Klassen auf Basis bestehender Klassen zu erstellen. Diese ermöglichst fördert die Wiederverwendbarkeit und Lesbarkeit des Codes.-->
-<!--## Videos to watch...-->
-<!--::::{grid}-->
-<!--:class-container: text-center-->
-<!--:gutter: 3-->
-<!---->
-<!--:::{grid-item-card}-->
-<!--:columns: 5-->
-<!--:class-header: bg-light-->
-<!--Facts and Myths about Python names and values - PyCon 2015 (Ned Batchelder)-->
-<!---->
-<!--<iframe width="200" height="113" src="https://www.youtube.com/embed/_AEJHKGk9ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-<!--:::-->
-<!---->
-<!--:::{grid-item-card}-->
-<!--:columns: 5-->
-<!--:class-header: bg-light-->
-<!--The PEP 8 Song (Leon Sandøy)-->
-<!---->
-<!--<iframe width="200" height="113" src="https://www.youtube.com/embed/hgI0p1zf31k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-<!--:::-->
-<!---->
-<!---->
-<!--::::-->
+  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-8-zeichenketten-und-debugging">
+<h1>Vorlesung 8: Zeichenketten und Debugging<a class="headerlink" href="#vorlesung-8-zeichenketten-und-debugging" title="Permalink to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -536,6 +499,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="vorlesung_7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="vorlesung_9.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Algorithmen 1: Sortieren und numerische Integration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>

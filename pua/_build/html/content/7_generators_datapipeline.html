@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden &#8212; Programmieren und Algorithmen</title>
+    <title>Generators Data Pipeline &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -95,11 +95,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/vorlesung_7';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/7_generators_datapipeline';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Vorlesung 8: Zeichenketten und Debugging" href="vorlesung_8.html" />
-    <link rel="prev" title="Quiz Overloading" href="jupyterquiz/quiz_overloading.html" />
+    <link rel="prev" title="Lyanna und die Orks 🧝‍♂️" href="lyanna_und_die_orks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -191,7 +190,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1: Einleitung</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
@@ -224,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_overloading.html">Quiz Overloading</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
@@ -233,8 +232,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -250,7 +249,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="7_generators_datapipeline.html">Generators Data Pipeline</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Generators Data Pipeline</a></li>
 </ul>
 </li>
 </ul>
@@ -299,6 +298,55 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/7_generators_datapipeline.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/7_generators_datapipeline.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -324,7 +372,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/vorlesung_7.md" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/7_generators_datapipeline.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,7 +389,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/vorlesung_7.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/7_generators_datapipeline.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +419,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/vorlesung_7.md" target="_blank"
+      <li><a href="../_sources/content/7_generators_datapipeline.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +429,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -440,9 +488,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -453,20 +499,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</h1>
+    <h1>Generators Data Pipeline</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-vorlesungsfolien">Download Vorlesungsfolien</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -476,24 +513,79 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-7-programmentwurf-und-fortgeschrittene-methoden">
-<h1>Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden<a class="headerlink" href="#vorlesung-7-programmentwurf-und-fortgeschrittene-methoden" title="Permalink to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Hier geht zum Quiz…</p>
-<p><a class="reference internal" href="jupyterquiz/quiz_generators.html"><span class="doc std std-doc">Quiz zum Thema “Generatoren”</span></a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="generators-data-pipeline">
+<h1>Generators Data Pipeline<a class="headerlink" href="#generators-data-pipeline" title="Permalink to this heading">#</a></h1>
+<p>Eine Datenpipeline ist ein Verfahren zur stufenweisen Verarbeitung von Daten, bei dem die Ausgabe einer Stufe die Eingabe der nächsten Stufe ist. Generatoren sind für die Erstellung von Datenpipelines nützlich, da sie Daten nach und nach erzeugen können, ohne alle Daten auf einmal im Speicher zu speichern.</p>
+<p>In diesem Beispiel verwenden wir eine Liste von Listen, um die Daten zu repräsentieren, anstatt sie aus einer Datei zu lesen. Wir verwenden zwei Generatorfunktionen, um die Daten zu filtern und Statistiken zu berechnen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a list of lists to store the data (these are startup funds for various, now huge, companies)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;Facebook&quot;</span><span class="p">,</span> <span class="s2">&quot;social&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="mi">15000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Twitter&quot;</span><span class="p">,</span> <span class="s2">&quot;social&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="mi">5000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Airbnb&quot;</span><span class="p">,</span> <span class="s2">&quot;travel&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="mi">20000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Uber&quot;</span><span class="p">,</span> <span class="s2">&quot;transportation&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="mi">40000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Spotify&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;Sweden&quot;</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Netflix&quot;</span><span class="p">,</span> <span class="s2">&quot;entertainment&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="mi">30000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Zalando&quot;</span><span class="p">,</span> <span class="s2">&quot;e-commerce&quot;</span><span class="p">,</span> <span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="mi">5000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Delivery Hero&quot;</span><span class="p">,</span> <span class="s2">&quot;food delivery&quot;</span><span class="p">,</span> <span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;N26&quot;</span><span class="p">,</span> <span class="s2">&quot;fintech&quot;</span><span class="p">,</span> <span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="mi">30000000</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;BlaBlaCar&quot;</span><span class="p">,</span> <span class="s2">&quot;carpooling&quot;</span><span class="p">,</span> <span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1"># Define a generator function to filter out unwanted rows</span>
+<span class="k">def</span> <span class="nf">filter_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">min_amount</span><span class="p">):</span>
+    <span class="c1"># Loop over the data</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="c1"># Convert the funding amount to a float</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="c1"># Check if the amount is greater than or equal to the minimum</span>
+        <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;=</span> <span class="n">min_amount</span><span class="p">:</span>
+            <span class="c1"># Yield the row</span>
+            <span class="k">yield</span> <span class="n">row</span>
+
+<span class="c1"># Define a generator function to calculate some statistics on the data</span>
+<span class="k">def</span> <span class="nf">calculate_stats</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="c1"># Initialize some variables</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># Loop over the data</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="c1"># Convert the funding amount to a float</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="c1"># Update the total and count</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">amount</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># Calculate the average</span>
+        <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">count</span>
+        <span class="c1"># Yield the current statistics as a tuple</span>
+        <span class="k">yield</span> <span class="p">(</span><span class="n">total</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">average</span><span class="p">)</span>
+
+<span class="c1"># Create a generator object by calling the filter_data function with the data and a minimum amount of 10 million</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">filter_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">10_000_000</span><span class="p">)</span>
+<span class="c1"># Create another generator object by calling the calculate_stats function with the data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">calculate_stats</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="c1"># Iterate over the final generator object and print the statistics</span>
+<span class="k">for</span> <span class="n">total</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">average</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total: </span><span class="si">{</span><span class="n">total</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Count: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">, Average: </span><span class="si">{</span><span class="n">average</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="seealso admonition">
-<p class="admonition-title">Beispiele und Vertiefung</p>
-<p><a class="reference internal" href="7_generators_datapipeline.html"><span class="doc std std-doc">Jupyter Notebook zum Thema “Generators and Data Pipelines”</span></a></p>
 </div>
-<!--## Was Sie wissen sollten-->
-<section id="was-sie-wissen-sollten">
-<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="download-vorlesungsfolien">
-<h2>Download Vorlesungsfolien<a class="headerlink" href="#download-vorlesungsfolien" title="Permalink to this heading">#</a></h2>
-<p><a class="reference download external" download="" href="https://"><code class="xref download docutils literal notranslate"><span class="pre">Hier</span></code></a> können sie die Vorlesungsfolien zur Vorlesung 7 herunterladen.</p>
-</section>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total: 15000000.00, Count: 1, Average: 15000000.00
+Total: 35000000.00, Count: 2, Average: 17500000.00
+Total: 75000000.00, Count: 3, Average: 25000000.00
+Total: 85000000.00, Count: 4, Average: 21250000.00
+Total: 115000000.00, Count: 5, Average: 23000000.00
+Total: 125000000.00, Count: 6, Average: 20833333.33
+Total: 155000000.00, Count: 7, Average: 22142857.14
+Total: 165000000.00, Count: 8, Average: 20625000.00
+</pre></div>
+</div>
+</div>
+</div>
+<p>Die Funktion <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> muss ein Generator und keine reguläre Funktion sein, weil sie die Statistiken für jede Datenzeile erstellen muss, während sie vom <code class="docutils literal notranslate"><span class="pre">filter_data</span></code>-Generator verarbeitet wird. Wäre sie eine reguläre Funktion, müsste sie warten, bis alle Daten gefiltert sind, und dann die endgültige Statistik als einen einzigen Wert zurückgeben. Dies würde den Zweck der Verwendung von Generatoren vereiteln, der darin besteht, Daten langsam zu verarbeiten und zu vermeiden, dass alle Daten auf einmal im Speicher abgelegt werden. Durch die Verwendung eines Generators können wir die Statistiken für jede Datenzeile abrufen, sobald sie gefiltert wurde, und wir können die Iteration auch jederzeit stoppen, wenn wir wollen. Wenn wir z. B. nur die Statistiken für die ersten fünf Datenzeilen benötigen, können wir die Schleife mit der break-Anweisung nach fünf Iterationen verlassen. Auf diese Weise können wir Zeit und Speicherplatz sparen, indem wir den Rest der Daten nicht verarbeiten. Generatoren sind effizienter und flexibler als reguläre Funktionen zur Erstellung von Datenpipelines in Python.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -528,22 +620,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jupyterquiz/quiz_overloading.html"
+       href="lyanna_und_die_orks.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz Overloading</p>
+        <p class="prev-next-title">Lyanna und die Orks 🧝‍♂️</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="vorlesung_8.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Vorlesung 8: Zeichenketten und Debugging</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -554,21 +637,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-vorlesungsfolien">Download Vorlesungsfolien</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

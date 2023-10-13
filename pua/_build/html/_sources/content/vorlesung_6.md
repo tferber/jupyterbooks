@@ -18,6 +18,7 @@
 
 
 <!--## Was Sie wissen sollten-->
+## Was Sie wissen sollten
 * Python erlaubt es alle gängigen Operatoren (wie z.B. “+”) auch fuer User-defined Klassen mithilfe von operator overloading zu nutzen
 * Funktionen können je nach input-Parametern unterschiedliches Verhalten implementieren. Dies ist oft mit operator overloading kombiniert.
 * Polymorphism bezeichnet die Kontext-Ahaengigkeit von Methoden
