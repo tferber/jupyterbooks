@@ -225,6 +225,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
@@ -244,6 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../7_generators_datapipeline.html">Generators Data Pipeline</a></li>
 </ul>
 </li>
 </ul>
@@ -513,13 +520,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="dttzckwZXcER" data-shufflequestions="False"
+<div class="output text_html"><div id="baFuClzgnhLj" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#dttzckwZXcER {
+#baFuClzgnhLj {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -689,7 +696,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsdttzckwZXcER=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "s = {1, 2, 3}\nprint(s[0])", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "Error", "correct": true, "feedback": "Richtig! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "None", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "0", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}]}];
+</style></div><script type="application/javascript">var questionsbaFuClzgnhLj=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "s = {1, 2, 3}\nprint(s[0])", "type": "multiple_choice", "answers": [{"answer": "1", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "Error", "correct": true, "feedback": "Richtig! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "None", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}, {"answer": "0", "correct": false, "feedback": "Falsch! Sets sind ungeordnete Sammlungen eindeutiger Elemente und unterst\u00fctzen keine Indexierung. Daher f\u00fchrt der Versuch, auf ein Element eines Sets per Index zuzugreifen, zu einem TypeError."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1438,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("dttzckwZXcER")) {
-            show_questions(questionsdttzckwZXcER,  dttzckwZXcER); 
+          if(document.getElementById("baFuClzgnhLj")) {
+            show_questions(questionsbaFuClzgnhLj,  baFuClzgnhLj); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1448,18 +1455,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("dttzckwZXcER");
-        // console.log(document.getElementById("dttzckwZXcER"));
+        //console.log("baFuClzgnhLj");
+        // console.log(document.getElementById("baFuClzgnhLj"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="yjoowAHQBcuA" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="JKdbxgzWzmXg" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#yjoowAHQBcuA {
+#JKdbxgzWzmXg {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1629,7 +1636,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsyjoowAHQBcuA=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "d = {'Apfel': 'Obst', 'Gurke': 'Gem\u00fcse'}\nprint(d.get('Banane', 'Not found'))", "type": "multiple_choice", "answers": [{"answer": "Obst", "correct": false, "feedback": "Falsch (obwohl Banane ein Obst ist, aber Python weiss das nicht)! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "Not found", "correct": true, "feedback": "Richtig! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "Error", "correct": false, "feedback": "Falsch! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "None", "correct": false, "feedback": "Falsch! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}]}];
+</style></div><script type="application/javascript">var questionsJKdbxgzWzmXg=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "d = {'Apfel': 'Obst', 'Gurke': 'Gem\u00fcse'}\nprint(d.get('Banane', 'Not found'))", "type": "multiple_choice", "answers": [{"answer": "Obst", "correct": false, "feedback": "Falsch (obwohl Banane ein Obst ist, aber Python weiss das nicht)! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "Not found", "correct": true, "feedback": "Richtig! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "Error", "correct": false, "feedback": "Falsch! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}, {"answer": "None", "correct": false, "feedback": "Falsch! Die get-Methode in Python gibt den Wert f\u00fcr den angegebenen key zur\u00fcck, wenn er im Dictionary vorhanden ist. Ist dies nicht der Fall, gibt sie einen Standardwert zur\u00fcck, der als zweites Argument angegeben wird. Da \"Banane\" kein key im W\u00f6rterbuch `d` ist, gibt die Methode \"Not found\" zur\u00fcck."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2378,8 +2385,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("yjoowAHQBcuA")) {
-            show_questions(questionsyjoowAHQBcuA,  yjoowAHQBcuA); 
+          if(document.getElementById("JKdbxgzWzmXg")) {
+            show_questions(questionsJKdbxgzWzmXg,  JKdbxgzWzmXg); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2388,18 +2395,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("yjoowAHQBcuA");
-        // console.log(document.getElementById("yjoowAHQBcuA"));
+        //console.log("JKdbxgzWzmXg");
+        // console.log(document.getElementById("JKdbxgzWzmXg"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="ipWeYRtbxnCY" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="JgKCrsASBJOd" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ipWeYRtbxnCY {
+#JgKCrsASBJOd {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2569,7 +2576,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsipWeYRtbxnCY=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "s = {1, 2, 3}\nd = {'apple': 1, 'banana': 2}\nt = (1, 2, 3)\nprint(type(s), type(d), type(t))", "type": "multiple_choice", "answers": [{"answer": "set, dict, tuple", "correct": true, "feedback": "Richtig! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. Daher geben type(s), type(d) und type(t) <class 'set'>, <class 'dict'> bzw. <class 'tuple'> zur\u00fcck."}, {"answer": "list, dict, tuple", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}, {"answer": "set, list, tuple", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}, {"answer": "set, dict, list", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}]}];
+</style></div><script type="application/javascript">var questionsJgKCrsASBJOd=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "s = {1, 2, 3}\nd = {'apple': 1, 'banana': 2}\nt = (1, 2, 3)\nprint(type(s), type(d), type(t))", "type": "multiple_choice", "answers": [{"answer": "set, dict, tuple", "correct": true, "feedback": "Richtig! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. Daher geben type(s), type(d) und type(t) <class 'set'>, <class 'dict'> bzw. <class 'tuple'> zur\u00fcck."}, {"answer": "list, dict, tuple", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}, {"answer": "set, list, tuple", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}, {"answer": "set, dict, list", "correct": false, "feedback": "Falsch! Die Funktion type in Python gibt den Datentyp der angegebenen Variablen zur\u00fcck. In diesem Fall ist s ein Set, d ist ein Dictionary und t ist ein Tuple. "}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3318,8 +3325,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ipWeYRtbxnCY")) {
-            show_questions(questionsipWeYRtbxnCY,  ipWeYRtbxnCY); 
+          if(document.getElementById("JgKCrsASBJOd")) {
+            show_questions(questionsJgKCrsASBJOd,  JgKCrsASBJOd); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3328,18 +3335,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ipWeYRtbxnCY");
-        // console.log(document.getElementById("ipWeYRtbxnCY"));
+        //console.log("JgKCrsASBJOd");
+        // console.log(document.getElementById("JgKCrsASBJOd"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="BhgxoryHCSlY" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="XwcKGQHOtzrR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#BhgxoryHCSlY {
+#XwcKGQHOtzrR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3509,7 +3516,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBhgxoryHCSlY=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def meine_funktion(d):\n    return d.get('a', False) and d.get('b', True)\n\nprint(meine_funktion({'a': True, 'b': False}))\nprint(meine_funktion({'a': True, 'b': True}))\nprint(meine_funktion({'a': False, 'b': True}))\nprint(meine_funktion({'a': True}))", "type": "multiple_choice", "answers": [{"answer": "True, True, False, False", "correct": false, "feedback": "Falsch!"}, {"answer": "False, True, False, True", "correct": true, "feedback": "Richtig"}, {"answer": "True, False, True, False", "correct": false, "feedback": "Falsch!"}, {"answer": "False, False, True, True", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsXwcKGQHOtzrR=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def meine_funktion(d):\n    return d.get('a', False) and d.get('b', True)\n\nprint(meine_funktion({'a': True, 'b': False}))\nprint(meine_funktion({'a': True, 'b': True}))\nprint(meine_funktion({'a': False, 'b': True}))\nprint(meine_funktion({'a': True}))", "type": "multiple_choice", "answers": [{"answer": "True, True, False, False", "correct": false, "feedback": "Falsch!"}, {"answer": "False, True, False, True", "correct": true, "feedback": "Richtig"}, {"answer": "True, False, True, False", "correct": false, "feedback": "Falsch!"}, {"answer": "False, False, True, True", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4258,8 +4265,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("BhgxoryHCSlY")) {
-            show_questions(questionsBhgxoryHCSlY,  BhgxoryHCSlY); 
+          if(document.getElementById("XwcKGQHOtzrR")) {
+            show_questions(questionsXwcKGQHOtzrR,  XwcKGQHOtzrR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4268,8 +4275,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("BhgxoryHCSlY");
-        // console.log(document.getElementById("BhgxoryHCSlY"));
+        //console.log("XwcKGQHOtzrR");
+        // console.log(document.getElementById("XwcKGQHOtzrR"));
 
         try_show();
         }
