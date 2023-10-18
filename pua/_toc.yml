@@ -12,58 +12,58 @@ parts:
     - file: content/jupyterquiz/quiz_syntax
     - file: content/jupyterquiz/quiz_grundrechenarten
 
-  - file: content/vorlesung_2.md
-    sections:
-    - file: content/jupyterquiz/quiz_variablen
-    - file: content/jupyterquiz/quiz_fstrings
-    - file: content/jupyterquiz/quiz_funktionen_1
-    
-  - file: content/vorlesung_3.md
-    sections:
-    - file: content/jupyterquiz/quiz_conditions
-    - file: content/jupyterquiz/quiz_control
-    - file: content/jupyterquiz/quiz_recursion
+#  - file: content/vorlesung_2.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_variablen
+#    - file: content/jupyterquiz/quiz_fstrings
+#    - file: content/jupyterquiz/quiz_funktionen_1
+#    
+#  - file: content/vorlesung_3.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_conditions
+#    - file: content/jupyterquiz/quiz_control
+#    - file: content/jupyterquiz/quiz_recursion
+#
+#  - file: content/vorlesung_4.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_listen
+#    - file: content/jupyterquiz/quiz_datenstrukturen_und_funktionen
+#    - file: content/jupyterquiz/quiz_dictionaries
+#    
+#  - file: content/vorlesung_5.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_classes
+#
+#  - file: content/vorlesung_6.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_inheritance
+#    - file: content/jupyterquiz/quiz_overloading
+#
+#  - file: content/vorlesung_7.md
+#    sections:
+#    - file: content/jupyterquiz/quiz_generators
+#
+#  - file: content/vorlesung_8.md
+#  - file: content/vorlesung_9.md
+#  - file: content/vorlesung_10.md
+#  - file: content/vorlesung_11.md
+#  - file: content/vorlesung_12.md
+#  - file: content/vorlesung_13.md
 
-  - file: content/vorlesung_4.md
-    sections:
-    - file: content/jupyterquiz/quiz_listen
-    - file: content/jupyterquiz/quiz_datenstrukturen_und_funktionen
-    - file: content/jupyterquiz/quiz_dictionaries
-    
-  - file: content/vorlesung_5.md
-    sections:
-    - file: content/jupyterquiz/quiz_classes
 
-  - file: content/vorlesung_6.md
-    sections:
-    - file: content/jupyterquiz/quiz_inheritance
-    - file: content/jupyterquiz/quiz_overloading
-
-  - file: content/vorlesung_7.md
-    sections:
-    - file: content/jupyterquiz/quiz_generators
-
-  - file: content/vorlesung_8.md
-  - file: content/vorlesung_9.md
-  - file: content/vorlesung_10.md
-  - file: content/vorlesung_11.md
-  - file: content/vorlesung_12.md
-  - file: content/vorlesung_13.md
-
-
-- caption: Jupyter Notebooks 🐍
-  chapters:
-  - file: content/extra.md
-    sections:
-    - file: content/2_bytecode
-    - file: content/3_bedingungen
-    - file: content/3_fibonacci
-    - file: content/4_nestedlistcomprehension
-    - file: content/4_listcomparison
-    - file: content/4_reverselookup
-    - file: content/4_global
-    - file: content/4_set_operations
-    - file: content/6_inheritance
-    - file: content/lyanna_und_die_orks
-    - file: content/7_generators_datapipeline
-    - file: content/7_generator_expression
+#- caption: Jupyter Notebooks 🐍
+#  chapters:
+#  - file: content/extra.md
+#    sections:
+#    - file: content/2_bytecode
+#    - file: content/3_bedingungen
+#    - file: content/3_fibonacci
+#    - file: content/4_nestedlistcomprehension
+#    - file: content/4_listcomparison
+#    - file: content/4_reverselookup
+#    - file: content/4_global
+#    - file: content/4_set_operations
+#    - file: content/6_inheritance
+#    - file: content/lyanna_und_die_orks
+#    - file: content/7_generators_datapipeline
+#    - file: content/7_generator_expression
