@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Quiz Datenstrukturen und Funktionen &#8212; Programmieren und Algorithmen</title>
+    <title>Quiz lambda-Funktionen &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -95,11 +95,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_datenstrukturen_und_funktionen';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/jupyterquiz/quiz_lambda';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Quiz Dictionaries, Sets, Tuples" href="quiz_dictionaries.html" />
-    <link rel="prev" title="Quiz Listen" href="quiz_listen.html" />
+    <link rel="next" title="Jupyter Notebooks" href="../extra.html" />
+    <link rel="prev" title="Quiz Generators" href="quiz_generators.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -209,9 +209,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_recursion.html">Quiz Rekursion</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_4.html">Vorlesung 4: Datenstrukturen</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_4.html">Vorlesung 4: Datenstrukturen</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="quiz_listen.html">Quiz Listen</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz Datenstrukturen und Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quiz_datenstrukturen_und_funktionen.html">Quiz Datenstrukturen und Funktionen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
 </ul>
 </li>
@@ -224,9 +224,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_overloading.html">Quiz Overloading</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="quiz_generators.html">Quiz Generators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quiz_lambda.html">Quiz lambda-Funktionen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Quiz lambda-Funktionen</a></li>
 </ul>
 </li>
 </ul>
@@ -306,7 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/jupyterquiz/quiz_datenstrukturen_und_funktionen.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/jupyterquiz/quiz_lambda.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +324,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/jupyterquiz/quiz_datenstrukturen_und_funktionen.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/jupyterquiz/quiz_lambda.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +372,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/jupyterquiz/quiz_datenstrukturen_und_funktionen.ipynb" target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/jupyterquiz/quiz_lambda.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -389,7 +389,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/jupyterquiz/quiz_datenstrukturen_und_funktionen.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/jupyterquiz/quiz_lambda.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +419,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/jupyterquiz/quiz_datenstrukturen_und_funktionen.ipynb" target="_blank"
+      <li><a href="../../_sources/content/jupyterquiz/quiz_lambda.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -499,7 +499,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quiz Datenstrukturen und Funktionen</h1>
+    <h1>Quiz lambda-Funktionen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -513,19 +513,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quiz-datenstrukturen-und-funktionen">
-<h1>Quiz Datenstrukturen und Funktionen<a class="headerlink" href="#quiz-datenstrukturen-und-funktionen" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="quiz-lambda-funktionen">
+<h1>Quiz lambda-Funktionen<a class="headerlink" href="#quiz-lambda-funktionen" title="Permalink to this heading">#</a></h1>
 <div class="cell tag_remove-input docutils container">
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="lOEDvlznpPRg" data-shufflequestions="False"
+<div class="output text_html"><div id="yZSkdjfTpOiP" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#lOEDvlznpPRg {
+#yZSkdjfTpOiP {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -695,7 +695,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslOEDvlznpPRg=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def foo(i, x=[]):\n    x.append(i)\n    return x\n\nfor i in range(3):\n    print(foo(i))\n", "type": "multiple_choice", "answers": [{"answer": "[0] [1] [2]", "correct": false, "feedback": "Das h\u00e4tten sie wohl gerne! Aber sie sind nicht alleine: Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0] [0, 1] [0, 1, 2]", "correct": true, "feedback": "Richtig! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0, 1, 2] [0, 1, 2] [0, 1, 2]", "correct": false, "feedback": "Falsch! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsyZSkdjfTpOiP=[{"question": "Was ist die Ausgabe des folgenden Codes", "code": "def gen():\n    yield 1\n    yield 2\n    yield 3\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "1 1 1 1", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield()."}, {"answer": "1 2 3 4", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield(). Was passiert beim vierten Aufruf?"}, {"answer": "1 2 3 StopIteration", "correct": true, "feedback": "Richtig! Das liegt daran, dass eine Generatorfunktion ein Generatorobjekt zur\u00fcckgibt, \u00fcber das mit der Funktion next() iteriert werden kann. Wenn die Generatorfunktion das Ende ihres Codes erreicht, l\u00f6st sie eine StopIteration-Ausnahme aus, um zu signalisieren, dass es keine weiteren Werte mehr zu liefern gibt."}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Die Syntax dieses Codes ist einwandfrei."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1444,8 +1444,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("lOEDvlznpPRg")) {
-            show_questions(questionslOEDvlznpPRg,  lOEDvlznpPRg); 
+          if(document.getElementById("yZSkdjfTpOiP")) {
+            show_questions(questionsyZSkdjfTpOiP,  yZSkdjfTpOiP); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1454,18 +1454,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("lOEDvlznpPRg");
-        // console.log(document.getElementById("lOEDvlznpPRg"));
+        //console.log("yZSkdjfTpOiP");
+        // console.log(document.getElementById("yZSkdjfTpOiP"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="bFcHJFSotwpg" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="DWizDYrOQopO" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#bFcHJFSotwpg {
+#DWizDYrOQopO {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1635,7 +1635,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsbFcHJFSotwpg=[{"question": "Welche der folgenden Operation f\u00fcgen einer Liste `t` eine Ganzzahl `x` als Element hinzu?", "code": "A: t.append(x)\nB: t += [x]\nC: t.append([x])\nD: t = t + x", "type": "multiple_choice", "answers": [{"answer": "A und B", "correct": true, "feedback": "Richtig!"}, {"answer": "A und C", "correct": false, "feedback": "Falsch! C ist erlaubt, f\u00fcgt der Liste aber Liste mit dem Wert x hinzu."}, {"answer": "B und D", "correct": false, "feedback": "Falsch! Addition von Listen (t) und Werten (x) ist ein SyntaxError."}, {"answer": "Alle", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsDWizDYrOQopO=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    for i in range(3):\n        yield i\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(gen()))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "0 1 0 2 StopIteration", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 1 2 2", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 2 StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 StopIteration SyntaxError", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2384,8 +2384,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("bFcHJFSotwpg")) {
-            show_questions(questionsbFcHJFSotwpg,  bFcHJFSotwpg); 
+          if(document.getElementById("DWizDYrOQopO")) {
+            show_questions(questionsDWizDYrOQopO,  DWizDYrOQopO); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2394,18 +2394,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("bFcHJFSotwpg");
-        // console.log(document.getElementById("bFcHJFSotwpg"));
+        //console.log("DWizDYrOQopO");
+        // console.log(document.getElementById("DWizDYrOQopO"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="weDEKxwqLtvF" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="CqaLgsUJnlOI" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#weDEKxwqLtvF {
+#CqaLgsUJnlOI {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2575,7 +2575,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsweDEKxwqLtvF=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, 4, ]\ndef entferne_erste_zeile(meine_liste):\n\n    meine_liste = meine_liste[1:]\n\nentferne_letzte_zeile(meine_liste)\nprint(meine_liste)", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 4]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3, 4]", "correct": true, "feedback": "Richtig! Die Funktion hat keinerlei Effekt auf die urspr\u00fcngliche Liste."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsCqaLgsUJnlOI=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    yield from range(3)\n\ng = gen()\nh = gen()\nprint(next(g))\nprint(next(h))\nprint(next(g))\nprint(next(h))", "type": "multiple_choice", "answers": [{"answer": "0 0 1 1", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 0 1", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "0 1 2 StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "StopIteration StopIteration StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3324,8 +3324,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("weDEKxwqLtvF")) {
-            show_questions(questionsweDEKxwqLtvF,  weDEKxwqLtvF); 
+          if(document.getElementById("CqaLgsUJnlOI")) {
+            show_questions(questionsCqaLgsUJnlOI,  CqaLgsUJnlOI); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3334,8 +3334,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("weDEKxwqLtvF");
-        // console.log(document.getElementById("weDEKxwqLtvF"));
+        //console.log("CqaLgsUJnlOI");
+        // console.log(document.getElementById("CqaLgsUJnlOI"));
 
         try_show();
         }
@@ -3375,20 +3375,20 @@ if (typeof version == 'undefined') {
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="quiz_listen.html"
+       href="quiz_generators.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz Listen</p>
+        <p class="prev-next-title">Quiz Generators</p>
       </div>
     </a>
     <a class="right-next"
-       href="quiz_dictionaries.html"
+       href="../extra.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quiz Dictionaries, Sets, Tuples</p>
+        <p class="prev-next-title">Jupyter Notebooks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

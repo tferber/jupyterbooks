@@ -45,7 +45,7 @@
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/EKdEyKCxnatdQ6G>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.
 
 ## Videos to watch...
 ::::{grid}

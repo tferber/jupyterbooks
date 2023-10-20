@@ -29,7 +29,7 @@
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/X5qcMqi4MfkKTkY>` können sie die Vorlesungsfolien zur Vorlesung 3 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 3 herunterladen.
 
 ## Videos to watch...
 ::::{grid}

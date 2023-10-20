@@ -37,7 +37,7 @@ Manchmal finden sie auf den Websites zu den Vorlesungen auch Videos zum Thema - 
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/Ek5AZ47nYr8eBXy>` können sie die Vorlesungsfolien zur Vorlesung 1 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 1 herunterladen.
 
 ## Videos to watch...
 ::::{grid}

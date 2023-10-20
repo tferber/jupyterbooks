@@ -4,6 +4,8 @@
 :class: tip
 [Quiz zum Thema "Generatoren"](jupyterquiz/quiz_generators)
 
+[Quiz zum Thema "Lambda-Funktionen"](jupyterquiz/quiz_lambda)
+
 ```
 
 ```{admonition} Beispiele und Vertiefung
@@ -19,5 +21,5 @@
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://>` können sie die Vorlesungsfolien zur Vorlesung 7 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 7 herunterladen.
 

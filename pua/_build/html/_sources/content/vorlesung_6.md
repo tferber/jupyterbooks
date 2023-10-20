@@ -26,7 +26,7 @@
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/GkK9tpP5bSbDSdF>` können sie die Vorlesungsfolien zur Vorlesung 6 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 6 herunterladen.
 
 
 <!--## Videos to watch...-->

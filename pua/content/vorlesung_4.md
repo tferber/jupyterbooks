@@ -68,7 +68,7 @@ Typischer Anwendungsfall: Verwenden Sie Sets, wenn Sie mehrere Elemente in einer
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/Tb76b4TiLKi3qKw>` können sie die Vorlesungsfolien zur Vorlesung 4 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 4 herunterladen.
 
 <!--## Videos to watch...-->
 <!--::::{grid}-->

@@ -31,7 +31,7 @@
 
 ## Download Vorlesungsfolien
 
-{Download}`Hier <https://bwsyncandshare.kit.edu/s/DT9im69iYtHijit>` können sie die Vorlesungsfolien zur Vorlesung 5 herunterladen.
+{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 5 herunterladen.
 
 <!--## Videos to watch...-->
 <!--::::{grid}-->
