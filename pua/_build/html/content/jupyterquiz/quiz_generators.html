@@ -241,6 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_global.html">Globale Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_class_attributes.html">Class und Instance Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../6_inheritance.html">Vererbung</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
 
@@ -519,13 +520,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="irMQafPGmIJf" data-shufflequestions="False"
+<div class="output text_html"><div id="NNSnmgAoiOJy" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#irMQafPGmIJf {
+#NNSnmgAoiOJy {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -695,7 +696,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsirMQafPGmIJf=[{"question": "Was ist die Ausgabe des folgenden Codes", "code": "def gen():\n    yield 1\n    yield 2\n    yield 3\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "1 1 1 1", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield()."}, {"answer": "1 2 3 4", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield(). Was passiert beim vierten Aufruf?"}, {"answer": "1 2 3 StopIteration", "correct": true, "feedback": "Richtig! Das liegt daran, dass eine Generatorfunktion ein Generatorobjekt zur\u00fcckgibt, \u00fcber das mit der Funktion next() iteriert werden kann. Wenn die Generatorfunktion das Ende ihres Codes erreicht, l\u00f6st sie eine StopIteration-Ausnahme aus, um zu signalisieren, dass es keine weiteren Werte mehr zu liefern gibt."}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Die Syntax dieses Codes ist einwandfrei."}]}];
+</style></div><script type="application/javascript">var questionsNNSnmgAoiOJy=[{"question": "Was ist die Ausgabe des folgenden Codes", "code": "def gen():\n    yield 1\n    yield 2\n    yield 3\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "1 1 1 1", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield()."}, {"answer": "1 2 3 4", "correct": false, "feedback": "Falsch! yield() h\u00e4lt den Generator an. Beim n\u00e4chsten Aufruf von next() l\u00e4uft der Code weiter - bis zum n\u00e4chsten yield(). Was passiert beim vierten Aufruf?"}, {"answer": "1 2 3 StopIteration", "correct": true, "feedback": "Richtig! Das liegt daran, dass eine Generatorfunktion ein Generatorobjekt zur\u00fcckgibt, \u00fcber das mit der Funktion next() iteriert werden kann. Wenn die Generatorfunktion das Ende ihres Codes erreicht, l\u00f6st sie eine StopIteration-Ausnahme aus, um zu signalisieren, dass es keine weiteren Werte mehr zu liefern gibt."}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Die Syntax dieses Codes ist einwandfrei."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1444,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("irMQafPGmIJf")) {
-            show_questions(questionsirMQafPGmIJf,  irMQafPGmIJf); 
+          if(document.getElementById("NNSnmgAoiOJy")) {
+            show_questions(questionsNNSnmgAoiOJy,  NNSnmgAoiOJy); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1454,18 +1455,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("irMQafPGmIJf");
-        // console.log(document.getElementById("irMQafPGmIJf"));
+        //console.log("NNSnmgAoiOJy");
+        // console.log(document.getElementById("NNSnmgAoiOJy"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="WUKTSGSiNlzJ" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="BsNQzeDdMEVp" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#WUKTSGSiNlzJ {
+#BsNQzeDdMEVp {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1635,7 +1636,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsWUKTSGSiNlzJ=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    for i in range(3):\n        yield i\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(gen()))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "0 1 0 2 StopIteration", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 1 2 2", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 2 StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 StopIteration SyntaxError", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}]}];
+</style></div><script type="application/javascript">var questionsBsNQzeDdMEVp=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    for i in range(3):\n        yield i\n\ng = gen()\nprint(next(g))\nprint(next(g))\nprint(next(gen()))\nprint(next(g))\nprint(next(g))", "type": "multiple_choice", "answers": [{"answer": "0 1 0 2 StopIteration", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 1 2 2", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 2 StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}, {"answer": "0 1 StopIteration SyntaxError", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die in einer Schleife die Werte 0, 1 und 2 liefert. Die Variable g ist ein Generatorobjekt, das durch den Aufruf der Funktion gen erzeugt wird. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Die ersten beiden Aufrufe von next(g) geben die Werte 0 bzw. 1 zur\u00fcck und bringen das Generatorobjekt in den n\u00e4chsten Zustand. Der dritte Aufruf von next(gen()) gibt den Wert 0 zur\u00fcck, wirkt sich aber nicht auf die Variable g aus, da er ein neues Generatorobjekt erzeugt, das von g unabh\u00e4ngig ist. Der Aufruf von next(g) gibt den Wert 2 zur\u00fcck, der der letzte Wert ist, den die Variable g liefert. Der letzte Aufruf erzeugt eine StopIteration-Ausnahme."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2384,8 +2385,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("WUKTSGSiNlzJ")) {
-            show_questions(questionsWUKTSGSiNlzJ,  WUKTSGSiNlzJ); 
+          if(document.getElementById("BsNQzeDdMEVp")) {
+            show_questions(questionsBsNQzeDdMEVp,  BsNQzeDdMEVp); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2394,18 +2395,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("WUKTSGSiNlzJ");
-        // console.log(document.getElementById("WUKTSGSiNlzJ"));
+        //console.log("BsNQzeDdMEVp");
+        // console.log(document.getElementById("BsNQzeDdMEVp"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="IvzKQtuSgvvt" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="vVIvRAFSmyvR" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#IvzKQtuSgvvt {
+#vVIvRAFSmyvR {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2575,7 +2576,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIvzKQtuSgvvt=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    yield from range(3)\n\ng = gen()\nh = gen()\nprint(next(g))\nprint(next(h))\nprint(next(g))\nprint(next(h))", "type": "multiple_choice", "answers": [{"answer": "0 0 1 1", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 0 1", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "0 1 2 StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "StopIteration StopIteration StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}]}];
+</style></div><script type="application/javascript">var questionsvVIvRAFSmyvR=[{"question": "Was ist die Ausgabe des folgenden Codes?", "code": "def gen():\n    yield from range(3)\n\ng = gen()\nh = gen()\nprint(next(g))\nprint(next(h))\nprint(next(g))\nprint(next(h))", "type": "multiple_choice", "answers": [{"answer": "0 0 1 1", "correct": true, "feedback": "Richtig! "}, {"answer": "0 1 0 1", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "0 1 2 StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}, {"answer": "StopIteration StopIteration StopIteration StopIteration", "correct": false, "feedback": "Falsch! Die Funktion gen ist eine Generatorfunktion, die die yield from-Syntax verwendet, um die Iteration an eine andere Iterable zu delegieren, die range(3) ist. Das bedeutet, dass die Funktion gen die Werte 0, 1 und 2 in einer Schleife ausgibt. Die Variablen g und h sind zwei verschiedene Generatorobjekte, die durch den Aufruf der Funktion gen erzeugt werden. Sie sind unabh\u00e4ngig voneinander und haben ihre eigenen Zust\u00e4nde. Die Funktion next nimmt ein Generatorobjekt und gibt den n\u00e4chsten Wert zur\u00fcck, den es liefert, oder l\u00f6st eine StopIteration-Ausnahme aus, wenn es keine weiteren Werte gibt. Der erste Aufruf von next(g) gibt den Wert 0 zur\u00fcck, also den ersten Wert, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der zweite Aufruf von next(h) gibt den Wert 0 zur\u00fcck, der der erste von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt. Der dritte Aufruf von next(g) gibt den Wert 1 zur\u00fcck, der der zweite Wert ist, den die Variable g liefert, und bringt das Generatorobjekt in den n\u00e4chsten Zustand. Der vierte Aufruf von next(h) gibt den Wert 1 zur\u00fcck, der der zweite von der Variable h gelieferte Wert ist, und schaltet das Generatorobjekt in den n\u00e4chsten Zustand weiter. Dies hat keine Auswirkungen auf die Variable g, da es sich um getrennte Objekte handelt."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3324,8 +3325,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("IvzKQtuSgvvt")) {
-            show_questions(questionsIvzKQtuSgvvt,  IvzKQtuSgvvt); 
+          if(document.getElementById("vVIvRAFSmyvR")) {
+            show_questions(questionsvVIvRAFSmyvR,  vVIvRAFSmyvR); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3334,8 +3335,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("IvzKQtuSgvvt");
-        // console.log(document.getElementById("IvzKQtuSgvvt"));
+        //console.log("vVIvRAFSmyvR");
+        // console.log(document.getElementById("vVIvRAFSmyvR"));
 
         try_show();
         }

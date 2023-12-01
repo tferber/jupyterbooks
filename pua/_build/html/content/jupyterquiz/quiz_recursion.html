@@ -241,6 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../4_reverselookup.html">Reverse lookup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_global.html">Globale Variablen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_class_attributes.html">Class und Instance Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../6_inheritance.html">Vererbung</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
 
@@ -519,13 +520,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="gFICsgyROCmN" data-shufflequestions="False"
+<div class="output text_html"><div id="CwehPYrIStUG" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#gFICsgyROCmN {
+#CwehPYrIStUG {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -695,7 +696,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsgFICsgyROCmN=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsCwehPYrIStUG=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function1(n):\n    if n == 1:\n        return 1\n    else:\n        return n * function1(n-1)\n\nprint(function1(5))", "type": "multiple_choice", "answers": [{"answer": "15", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "120", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Fakult\u00e4t bekannt."}, {"answer": "5040", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1444,8 +1445,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("gFICsgyROCmN")) {
-            show_questions(questionsgFICsgyROCmN,  gFICsgyROCmN); 
+          if(document.getElementById("CwehPYrIStUG")) {
+            show_questions(questionsCwehPYrIStUG,  CwehPYrIStUG); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1454,18 +1455,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("gFICsgyROCmN");
-        // console.log(document.getElementById("gFICsgyROCmN"));
+        //console.log("CwehPYrIStUG");
+        // console.log(document.getElementById("CwehPYrIStUG"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="QzdKFfPdHtzJ" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="ETZfLByOPTUm" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#QzdKFfPdHtzJ {
+#ETZfLByOPTUm {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1635,7 +1636,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsQzdKFfPdHtzJ=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if m == 0:\n        return 1\n    else:\n        return n * function2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsETZfLByOPTUm=[{"question": "Was ist das Ergebnis des folgenden Codes (Achtung, die Funktion bekommt zwei Parameter \u00fcbergeben)?", "code": "def function2(n, m):\n    if m == 0:\n        return 1\n    else:\n        return n * function2(n, m-1)\n\nprint(function2(2,5))", "type": "multiple_choice", "answers": [{"answer": "8", "correct": false, "feedback": "Falsch!"}, {"answer": "16", "correct": false, "feedback": "Falsch!"}, {"answer": "32", "correct": true, "feedback": "Richtig! Die Funktion ist auch als Potenz zur Basis n bekannt."}, {"answer": "2", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2384,8 +2385,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("QzdKFfPdHtzJ")) {
-            show_questions(questionsQzdKFfPdHtzJ,  QzdKFfPdHtzJ); 
+          if(document.getElementById("ETZfLByOPTUm")) {
+            show_questions(questionsETZfLByOPTUm,  ETZfLByOPTUm); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2394,18 +2395,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("QzdKFfPdHtzJ");
-        // console.log(document.getElementById("QzdKFfPdHtzJ"));
+        //console.log("ETZfLByOPTUm");
+        // console.log(document.getElementById("ETZfLByOPTUm"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="JQnEdXKDgXXK" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="dbGUxoWxgNMe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#JQnEdXKDgXXK {
+#dbGUxoWxgNMe {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2575,7 +2576,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsJQnEdXKDgXXK=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function3(n):\n    if n > 10000:\n        return n\n    else:\n        return function3(function3(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "10000", "correct": false, "feedback": "Falsch!"}, {"answer": "10001", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig! Bei einer so hohen Zahl von Rekursionen wird i.A. die maximale Rekursionstiefe \u00fcberschritten."}]}];
+</style></div><script type="application/javascript">var questionsdbGUxoWxgNMe=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def function3(n):\n    if n > 10000:\n        return n\n    else:\n        return function3(function3(n+1))\n\nprint(function3(0))", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!"}, {"answer": "10000", "correct": false, "feedback": "Falsch!"}, {"answer": "10001", "correct": false, "feedback": "Falsch."}, {"answer": "RecursionError", "correct": true, "feedback": "Richtig! Bei einer so hohen Zahl von Rekursionen wird i.A. die maximale Rekursionstiefe \u00fcberschritten."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3324,8 +3325,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("JQnEdXKDgXXK")) {
-            show_questions(questionsJQnEdXKDgXXK,  JQnEdXKDgXXK); 
+          if(document.getElementById("dbGUxoWxgNMe")) {
+            show_questions(questionsdbGUxoWxgNMe,  dbGUxoWxgNMe); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3334,8 +3335,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("JQnEdXKDgXXK");
-        // console.log(document.getElementById("JQnEdXKDgXXK"));
+        //console.log("dbGUxoWxgNMe");
+        // console.log(document.getElementById("dbGUxoWxgNMe"));
 
         try_show();
         }
