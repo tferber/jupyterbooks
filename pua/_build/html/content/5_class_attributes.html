@@ -1,0 +1,818 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Class und Instance Attributes &#8212; Programmieren und Algorithmen</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/tferber/jupyterbooks/");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/5_class_attributes';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Programmieren und und Algorithmen
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_1.html">Vorlesung 1: Einleitung</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_syntax.html">Quiz Syntax und Semantik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_grundrechenarten.html">Quiz Grundrechenarten</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_2.html">Vorlesung 2: Variablen, Funktionen, Dokumentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_variablen.html">Quiz Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_fstrings.html">Quiz f-strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_funktionen_1.html">Quiz void-Funktionen</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_3.html">Vorlesung 3: Konditionen, Iteration, Rekursion</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_conditions.html">Quiz Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_control.html">Quiz Kontrollstrukturen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_recursion.html">Quiz Rekursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_4.html">Vorlesung 4: Datenstrukturen</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_listen.html">Quiz Listen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_datenstrukturen_und_funktionen.html">Quiz Datenstrukturen und Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_dictionaries.html">Quiz Dictionaries, Sets, Tuples</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_classes.html">Quiz Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_inheritance.html">Quiz Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_overloading.html">Quiz Overloading</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_generators.html">Quiz Generators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterquiz/quiz_lambda.html">Quiz lambda-Funktionen</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_bytecode.html">Bytecode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_fibonacci.html">Fibonacci Zahlen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_nestedlistcomprehension.html">Nested list comprehension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_listcomparison.html">List comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_reverselookup.html">Reverse lookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_global.html">Globale Variablen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_set_operations.html">Operationen auf Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_inheritance.html">Vererbung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lyanna_und_die_orks.html">Lyanna und die Orks 🧝‍♂️</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="7_generators_datapipeline.html">Generators Data Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_generator_expression.html">Generator expression vs. list comprehension</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupytermachine.etp.kit.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/tferber/jupyterbooks&urlpath=lab/tree/jupyterbooks/pua/content/5_class_attributes.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tferber/jupyterbooks/blob/main/pua/content/5_class_attributes.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks/edit/main/pua/content/5_class_attributes.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/tferber/jupyterbooks/issues/new?title=Issue%20on%20page%20%2Fcontent/5_class_attributes.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/5_class_attributes.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class und Instance Attributes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-attributes">Class attributes:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instanz-attribute">Instanz-Attribute:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchie-und-namenskonflikte">Hierarchie und Namenskonflikte:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">Beispiel</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-und-instance-attributes">
+<h1>Class und Instance Attributes<a class="headerlink" href="#class-und-instance-attributes" title="Permalink to this heading">#</a></h1>
+<section id="class-attributes">
+<h2>Class attributes:<a class="headerlink" href="#class-attributes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Definition: Klassenattribute sind Variablen, die von allen Instanzen einer Klasse gemeinsam genutzt werden. Sie werden innerhalb der Klasse, aber außerhalb der Methoden definiert.</p></li>
+<li><p>Zugriff: Auf sie kann über den Klassennamen selbst oder über eine Instanz der Klasse zugegriffen werden.</p></li>
+<li><p>Auswirkung einer Änderung: Wenn ein Klassenattribut geändert wird, wirkt sich die Änderung auf alle Instanzen der Klasse aus.</p></li>
+<li><p>Häufige Verwendung: Typischerweise verwendet für Eigenschaften, die für jede Instanz der Klasse gleich sein sollten.</p></li>
+</ul>
+</section>
+<section id="instanz-attribute">
+<h2>Instanz-Attribute:<a class="headerlink" href="#instanz-attribute" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Definition: Instanzattribute sind Variablen, die für jede Instanz einer Klasse spezifisch sind. Sie werden normalerweise innerhalb der <code class="docutils literal notranslate"><span class="pre">__init__</span></code>-Methode (Konstruktor) der Klasse definiert.</p></li>
+<li><p>Zugriff: Auf sie kann nur in Bezug auf eine bestimmte Instanz zugegriffen werden.</p></li>
+<li><p>Auswirkung der Änderung: Die Änderung eines Instanzattributs wirkt sich nur auf diese bestimmte Instanz aus.</p></li>
+<li><p>Häufige Verwendung: Wird für Eigenschaften verwendet, die für jede Instanz anders sind.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">KITStudentin</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Eine Klasse, die eine Student*in am Karlsruher Institut für Technologie repräsentiert.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        universitaet (str): Der Name der Universität, an der alle Student*innen studieren. </span>
+<span class="sd">                            Dies ist ein Klassenattribut, das für alle Instanzen der Klasse gleich ist.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Klassenattribut</span>
+    <span class="n">universitaet</span> <span class="o">=</span> <span class="s2">&quot;Karlsruher Institut für Technologie&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">studiengang</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialisiert eine neue Instanz der KITStudentin-Klasse.</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">            name (str): Der Name der Studentin.</span>
+<span class="sd">            studiengang (str): Der Studiengang, in dem die Studentin eingeschrieben ist.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Instanzattribute</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">studiengang</span> <span class="o">=</span> <span class="n">studiengang</span>
+
+<span class="c1"># Instanzen von KITStudent erstellen</span>
+<span class="n">studentin1</span> <span class="o">=</span> <span class="n">KITStudentin</span><span class="p">(</span><span class="s2">&quot;Anna&quot;</span><span class="p">,</span> <span class="s2">&quot;Physik&quot;</span><span class="p">)</span>
+<span class="n">student2</span> <span class="o">=</span> <span class="n">KITStudentin</span><span class="p">(</span><span class="s2">&quot;Max&quot;</span><span class="p">,</span> <span class="s2">&quot;Informatik&quot;</span><span class="p">)</span>
+
+<span class="c1"># Zugriff auf das Klassenattribut</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">studentin1</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> studiert am </span><span class="si">{</span><span class="n">KITStudentin</span><span class="o">.</span><span class="n">universitaet</span><span class="si">}</span><span class="s2">, Fachrichtung </span><span class="si">{</span><span class="n">studentin1</span><span class="o">.</span><span class="n">studiengang</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">student2</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> studiert am </span><span class="si">{</span><span class="n">KITStudentin</span><span class="o">.</span><span class="n">universitaet</span><span class="si">}</span><span class="s2">, Fachrichtung </span><span class="si">{</span><span class="n">student2</span><span class="o">.</span><span class="n">studiengang</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anna studiert am Karlsruher Institut für Technologie, Fachrichtung Physik.
+Max studiert am Karlsruher Institut für Technologie, Fachrichtung Informatik.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Die Klasse <code class="docutils literal notranslate"><span class="pre">KITStudentin</span></code> hat ein Klassenattribut <code class="docutils literal notranslate"><span class="pre">universitaet</span></code>, das auf “Karlsruher Institut für Technologie” gesetzt ist.
+Jeder Student (<code class="docutils literal notranslate"><span class="pre">student1</span></code> und <code class="docutils literal notranslate"><span class="pre">student2</span></code>) hat eigene Instanzattribute (<code class="docutils literal notranslate"><span class="pre">name</span></code> und <code class="docutils literal notranslate"><span class="pre">studiengang</span></code>), aber sie teilen sich das Klassenattribut <code class="docutils literal notranslate"><span class="pre">universitaet</span></code>.</p>
+</section>
+<section id="hierarchie-und-namenskonflikte">
+<h2>Hierarchie und Namenskonflikte:<a class="headerlink" href="#hierarchie-und-namenskonflikte" title="Permalink to this heading">#</a></h2>
+<p>Zugriffshierarchie: Wenn man versucht, von einer Instanz aus auf ein Attribut zuzugreifen, sucht Python zuerst im Namespace der Instanz danach. Wenn es dort nicht gefunden wird, wird der Klassennamensraum überprüft.</p>
+<ul class="simple">
+<li><p>Gleichnamiges Szenario: Wenn eine Klasse und eine Instanz Attribute mit demselben Namen haben, gibt der Zugriff auf das Attribut über eine Instanz das Instanzattribut und nicht das Klassenattribut zurück. Dies liegt daran, dass der Instanz-Namensraum zuerst geprüft wird.</p></li>
+<li><p>Ändern von Klassenattributen: Wenn Sie ein Klassenattribut über den Klassennamen ändern (z. B. MyClass.attribute = new_value), wirkt sich dies <strong>nicht</strong> auf das Instanzattribut mit demselben Namen aus.</p></li>
+</ul>
+</section>
+<section id="beispiel">
+<h2>Beispiel<a class="headerlink" href="#beispiel" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Tier</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Eine Klasse zur Darstellung eines generischen Tiers.</span>
+
+<span class="sd">    Klassenattribute:</span>
+<span class="sd">        ordnung (str): Ein immutable Klassenattribut, das die allgemeine Kategorie des Tiers angibt.</span>
+<span class="sd">        gemeinsame_merkmale (list): Ein mutable Klassenattribut, das allgemeine Merkmale aller Tiere beschreibt.</span>
+
+<span class="sd">    Attribute:</span>
+<span class="sd">        name (str): Der Name des spezifischen Tieres.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># immutable Klassenattribut</span>
+    <span class="n">ordnung</span> <span class="o">=</span> <span class="s2">&quot;Tier&quot;</span>
+
+    <span class="c1"># mutable Klassenattribut (Liste)</span>
+    <span class="n">gemeinsame_merkmale</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mehrzellig&quot;</span><span class="p">,</span> <span class="s2">&quot;Federn&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Der Konstruktor für die Tierklasse.</span>
+
+<span class="sd">        Parameter:</span>
+<span class="sd">            name (str): Der Name des Tieres.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+<span class="c1"># Hier könnte weiterer Code folgen, wie die Erstellung von Tierinstanzen usw.</span>
+
+<span class="c1"># Erstellung einer Instanz von Tier</span>
+<span class="n">loewe</span> <span class="o">=</span> <span class="n">Tier</span><span class="p">(</span><span class="s2">&quot;Löwe&quot;</span><span class="p">)</span>
+
+<span class="c1"># Festlegen von Instanzattributen mit demselben Namen wie die Klassenattribute</span>
+<span class="n">loewe</span><span class="o">.</span><span class="n">ordnung</span> <span class="o">=</span> <span class="s2">&quot;Raubtier&quot;</span>
+<span class="n">loewe</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Warmblütig&quot;</span><span class="p">,</span> <span class="s2">&quot;Wirbeltier&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Klassen-Reich: </span><span class="si">{</span><span class="n">Tier</span><span class="o">.</span><span class="n">ordnung</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Löwen-Reich: </span><span class="si">{</span><span class="n">loewe</span><span class="o">.</span><span class="n">ordnung</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Klassen Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">Tier</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Löwen Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">loewe</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Klassen-Reich: Tier
+Löwen-Reich: Raubtier
+Klassen Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;]
+Löwen Gemeinsame Merkmale: [&#39;Warmblütig&#39;, &#39;Wirbeltier&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple">
+<li><p>Klassendefinition (Tier): Es wird eine Klasse namens Tier definiert. Diese Klasse hat zwei Klassenattribute:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ordnung</span></code>: Dies ist ein immutable Klassenattribut mit dem  Wert “Tier”. Als Klassenattribut wird es zwischen allen Instanzen der Klasse geteilt, es sei denn, es wird ausdrücklich auf Instanzebene überschrieben.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code>: Dies ist ein mutable Klassenattribut, initialisiert als Liste mit den Werten <code class="docutils literal notranslate"><span class="pre">[&quot;mehrzellig&quot;,</span> <span class="pre">&quot;Federn&quot;]</span></code>. Da es mutable ist, kann es direkt über die Klasse modifiziert werden, was alle Instanzen beeinflussen würde, die darauf zugreifen.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Erzeugung einer Instanz (loewe): Eine Instanz der Klasse Tier wird erstellt und loewe genannt. Dem Konstruktor (<code class="docutils literal notranslate"><span class="pre">__init__</span></code>) wird der Parameter <code class="docutils literal notranslate"><span class="pre">name</span></code> mit dem Wert “Löwe” übergeben. Dadurch wird ein Instanzattribut <code class="docutils literal notranslate"><span class="pre">name</span></code> für diese spezielle Instanz erstellt.</p></li>
+<li><p>Überschreiben von Klassenattributen auf Instanzebene:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">loewe.ordnung</span></code>: Das Klassenattribut ordnung wird auf Instanzebene für loewe auf “Raubtier” überschrieben. Dies beeinflusst nur die loewe-Instanz.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">loewe.gemeinsame_merkmale</span></code>: Das Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> wird auf Instanzebene für <code class="docutils literal notranslate"><span class="pre">loewe</span></code> durch eine neue Liste <code class="docutils literal notranslate"><span class="pre">[&quot;Warmblütig&quot;,</span> <span class="pre">&quot;Wirbeltier&quot;]</span></code> ersetzt. Dies ändert das Attribut nur für die loewe-Instanz.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Ausgabe:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">print(f&quot;Klassen-Reich:</span> <span class="pre">{Tier.ordnung}&quot;)</span></code>: Gibt das Klassenattribut <code class="docutils literal notranslate"><span class="pre">ordnung</span></code> der Klasse Tier aus, welches “Tier” bleibt.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print(f&quot;Löwen-Reich:</span> <span class="pre">{loewe.ordnung}&quot;)</span></code>: Gibt das überschriebene Instanzattribut <code class="docutils literal notranslate"><span class="pre">ordnung</span></code> von <code class="docutils literal notranslate"><span class="pre">loewe</span></code> aus, welches jetzt “Raubtier” ist.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print(f&quot;Klassen</span> <span class="pre">Gemeinsame</span> <span class="pre">Merkmale:</span> <span class="pre">{Tier.gemeinsame_merkmale}&quot;)</span></code>: Gibt das unveränderte Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> der Klasse Tier aus.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print(f&quot;Löwen</span> <span class="pre">Gemeinsame</span> <span class="pre">Merkmale:</span> <span class="pre">{loewe.gemeinsame_merkmale}&quot;)</span></code>: Gibt das auf Instanzebene überschriebene Attribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> von loewe aus.</p></li>
+</ul>
+<p>Das Schlüsselkonzept hier ist, dass das Überschreiben von Klassenattributen auf Instanzebene die Klassenattribute nicht ändert. Stattdessen werden individuelle Kopien dieser Attribute für die jeweilige Instanz erstellt.</p>
+<p>Besonders trickreich (aber voellig konsistent) wird es, wenn sie mutable Klassenattribute ändern.
+Im folgenden Beispiel erzeugen wir eine neue Instanz <code class="docutils literal notranslate"><span class="pre">Frosch</span></code> und ersetzen das Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code>  auf Instanzebene für <code class="docutils literal notranslate"><span class="pre">Frosch</span></code> durch eine neue Liste <code class="docutils literal notranslate"><span class="pre">[&quot;Nass&quot;,</span> <span class="pre">&quot;Gruen&quot;]</span></code>.</p>
+<p>Danach erzeugen wir eine neue Instanz <code class="docutils literal notranslate"><span class="pre">Tiger</span></code> und fuegen dem Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> ein weiteres Element hinzu.
+Dies ändert das Klassenattribut sowohl für <code class="docutils literal notranslate"><span class="pre">Tiger</span></code> als auch fuer die Klasse selbst.
+Für Frosch<code class="docutils literal notranslate"><span class="pre">Frosch</span></code> haben wir vorher ein neues Instanzattribut erstellt (mit dem Zuweisungsoperator) das durch eine Änderung des Klassenattributes nicht beeinflusst wird!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">frosch</span> <span class="o">=</span> <span class="n">Tier</span><span class="p">(</span><span class="s2">&quot;Frosch&quot;</span><span class="p">)</span>
+<span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Nass&quot;</span><span class="p">,</span> <span class="s2">&quot;Grün&quot;</span><span class="p">]</span>
+
+<span class="n">tiger</span> <span class="o">=</span> <span class="n">Tier</span><span class="p">(</span><span class="s2">&quot;Tiger&quot;</span><span class="p">)</span>
+<span class="n">tiger</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;getreift&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Klassen Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">Tier</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frosch Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tiger Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">tiger</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Klassen Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreift&#39;]
+Frosch Gemeinsame Merkmale: [&#39;Nass&#39;, &#39;Grün&#39;]
+Tiger Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreift&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-attributes">Class attributes:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instanz-attribute">Instanz-Attribute:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchie-und-namenskonflikte">Hierarchie und Namenskonflikte:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">Beispiel</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Torben Ferber
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

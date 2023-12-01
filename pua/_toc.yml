@@ -64,6 +64,7 @@ parts:
     - file: content/4_reverselookup
     - file: content/4_global
     - file: content/4_set_operations
+    - file: content/4_class_attributes
     - file: content/6_inheritance
     - file: content/lyanna_und_die_orks
     - file: content/7_generators_datapipeline
