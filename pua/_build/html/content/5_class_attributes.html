@@ -516,6 +516,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instanz-attribute">Instanz-Attribute:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchie-und-namenskonflikte">Hierarchie und Namenskonflikte:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">Beispiel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kompliziertere-beispiel">Kompliziertere Beispiel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mutable-class-atrributes">mutable class atrributes</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -682,6 +686,11 @@ Löwen Gemeinsame Merkmale: [&#39;Warmblütig&#39;, &#39;Wirbeltier&#39;]
 <li><p><code class="docutils literal notranslate"><span class="pre">print(f&quot;Löwen</span> <span class="pre">Gemeinsame</span> <span class="pre">Merkmale:</span> <span class="pre">{loewe.gemeinsame_merkmale}&quot;)</span></code>: Gibt das auf Instanzebene überschriebene Attribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> von loewe aus.</p></li>
 </ul>
 <p>Das Schlüsselkonzept hier ist, dass das Überschreiben von Klassenattributen auf Instanzebene die Klassenattribute nicht ändert. Stattdessen werden individuelle Kopien dieser Attribute für die jeweilige Instanz erstellt.</p>
+</section>
+<section id="kompliziertere-beispiel">
+<h2>Kompliziertere Beispiel<a class="headerlink" href="#kompliziertere-beispiel" title="Permalink to this heading">#</a></h2>
+<section id="mutable-class-atrributes">
+<h3>mutable class atrributes<a class="headerlink" href="#mutable-class-atrributes" title="Permalink to this heading">#</a></h3>
 <p>Besonders trickreich (aber voellig konsistent) wird es, wenn sie mutable Klassenattribute ändern.
 Im folgenden Beispiel erzeugen wir eine neue Instanz <code class="docutils literal notranslate"><span class="pre">Frosch</span></code> und ersetzen das Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code>  auf Instanzebene für <code class="docutils literal notranslate"><span class="pre">Frosch</span></code> durch eine neue Liste <code class="docutils literal notranslate"><span class="pre">[&quot;Nass&quot;,</span> <span class="pre">&quot;Gruen&quot;]</span></code>.</p>
 <p>Danach erzeugen wir eine neue Instanz <code class="docutils literal notranslate"><span class="pre">Tiger</span></code> und fuegen dem Klassenattribut <code class="docutils literal notranslate"><span class="pre">gemeinsame_merkmale</span></code> ein weiteres Element hinzu.
@@ -690,10 +699,10 @@ Für Frosch<code class="docutils literal notranslate"><span class="pre">Frosch</
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">frosch</span> <span class="o">=</span> <span class="n">Tier</span><span class="p">(</span><span class="s2">&quot;Frosch&quot;</span><span class="p">)</span>
-<span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Nass&quot;</span><span class="p">,</span> <span class="s2">&quot;Grün&quot;</span><span class="p">]</span>
+<span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;nass&quot;</span><span class="p">,</span> <span class="s2">&quot;grün&quot;</span><span class="p">]</span> <span class="c1">#neues assignment nur fuer diese Instanz!</span>
 
 <span class="n">tiger</span> <span class="o">=</span> <span class="n">Tier</span><span class="p">(</span><span class="s2">&quot;Tiger&quot;</span><span class="p">)</span>
-<span class="n">tiger</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;getreift&quot;</span><span class="p">)</span>
+<span class="n">tiger</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;getreift&quot;</span><span class="p">)</span> <span class="c1">#aenderung des class attribute fuer alle instancen der Klasse!</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Klassen Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">Tier</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frosch Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -703,12 +712,29 @@ Für Frosch<code class="docutils literal notranslate"><span class="pre">Frosch</
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Klassen Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreift&#39;]
-Frosch Gemeinsame Merkmale: [&#39;Nass&#39;, &#39;Grün&#39;]
+Frosch Gemeinsame Merkmale: [&#39;nass&#39;, &#39;grün&#39;]
 Tiger Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreift&#39;]
 </pre></div>
 </div>
 </div>
 </div>
+<p>Wenn sie ein mutable Klassenattribute über die Klasse (und nicht über eine Instanz) ändern, ändert dies das Klassenattribute für alle Instanzen der Klasse.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Tier</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;niedlich&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frosch Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">frosch</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1">#&quot;Frosch&quot; nutzt aktuell ein Instanzattribut gleichen Namens!</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tiger Gemeinsame Merkmale: </span><span class="si">{</span><span class="n">tiger</span><span class="o">.</span><span class="n">gemeinsame_merkmale</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Frosch Gemeinsame Merkmale: [&#39;nass&#39;, &#39;grün&#39;]
+Tiger Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreift&#39;, &#39;niedlich&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -783,6 +809,10 @@ Tiger Gemeinsame Merkmale: [&#39;mehrzellig&#39;, &#39;Federn&#39;, &#39;getreif
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instanz-attribute">Instanz-Attribute:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchie-und-namenskonflikte">Hierarchie und Namenskonflikte:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">Beispiel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kompliziertere-beispiel">Kompliziertere Beispiel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mutable-class-atrributes">mutable class atrributes</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
