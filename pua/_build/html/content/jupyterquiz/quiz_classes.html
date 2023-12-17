@@ -229,7 +229,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_lambda.html">Quiz lambda-Funktionen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_strings.html">Quiz Strings</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
@@ -238,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -526,13 +529,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="LnpAqvVMprXv" data-shufflequestions="False"
+<div class="output text_html"><div id="bJocmCkSVTuJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#LnpAqvVMprXv {
+#bJocmCkSVTuJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -702,7 +705,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsLnpAqvVMprXv=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "import copy\n\nclass MyClass:\n    def __init__(self, my_list):\n        self.my_list = my_list\n\noriginal = MyClass([1, 2, 3])\nshallow_copy = copy.copy(original)\ndeep_copy = copy.deepcopy(original)\n\noriginal.my_list.append(4)\nprint(shallow_copy.my_list)\nprint(deep_copy.my_list)", "type": "multiple_choice", "answers": [{"answer": "[1, 2, 3] und [1, 2, 3]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}, {"answer": "[1, 2, 3] und [1, 2, 3, 4]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}, {"answer": "[1, 2, 3, 4] und [1, 2, 3]", "correct": true, "feedback": "Richtig!"}, {"answer": "[1, 2, 3, 4] und [1, 2, 3, 4]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}]}];
+</style></div><script type="application/javascript">var questionsbJocmCkSVTuJ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "import copy\n\nclass MyClass:\n    def __init__(self, my_list):\n        self.my_list = my_list\n\noriginal = MyClass([1, 2, 3])\nshallow_copy = copy.copy(original)\ndeep_copy = copy.deepcopy(original)\n\noriginal.my_list.append(4)\nprint(shallow_copy.my_list)\nprint(deep_copy.my_list)", "type": "multiple_choice", "answers": [{"answer": "[1, 2, 3] und [1, 2, 3]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}, {"answer": "[1, 2, 3] und [1, 2, 3, 4]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}, {"answer": "[1, 2, 3, 4] und [1, 2, 3]", "correct": true, "feedback": "Richtig!"}, {"answer": "[1, 2, 3, 4] und [1, 2, 3, 4]", "correct": false, "feedback": "Falsch! deepcopy und shallow copy unterscheiden sich, wenn nicht simple Datenobjekte (wie 'int') kopiert werden!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1451,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("LnpAqvVMprXv")) {
-            show_questions(questionsLnpAqvVMprXv,  LnpAqvVMprXv); 
+          if(document.getElementById("bJocmCkSVTuJ")) {
+            show_questions(questionsbJocmCkSVTuJ,  bJocmCkSVTuJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1461,18 +1464,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("LnpAqvVMprXv");
-        // console.log(document.getElementById("LnpAqvVMprXv"));
+        //console.log("bJocmCkSVTuJ");
+        // console.log(document.getElementById("bJocmCkSVTuJ"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="wtkCyJnxeJtW" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="yurMXKRgVBuG" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#wtkCyJnxeJtW {
+#yurMXKRgVBuG {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1642,7 +1645,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswtkCyJnxeJtW=[{"question": "Was ist das Ergebnis des folgenden Codes? (Dieser Code ist auch ein Beispiel f\u00fcr schlechte Variablennamen, die weder beschreibend noch eindeutig sind!)", "code": "class MyClass:\n    x = 5\n\nx = MyClass()\nx.x = 6\nprint(x.x, MyClass.x)", "type": "multiple_choice", "answers": [{"answer": "5, 6", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "6, 5", "correct": true, "feedback": "Richtig! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "6, 6", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "5, 5", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Dieser Code ist erlaubt."}]}];
+</style></div><script type="application/javascript">var questionsyurMXKRgVBuG=[{"question": "Was ist das Ergebnis des folgenden Codes? (Dieser Code ist auch ein Beispiel f\u00fcr schlechte Variablennamen, die weder beschreibend noch eindeutig sind!)", "code": "class MyClass:\n    x = 5\n\nx = MyClass()\nx.x = 6\nprint(x.x, MyClass.x)", "type": "multiple_choice", "answers": [{"answer": "5, 6", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "6, 5", "correct": true, "feedback": "Richtig! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "6, 6", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "5, 5", "correct": false, "feedback": "Falsch! Python unterscheiden sog. class-attributes (gleich f\u00fcr alle Instanzen der Klasse) und instance-attributes (unterschiedlich f\u00fcr verschiedene Instanzen der Klasse). "}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! Dieser Code ist erlaubt."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2391,8 +2394,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("wtkCyJnxeJtW")) {
-            show_questions(questionswtkCyJnxeJtW,  wtkCyJnxeJtW); 
+          if(document.getElementById("yurMXKRgVBuG")) {
+            show_questions(questionsyurMXKRgVBuG,  yurMXKRgVBuG); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2401,8 +2404,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("wtkCyJnxeJtW");
-        // console.log(document.getElementById("wtkCyJnxeJtW"));
+        //console.log("yurMXKRgVBuG");
+        // console.log(document.getElementById("yurMXKRgVBuG"));
 
         try_show();
         }

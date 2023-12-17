@@ -229,7 +229,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_lambda.html">Quiz lambda-Funktionen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="quiz_strings.html">Quiz Strings</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
@@ -238,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../extra.html">Jupyter Notebooks</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../2_bytecode.html">Bytecode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_bedingungen.html">Boolsche Algebra und Bedingungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3_fibonacci.html">Fibonacci Zahlen</a></li>
@@ -526,13 +529,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="fOddUbMWDQSH" data-shufflequestions="False"
+<div class="output text_html"><div id="fqUBCweGPRVN" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#fOddUbMWDQSH {
+#fqUBCweGPRVN {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -702,7 +705,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsfOddUbMWDQSH=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 / 2", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2", "correct": false, "feedback": "Falsch. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2.0000000000001", "correct": false, "feedback": "Falsch! Allerdings kann es durch begrenzte numerische Pr\u00e4zision und die Schwierigkeiten manche Zahlen auf dem Computer bin\u00e4r darzustellen durchaus zu solchen F\u00e4llen kommen."}]}];
+</style></div><script type="application/javascript">var questionsfqUBCweGPRVN=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 / 2", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2", "correct": false, "feedback": "Falsch. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2.0000000000001", "correct": false, "feedback": "Falsch! Allerdings kann es durch begrenzte numerische Pr\u00e4zision und die Schwierigkeiten manche Zahlen auf dem Computer bin\u00e4r darzustellen durchaus zu solchen F\u00e4llen kommen."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1451,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("fOddUbMWDQSH")) {
-            show_questions(questionsfOddUbMWDQSH,  fOddUbMWDQSH); 
+          if(document.getElementById("fqUBCweGPRVN")) {
+            show_questions(questionsfqUBCweGPRVN,  fqUBCweGPRVN); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1461,18 +1464,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("fOddUbMWDQSH");
-        // console.log(document.getElementById("fOddUbMWDQSH"));
+        //console.log("fqUBCweGPRVN");
+        // console.log(document.getElementById("fqUBCweGPRVN"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="cUbTcgpnCwhy" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="wOJyzyQqsLtJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#cUbTcgpnCwhy {
+#wOJyzyQqsLtJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1642,7 +1645,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionscUbTcgpnCwhy=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 % 2", "type": "multiple_choice", "answers": [{"answer": "0.0", "correct": true, "feedback": "Richtig. Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "0", "correct": false, "feedback": "Falsch (aber fast richtig). Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da aber einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! % ist nicht der Divisionsoperator, sondern beschreibt den Rest einer Ganzzahldivision."}]}];
+</style></div><script type="application/javascript">var questionswOJyzyQqsLtJ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 % 2", "type": "multiple_choice", "answers": [{"answer": "0.0", "correct": true, "feedback": "Richtig. Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "0", "correct": false, "feedback": "Falsch (aber fast richtig). Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da aber einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! % ist nicht der Divisionsoperator, sondern beschreibt den Rest einer Ganzzahldivision."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2391,8 +2394,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("cUbTcgpnCwhy")) {
-            show_questions(questionscUbTcgpnCwhy,  cUbTcgpnCwhy); 
+          if(document.getElementById("wOJyzyQqsLtJ")) {
+            show_questions(questionswOJyzyQqsLtJ,  wOJyzyQqsLtJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2401,18 +2404,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("cUbTcgpnCwhy");
-        // console.log(document.getElementById("cUbTcgpnCwhy"));
+        //console.log("wOJyzyQqsLtJ");
+        // console.log(document.getElementById("wOJyzyQqsLtJ"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="KaYnoinomCNL" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="CGuqNiQiRtsQ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#KaYnoinomCNL {
+#CGuqNiQiRtsQ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2582,7 +2585,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKaYnoinomCNL=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 // 2.0", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "1", "correct": false, "feedback": "Falsch! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. // beschreibt den Quotienten, nicht den Rest (diesen bekommen sie mit dem Modulo Operator %)."}, {"answer": "2.5", "correct": false, "feedback": "Falsch! // beschreibt keine Division sondern eine Division mit Rest."}, {"answer": "2", "correct": false, "feedback": "Falsch (aber fast richtig)! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da aber mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}]}];
+</style></div><script type="application/javascript">var questionsCGuqNiQiRtsQ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 // 2.0", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "1", "correct": false, "feedback": "Falsch! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. // beschreibt den Quotienten, nicht den Rest (diesen bekommen sie mit dem Modulo Operator %)."}, {"answer": "2.5", "correct": false, "feedback": "Falsch! // beschreibt keine Division sondern eine Division mit Rest."}, {"answer": "2", "correct": false, "feedback": "Falsch (aber fast richtig)! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da aber mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3331,8 +3334,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("KaYnoinomCNL")) {
-            show_questions(questionsKaYnoinomCNL,  KaYnoinomCNL); 
+          if(document.getElementById("CGuqNiQiRtsQ")) {
+            show_questions(questionsCGuqNiQiRtsQ,  CGuqNiQiRtsQ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3341,18 +3344,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("KaYnoinomCNL");
-        // console.log(document.getElementById("KaYnoinomCNL"));
+        //console.log("CGuqNiQiRtsQ");
+        // console.log(document.getElementById("CGuqNiQiRtsQ"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="jDBMlqdOqZYf" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="vjNtBcDLSMTt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#jDBMlqdOqZYf {
+#vjNtBcDLSMTt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3522,7 +3525,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsjDBMlqdOqZYf=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 / 2.0", "type": "multiple_choice", "answers": [{"answer": "2.5", "correct": true, "feedback": "Richtig! Das Ergebnis der Division ist 2.5. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}, {"answer": "2.0", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}]}];
+</style></div><script type="application/javascript">var questionsvjNtBcDLSMTt=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 / 2.0", "type": "multiple_choice", "answers": [{"answer": "2.5", "correct": true, "feedback": "Richtig! Das Ergebnis der Division ist 2.5. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}, {"answer": "2.0", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4271,8 +4274,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("jDBMlqdOqZYf")) {
-            show_questions(questionsjDBMlqdOqZYf,  jDBMlqdOqZYf); 
+          if(document.getElementById("vjNtBcDLSMTt")) {
+            show_questions(questionsvjNtBcDLSMTt,  vjNtBcDLSMTt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4281,8 +4284,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("jDBMlqdOqZYf");
-        // console.log(document.getElementById("jDBMlqdOqZYf"));
+        //console.log("vjNtBcDLSMTt");
+        // console.log(document.getElementById("vjNtBcDLSMTt"));
 
         try_show();
         }
