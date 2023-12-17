@@ -228,6 +228,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="content/jupyterquiz/quiz_lambda.html">Quiz lambda-Funktionen</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_12.html">Vorlesung 12: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
@@ -439,7 +445,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -455,6 +463,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-uber-vorlesungen">Übersicht über Vorlesungen</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -466,18 +484,26 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="programmieren-und-und-algorithmen">
 <h1>Programmieren und und Algorithmen<a class="headerlink" href="#programmieren-und-und-algorithmen" title="Permalink to this heading">#</a></h1>
-<p>Willkommen bei der Vorlesung “Programmieren und und Algorithmen (PuA)”. Diese Vorlesung wird Sie in die  Programmiersprache Python und das Thema Algorithmen einführen.</p>
-<p>Python, bekannt für seine (relative) Einfachheit und gute Lesbarkeit, ist eine der beliebtesten Programmiersprachen der Welt. Sie wird in einer Vielzahl von Bereichen eingesetzt, von der Webentwicklung, über künstliche Intelligen bis hin zur Datenanalyse, was sie zu einer wertvollen Fähigkeit im heutigen digitalen Zeitalter macht. In der Experimentalphysik ist sie die weitverbreitetste Programmiersprache zur Datenanalyse. In der Vorlesung “Computergestützte Datenauswertung (CgDA)” im 2. Semester werden sie lernen wie man Python zur Datenauswertung und für Grundlagen der Statistik verwendet. In Praktika werden sie Python zur Auswertung von Messdaten verwenden.</p>
-<p>Algorithmen hingegen sind Schritt-für-Schritt-Verfahren zur Lösung von Problemen oder zur Bewältigung von Aufgaben. Sie bilden das Herzstück der Informatik und sind entscheidend für die Entwicklung effizienter Software.</p>
-<p>In diesem Kurs lernen Sie nicht nur, wie man Python-Code schreibt, sondern auch, wie man algorithmisch denkt und komplexe Probleme löst. Wir behandeln alles von der grundlegenden Python-Syntax über Objekt-Orientierung bis hin zu algorithmischen Techniken.</p>
+<p>Willkommen bei der Vorlesung “Programmieren und und Algorithmen (PuA)”.
+Diese Vorlesung wird Sie in die  Programmiersprache Python und das Thema Algorithmen einführen.</p>
+<p>Python, bekannt für seine (relative) Einfachheit und gute Lesbarkeit, ist eine der beliebtesten Programmiersprachen der Welt.
+Sie wird in einer Vielzahl von Bereichen eingesetzt, von der Webentwicklung, über künstliche Intelligen bis hin zur Datenanalyse, was sie zu einer wertvollen Fähigkeit im heutigen digitalen Zeitalter macht.
+In der Experimentalphysik ist sie die weitverbreitetste Programmiersprache zur Datenanalyse.
+In der Vorlesung “Computergestützte Datenauswertung (CgDA)” im 2. Semester werden sie lernen wie man Python zur Datenauswertung und für Grundlagen der Statistik verwendet.
+In Praktika werden sie Python zur Auswertung von Messdaten verwenden.</p>
+<p>Algorithmen hingegen sind Schritt-für-Schritt-Verfahren zur Lösung von Problemen oder zur Bewältigung von Aufgaben.
+Sie bilden das Herzstück der Informatik und sind entscheidend für die Entwicklung effizienter Software.</p>
+<p>In diesem Kurs lernen Sie nicht nur, wie man Python-Code schreibt, sondern auch, wie man algorithmisch denkt und komplexe Probleme löst.
+Wir behandeln alles von der grundlegenden Python-Syntax über Objekt-Orientierung bis hin zu algorithmischen Techniken.</p>
 <!--```{admonition} Feedback zur Website-->
 <!--:class: tip-->
 <!--Sie können Feedback zur Website mithilfe von hypothes.is direkt auf der jeweiligen Website -->
 <!--```-->
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Dieses <em>PuA Jupyterbook</em> befindet sich aktuell im Aufbau und Sie können sich noch nicht auf Vollständigkeit verlassen.</p>
-</div>
+<!-- 
+## Index zur Vorlesung
+Sie suchen die Vorlesung in der ein bestimmtes Thema behandelt wurde? Hier geht's zum [](content/index_vl.md). -->
+<section id="ubersicht-uber-vorlesungen">
+<h2>Übersicht über Vorlesungen<a class="headerlink" href="#ubersicht-uber-vorlesungen" title="Permalink to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">VORLESUNGEN ✍️</span></p>
 <ul>
@@ -488,6 +514,12 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_5.html">Vorlesung 5: Klassen und Objekte</a></li>
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_6.html">Vorlesung 6: Vererbung und Polymorphismus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="content/vorlesung_7.html">Vorlesung 7: Programmentwurf und Fortgeschrittene Methoden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_12.html">Vorlesung 12: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -496,6 +528,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="content/extra.html">Jupyter Notebooks</a></li>
 </ul>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -547,6 +580,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-uber-vorlesungen">Übersicht über Vorlesungen</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

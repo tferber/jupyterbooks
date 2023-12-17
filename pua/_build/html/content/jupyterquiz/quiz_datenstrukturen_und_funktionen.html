@@ -229,6 +229,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quiz_lambda.html">Quiz lambda-Funktionen</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_8.html">Vorlesung 8: import, Kommandozeile, Zeichenketten und Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: Lineare Gleichungssysteme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
 <ul class="nav bd-sidenav">
@@ -520,13 +526,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="PnyCwRgMBStD" data-shufflequestions="False"
+<div class="output text_html"><div id="UKWZlpJYvXIv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PnyCwRgMBStD {
+#UKWZlpJYvXIv {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -696,7 +702,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPnyCwRgMBStD=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def foo(i, x=[]):\n    x.append(i)\n    return x\n\nfor i in range(3):\n    print(foo(i))\n", "type": "multiple_choice", "answers": [{"answer": "[0] [1] [2]", "correct": false, "feedback": "Das h\u00e4tten sie wohl gerne! Aber sie sind nicht alleine: Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0] [0, 1] [0, 1, 2]", "correct": true, "feedback": "Richtig! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0, 1, 2] [0, 1, 2] [0, 1, 2]", "correct": false, "feedback": "Falsch! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsUKWZlpJYvXIv=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "def foo(i, x=[]):\n    x.append(i)\n    return x\n\nfor i in range(3):\n    print(foo(i))\n", "type": "multiple_choice", "answers": [{"answer": "[0] [1] [2]", "correct": false, "feedback": "Das h\u00e4tten sie wohl gerne! Aber sie sind nicht alleine: Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0] [0, 1] [0, 1, 2]", "correct": true, "feedback": "Richtig! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "[0, 1, 2] [0, 1, 2] [0, 1, 2]", "correct": false, "feedback": "Falsch! Dies ist einer der bekanntesten Python Fehler \u00fcberhaupt :). Der Standardwert f\u00fcr ein Funktionsargument wird in Python nur einmal ausgewertet, n\u00e4mlich zu dem Zeitpunkt, zu dem die Funktion definiert wird. Jedes Mal, wenn foo aufgerufen wird, wird also an dieselbe Liste x angeh\u00e4ngt."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1445,8 +1451,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PnyCwRgMBStD")) {
-            show_questions(questionsPnyCwRgMBStD,  PnyCwRgMBStD); 
+          if(document.getElementById("UKWZlpJYvXIv")) {
+            show_questions(questionsUKWZlpJYvXIv,  UKWZlpJYvXIv); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1455,18 +1461,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PnyCwRgMBStD");
-        // console.log(document.getElementById("PnyCwRgMBStD"));
+        //console.log("UKWZlpJYvXIv");
+        // console.log(document.getElementById("UKWZlpJYvXIv"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="SiOyRqRZbyPl" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="sWWesVWdUXvt" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#SiOyRqRZbyPl {
+#sWWesVWdUXvt {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1636,7 +1642,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSiOyRqRZbyPl=[{"question": "Welche der folgenden Operation f\u00fcgen einer Liste `t` eine Ganzzahl `x` als Element hinzu?", "code": "A: t.append(x)\nB: t += [x]\nC: t.append([x])\nD: t = t + x", "type": "multiple_choice", "answers": [{"answer": "A und B", "correct": true, "feedback": "Richtig!"}, {"answer": "A und C", "correct": false, "feedback": "Falsch! C ist erlaubt, f\u00fcgt der Liste aber Liste mit dem Wert x hinzu."}, {"answer": "B und D", "correct": false, "feedback": "Falsch! Addition von Listen (t) und Werten (x) ist ein SyntaxError."}, {"answer": "Alle", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionssWWesVWdUXvt=[{"question": "Welche der folgenden Operation f\u00fcgen einer Liste `t` eine Ganzzahl `x` als Element hinzu?", "code": "A: t.append(x)\nB: t += [x]\nC: t.append([x])\nD: t = t + x", "type": "multiple_choice", "answers": [{"answer": "A und B", "correct": true, "feedback": "Richtig!"}, {"answer": "A und C", "correct": false, "feedback": "Falsch! C ist erlaubt, f\u00fcgt der Liste aber Liste mit dem Wert x hinzu."}, {"answer": "B und D", "correct": false, "feedback": "Falsch! Addition von Listen (t) und Werten (x) ist ein SyntaxError."}, {"answer": "Alle", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2385,8 +2391,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("SiOyRqRZbyPl")) {
-            show_questions(questionsSiOyRqRZbyPl,  SiOyRqRZbyPl); 
+          if(document.getElementById("sWWesVWdUXvt")) {
+            show_questions(questionssWWesVWdUXvt,  sWWesVWdUXvt); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2395,18 +2401,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("SiOyRqRZbyPl");
-        // console.log(document.getElementById("SiOyRqRZbyPl"));
+        //console.log("sWWesVWdUXvt");
+        // console.log(document.getElementById("sWWesVWdUXvt"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="abzfbGJpngHe" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="oULYyvxvSMLj" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#abzfbGJpngHe {
+#oULYyvxvSMLj {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2576,7 +2582,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsabzfbGJpngHe=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, 4, ]\ndef entferne_erste_zeile(meine_liste):\n\n    meine_liste = meine_liste[1:]\n\nentferne_erste_zeile(meine_liste)\nprint(meine_liste)", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 4]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3, 4]", "correct": true, "feedback": "Richtig! Die Funktion hat keinerlei Effekt auf die urspr\u00fcngliche Liste."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsoULYyvxvSMLj=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "meine_liste = [1, 2, 3, 4, ]\ndef entferne_erste_zeile(meine_liste):\n\n    meine_liste = meine_liste[1:]\n\nentferne_erste_zeile(meine_liste)\nprint(meine_liste)", "type": "multiple_choice", "answers": [{"answer": "[2, 3, 4]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3]", "correct": false, "feedback": "Falsch! Zuweisungen innerhalb einer Funktion verlieren ihre G\u00fcltigkeit wenn die Funktion verlassen wird. Durch die Zuweisung wird eine neue Referenz erzeugt die die urpsr\u00fcngliche Liste nicht \u00e4ndert."}, {"answer": "[1, 2, 3, 4]", "correct": true, "feedback": "Richtig! Die Funktion hat keinerlei Effekt auf die urspr\u00fcngliche Liste."}, {"answer": "None", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3325,8 +3331,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("abzfbGJpngHe")) {
-            show_questions(questionsabzfbGJpngHe,  abzfbGJpngHe); 
+          if(document.getElementById("oULYyvxvSMLj")) {
+            show_questions(questionsoULYyvxvSMLj,  oULYyvxvSMLj); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3335,8 +3341,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("abzfbGJpngHe");
-        // console.log(document.getElementById("abzfbGJpngHe"));
+        //console.log("oULYyvxvSMLj");
+        // console.log(document.getElementById("oULYyvxvSMLj"));
 
         try_show();
         }
