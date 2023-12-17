@@ -45,6 +45,8 @@ parts:
     - file: content/jupyterquiz/quiz_lambda
 
   - file: content/vorlesung_8.md
+      - file: content/jupyterquiz/quiz_strings
+
   - file: content/vorlesung_9.md
   - file: content/vorlesung_10.md
   - file: content/vorlesung_11.md
