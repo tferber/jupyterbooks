@@ -1,1 +1,1 @@
-# Vorlesung 10: numpy und pandas
+# Vorlesung 10: Differentialgleichungssysteme und numerische Integration

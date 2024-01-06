@@ -1,1 +1,1 @@
-# Vorlesung 12: Lineare Gleichungssysteme
+# Vorlesung 12: numpy und pandas
