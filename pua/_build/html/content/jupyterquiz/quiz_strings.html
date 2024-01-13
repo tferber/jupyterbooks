@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren, lineare Gleichungssysteme und Interpolation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: Differentialgleichungssysteme und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: Numerische Integration und Differentialgleichungssysteme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: numpy und pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
@@ -529,13 +529,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="OoPqPTmozbeu" data-shufflequestions="False"
+<div class="output text_html"><div id="oJoHeuruQsDE" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#OoPqPTmozbeu {
+#oJoHeuruQsDE {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -705,7 +705,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsOoPqPTmozbeu=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "sentence = \"Anyone who has never made a mistake has never tried anything new.\"\nresult = all(letter.isalpha() for letter in sentence)\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "True", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}, {"answer": "\"anyonewhohasnevermadeamistakehasnevertriedanythingnew\"", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}]}];
+</style></div><script type="application/javascript">var questionsoJoHeuruQsDE=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "sentence = \"Anyone who has never made a mistake has never tried anything new.\"\nresult = all(letter.isalpha() for letter in sentence)\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "False", "correct": true, "feedback": "Richtig!"}, {"answer": "True", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}, {"answer": "\"anyonewhohasnevermadeamistakehasnevertriedanythingnew\"", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}, {"answer": "SyntaxError", "correct": false, "feedback": "Falsch! 'for letter in sentence' ist ein Generator-Ausdruck, der durch jeden Buchstaben in der Zeichenkette sentence iteriert. F\u00fcr jeden Buchstaben (letter) in sentence wird \u00fcberpr\u00fcft, ob es sich um einen 'alphabetischen' Buchstaben (.isalpha()). Die Funktion all() pr\u00fcft, ob alle Elemente im Iterable True sind. In diesem Fall ist das Iterable die Sequenz von booleschen Werten, die durch letter.isalpha() f\u00fcr jeden Buchstaben in sentence entstehen. Achtung: Leerzeichen sind keine alphabetischen Buchstaben!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1454,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("OoPqPTmozbeu")) {
-            show_questions(questionsOoPqPTmozbeu,  OoPqPTmozbeu); 
+          if(document.getElementById("oJoHeuruQsDE")) {
+            show_questions(questionsoJoHeuruQsDE,  oJoHeuruQsDE); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1464,18 +1464,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("OoPqPTmozbeu");
-        // console.log(document.getElementById("OoPqPTmozbeu"));
+        //console.log("oJoHeuruQsDE");
+        // console.log(document.getElementById("oJoHeuruQsDE"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="xXgNAvkMDocc" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="PUXiTAKecsiJ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#xXgNAvkMDocc {
+#PUXiTAKecsiJ {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1645,7 +1645,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsxXgNAvkMDocc=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('p')\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!  find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}, {"answer": "-1", "correct": false, "feedback": "Falsch! find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}, {"answer": "12", "correct": true, "feedback": "Richtig!"}, {"answer": "2", "correct": false, "feedback": "Falsch! find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}]}];
+</style></div><script type="application/javascript">var questionsPUXiTAKecsiJ=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('p')\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!  find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}, {"answer": "-1", "correct": false, "feedback": "Falsch! find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}, {"answer": "12", "correct": true, "feedback": "Richtig!"}, {"answer": "2", "correct": false, "feedback": "Falsch! find() gibt den index des ersten Treffers zur\u00fcck. Hierbei ist es case-sensititive. -1 wird nur dann zur\u00fcckgegeben wenn es keinen Treffer gibt."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2394,8 +2394,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("xXgNAvkMDocc")) {
-            show_questions(questionsxXgNAvkMDocc,  xXgNAvkMDocc); 
+          if(document.getElementById("PUXiTAKecsiJ")) {
+            show_questions(questionsPUXiTAKecsiJ,  PUXiTAKecsiJ); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2404,18 +2404,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("xXgNAvkMDocc");
-        // console.log(document.getElementById("xXgNAvkMDocc"));
+        //console.log("PUXiTAKecsiJ");
+        // console.log(document.getElementById("PUXiTAKecsiJ"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="lIrBOvqNTKmT" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="AMlOofxxpCav" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#lIrBOvqNTKmT {
+#AMlOofxxpCav {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2585,7 +2585,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslIrBOvqNTKmT=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('ogram', 10, 20)\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!  find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}, {"answer": "-1", "correct": true, "feedback": "Richtig! In diesem slice kommt 'ogram' nicht vor."}, {"answer": "23", "correct": false, "feedback": "Falsch!  find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}, {"answer": "10", "correct": false, "feedback": "Falsch! find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}]}];
+</style></div><script type="application/javascript">var questionsAMlOofxxpCav=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('ogram', 10, 20)\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "0", "correct": false, "feedback": "Falsch!  find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}, {"answer": "-1", "correct": true, "feedback": "Richtig! In diesem slice kommt 'ogram' nicht vor."}, {"answer": "23", "correct": false, "feedback": "Falsch!  find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}, {"answer": "10", "correct": false, "feedback": "Falsch! find() kann mit optionalen Parametern aufgerufen die den String zuerst slicen und dort suchen. ! Mehr Info: https://docs.python.org/3/library/stdtypes.html#str.find"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3334,8 +3334,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("lIrBOvqNTKmT")) {
-            show_questions(questionslIrBOvqNTKmT,  lIrBOvqNTKmT); 
+          if(document.getElementById("AMlOofxxpCav")) {
+            show_questions(questionsAMlOofxxpCav,  AMlOofxxpCav); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3344,18 +3344,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("lIrBOvqNTKmT");
-        // console.log(document.getElementById("lIrBOvqNTKmT"));
+        //console.log("AMlOofxxpCav");
+        // console.log(document.getElementById("AMlOofxxpCav"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="hpqnTLXGNlis" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="VhhKJZEqvoDk" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#hpqnTLXGNlis {
+#VhhKJZEqvoDk {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3525,7 +3525,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshpqnTLXGNlis=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('g', text.find('prog'), text.find('language'))\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "3", "correct": false, "feedback": "Falsch!  Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}, {"answer": "24", "correct": true, "feedback": "Richtig!"}, {"answer": "4", "correct": false, "feedback": "Falsch!  Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}, {"answer": "-1", "correct": false, "feedback": "Falsch! Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}]}];
+</style></div><script type="application/javascript">var questionsVhhKJZEqvoDk=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "text = \"Python is a powerful programming language.\"\nresult = text.find('g', text.find('prog'), text.find('language'))\nprint(result)", "type": "multiple_choice", "answers": [{"answer": "3", "correct": false, "feedback": "Falsch!  Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}, {"answer": "24", "correct": true, "feedback": "Richtig!"}, {"answer": "4", "correct": false, "feedback": "Falsch!  Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}, {"answer": "-1", "correct": false, "feedback": "Falsch! Wie in der vorherigen Fragen wird die Suche in einem Slice durchgef\u00fchrt - der Index wird aber relativ zum gesamten String zur\u00fcckgegeben."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4274,8 +4274,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("hpqnTLXGNlis")) {
-            show_questions(questionshpqnTLXGNlis,  hpqnTLXGNlis); 
+          if(document.getElementById("VhhKJZEqvoDk")) {
+            show_questions(questionsVhhKJZEqvoDk,  VhhKJZEqvoDk); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4284,8 +4284,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("hpqnTLXGNlis");
-        // console.log(document.getElementById("hpqnTLXGNlis"));
+        //console.log("VhhKJZEqvoDk");
+        // console.log(document.getElementById("VhhKJZEqvoDk"));
 
         try_show();
         }

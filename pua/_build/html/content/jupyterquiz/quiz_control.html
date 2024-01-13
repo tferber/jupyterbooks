@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren, lineare Gleichungssysteme und Interpolation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: Differentialgleichungssysteme und numerische Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: Numerische Integration und Differentialgleichungssysteme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: numpy und pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
@@ -529,13 +529,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="khiDhAislRDI" data-shufflequestions="False"
+<div class="output text_html"><div id="KmPyRbXIFPqv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#khiDhAislRDI {
+#KmPyRbXIFPqv {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -705,7 +705,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionskhiDhAislRDI=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\nif x > 10:\n    print(\"A\")\nelif x < 10:\n    print(\"B\")\nelse:\n    print(\"C\")", "type": "multiple_choice", "answers": [{"answer": "A", "correct": false, "feedback": "Falsch! `x` ist eine Ganzzahl und daher w\u00e4re `x==10` `True`, nicht aber `x>10`."}, {"answer": "B", "correct": false, "feedback": "Falsch! `x` ist eine Ganzzahl und daher w\u00e4re `x==10` `True`, nicht aber `x<10`."}, {"answer": "C", "correct": true, "feedback": "Richtig!"}, {"answer": "Es wird nichts auf dem Bildschirm ausgegeben.", "correct": false, "feedback": "Falsch!"}]}];
+</style></div><script type="application/javascript">var questionsKmPyRbXIFPqv=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 10\nif x > 10:\n    print(\"A\")\nelif x < 10:\n    print(\"B\")\nelse:\n    print(\"C\")", "type": "multiple_choice", "answers": [{"answer": "A", "correct": false, "feedback": "Falsch! `x` ist eine Ganzzahl und daher w\u00e4re `x==10` `True`, nicht aber `x>10`."}, {"answer": "B", "correct": false, "feedback": "Falsch! `x` ist eine Ganzzahl und daher w\u00e4re `x==10` `True`, nicht aber `x<10`."}, {"answer": "C", "correct": true, "feedback": "Richtig!"}, {"answer": "Es wird nichts auf dem Bildschirm ausgegeben.", "correct": false, "feedback": "Falsch!"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1454,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("khiDhAislRDI")) {
-            show_questions(questionskhiDhAislRDI,  khiDhAislRDI); 
+          if(document.getElementById("KmPyRbXIFPqv")) {
+            show_questions(questionsKmPyRbXIFPqv,  KmPyRbXIFPqv); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1464,18 +1464,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("khiDhAislRDI");
-        // console.log(document.getElementById("khiDhAislRDI"));
+        //console.log("KmPyRbXIFPqv");
+        // console.log(document.getElementById("KmPyRbXIFPqv"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="QcTVrSiimRQp" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="CEnNRMCtsbpe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#QcTVrSiimRQp {
+#CEnNRMCtsbpe {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1645,7 +1645,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsQcTVrSiimRQp=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 1\nwhile x < 100:\n    if x % 2 == 0:\n        x *= 2\n    else:\n        x += 1\n\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "64", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}, {"answer": "100", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}, {"answer": "128", "correct": true, "feedback": "Richtig!"}, {"answer": "Die while-Schleife bricht nicht ab und l\u00e4uft unendlich.", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}]}];
+</style></div><script type="application/javascript">var questionsCEnNRMCtsbpe=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 1\nwhile x < 100:\n    if x % 2 == 0:\n        x *= 2\n    else:\n        x += 1\n\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "64", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}, {"answer": "100", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}, {"answer": "128", "correct": true, "feedback": "Richtig!"}, {"answer": "Die while-Schleife bricht nicht ab und l\u00e4uft unendlich.", "correct": false, "feedback": "Falsch! Die while-Schleife im Code wird so lange ausgef\u00fchrt, wie x kleiner als 100 ist. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob x eine gerade Zahl ist (x % 2 == 0). Wenn x gerade ist, wird es verdoppelt (x *= 2). Wenn x ungerade ist, wird 1 dazu addiert (x += 1). Gehen wir die Iterationen durch: x beginnt bei 1, was ungerade ist, also addieren wir 1, um x = 2 zu erhalten.\nJetzt ist x gerade, also verdoppeln wir es, um x = 4 zu erhalten.\nx ist immer noch gerade, also verdoppeln wir es wieder, um x = 8 zu erhalten.\nWir fahren mit diesem Muster fort (verdoppeln, wenn gerade, addieren 1, wenn ungerade), bis x 64 erreicht.\nBei x = 64 ist x immer noch gerade, also verdoppeln wir es, um x = 128 zu erhalten.\nJetzt ist x nicht mehr kleiner als 100, und die Schleife ist beendet. Daher ist der endg\u00fcltige Wert von x am Ende der Schleife 128."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2394,8 +2394,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("QcTVrSiimRQp")) {
-            show_questions(questionsQcTVrSiimRQp,  QcTVrSiimRQp); 
+          if(document.getElementById("CEnNRMCtsbpe")) {
+            show_questions(questionsCEnNRMCtsbpe,  CEnNRMCtsbpe); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2404,18 +2404,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("QcTVrSiimRQp");
-        // console.log(document.getElementById("QcTVrSiimRQp"));
+        //console.log("CEnNRMCtsbpe");
+        // console.log(document.getElementById("CEnNRMCtsbpe"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="PIxyVUisWvPH" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="wTvGBQqRnWeq" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#PIxyVUisWvPH {
+#wTvGBQqRnWeq {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2585,7 +2585,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsPIxyVUisWvPH=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 0\nfor i in range(1, 11):\n    if i % 2 == 0:\n        x += i\n    else:\n        x -= i\n\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "-5", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}, {"answer": "0", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}, {"answer": "5", "correct": true, "feedback": "Richtig!"}, {"answer": "-6", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}]}];
+</style></div><script type="application/javascript">var questionswTvGBQqRnWeq=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "x = 0\nfor i in range(1, 11):\n    if i % 2 == 0:\n        x += i\n    else:\n        x -= i\n\nprint(x)", "type": "multiple_choice", "answers": [{"answer": "-5", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}, {"answer": "0", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}, {"answer": "5", "correct": true, "feedback": "Richtig!"}, {"answer": "-6", "correct": false, "feedback": "Falsch! Die for-Schleife im Code durchl\u00e4uft jede Zahl im Bereich von 1 bis 10. Bei jeder Iteration der Schleife wird gepr\u00fcft, ob i eine gerade Zahl ist (i % 2 == 0). Wenn i gerade ist, wird i zu x addiert (x += i). Wenn i nicht gerade ist (d. h. i ist ungerade), wird i von x subtrahiert (x -= i). Gehen wir nun die Iterationen durch: F\u00fcr i = 1, was ungerade ist, subtrahieren wir 1 von x und erhalten x = -1.\nF\u00fcr i = 2, was gerade ist, addieren wir 2 zu x, um x = 1 zu erhalten.\nF\u00fcr i = 3, was ungerade ist, subtrahieren wir 3 von x, um x = -2 zu erhalten.\nF\u00fcr i = 4, was gerade ist, addieren wir 4 zu x, um x = 2 zu erhalten.\nF\u00fcr i = 5, was ungerade ist, subtrahieren wir 5 von x, um x = -3 zu erhalten.\nF\u00fcr i = 6, was gerade ist, addieren wir 6 zu x, um x = 3 zu erhalten.\nF\u00fcr i = 7, was ungerade ist, subtrahieren wir 7 von x, um x = -4 zu erhalten.\nF\u00fcr i = 8, was gerade ist, addieren wir 8 zu x, um x = 4 zu erhalten.\nF\u00fcr i = 9, was ungerade ist, subtrahieren wir 9 von x, um x = -5 zu erhalten.\nF\u00fcr i = 10, was gerade ist, addieren wir 10 zu x, so dass der endg\u00fcltige Wert von x -5 + 10 = 5 ist. \nBeachten sie, dass range(start, stop) die Zahl `stop` nicht mehr enthaelt."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3334,8 +3334,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("PIxyVUisWvPH")) {
-            show_questions(questionsPIxyVUisWvPH,  PIxyVUisWvPH); 
+          if(document.getElementById("wTvGBQqRnWeq")) {
+            show_questions(questionswTvGBQqRnWeq,  wTvGBQqRnWeq); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3344,8 +3344,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("PIxyVUisWvPH");
-        // console.log(document.getElementById("PIxyVUisWvPH"));
+        //console.log("wTvGBQqRnWeq");
+        // console.log(document.getElementById("wTvGBQqRnWeq"));
 
         try_show();
         }
