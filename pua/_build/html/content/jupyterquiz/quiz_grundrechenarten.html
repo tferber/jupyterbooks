@@ -235,8 +235,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_9.html">Vorlesung 9: Sortieren, lineare Gleichungssysteme und Interpolation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_10.html">Vorlesung 10: Numerische Integration und Differentialgleichungssysteme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_11.html">Vorlesung 11: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vorlesung_12.html">Vorlesung 12: Datei Ein- und Ausgabe, scipy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
@@ -529,13 +529,13 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qEnJFKlGxlCy" data-shufflequestions="False"
+<div class="output text_html"><div id="cxEAutWKMoZw" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#qEnJFKlGxlCy {
+#cxEAutWKMoZw {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -705,7 +705,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqEnJFKlGxlCy=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 / 2", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2", "correct": false, "feedback": "Falsch. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2.0000000000001", "correct": false, "feedback": "Falsch! Allerdings kann es durch begrenzte numerische Pr\u00e4zision und die Schwierigkeiten manche Zahlen auf dem Computer bin\u00e4r darzustellen durchaus zu solchen F\u00e4llen kommen."}]}];
+</style></div><script type="application/javascript">var questionscxEAutWKMoZw=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 / 2", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2", "correct": false, "feedback": "Falsch. Das Ergebnis einer Division ist immer eine Gleitkommazahl, auch wenn einer der Operanden ein ganzzahliger Datentyp ist."}, {"answer": "2.0000000000001", "correct": false, "feedback": "Falsch! Allerdings kann es durch begrenzte numerische Pr\u00e4zision und die Schwierigkeiten manche Zahlen auf dem Computer bin\u00e4r darzustellen durchaus zu solchen F\u00e4llen kommen."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1454,8 +1454,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("qEnJFKlGxlCy")) {
-            show_questions(questionsqEnJFKlGxlCy,  qEnJFKlGxlCy); 
+          if(document.getElementById("cxEAutWKMoZw")) {
+            show_questions(questionscxEAutWKMoZw,  cxEAutWKMoZw); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1464,18 +1464,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("qEnJFKlGxlCy");
-        // console.log(document.getElementById("qEnJFKlGxlCy"));
+        //console.log("cxEAutWKMoZw");
+        // console.log(document.getElementById("cxEAutWKMoZw"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="fOyVvunEFmjS" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="jdEZJtsjVtUl" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#fOyVvunEFmjS {
+#jdEZJtsjVtUl {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1645,7 +1645,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsfOyVvunEFmjS=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 % 2", "type": "multiple_choice", "answers": [{"answer": "0.0", "correct": true, "feedback": "Richtig. Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "0", "correct": false, "feedback": "Falsch (aber fast richtig). Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da aber einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! % ist nicht der Divisionsoperator, sondern beschreibt den Rest einer Ganzzahldivision."}]}];
+</style></div><script type="application/javascript">var questionsjdEZJtsjVtUl=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "4.0 % 2", "type": "multiple_choice", "answers": [{"answer": "0.0", "correct": true, "feedback": "Richtig. Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "0", "correct": false, "feedback": "Falsch (aber fast richtig). Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist null. Da aber einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! % ist nicht der Divisionsoperator, sondern beschreibt den Rest einer Ganzzahldivision."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2394,8 +2394,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("fOyVvunEFmjS")) {
-            show_questions(questionsfOyVvunEFmjS,  fOyVvunEFmjS); 
+          if(document.getElementById("jdEZJtsjVtUl")) {
+            show_questions(questionsjdEZJtsjVtUl,  jdEZJtsjVtUl); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2404,18 +2404,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("fOyVvunEFmjS");
-        // console.log(document.getElementById("fOyVvunEFmjS"));
+        //console.log("jdEZJtsjVtUl");
+        // console.log(document.getElementById("jdEZJtsjVtUl"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="NOZkXZeHIkUf" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="TYNHTfxCnZJy" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#NOZkXZeHIkUf {
+#TYNHTfxCnZJy {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2585,7 +2585,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsNOZkXZeHIkUf=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 // 2.0", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "1", "correct": false, "feedback": "Falsch! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. // beschreibt den Quotienten, nicht den Rest (diesen bekommen sie mit dem Modulo Operator %)."}, {"answer": "2.5", "correct": false, "feedback": "Falsch! // beschreibt keine Division sondern eine Division mit Rest."}, {"answer": "2", "correct": false, "feedback": "Falsch (aber fast richtig)! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da aber mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}]}];
+</style></div><script type="application/javascript">var questionsTYNHTfxCnZJy=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 // 2.0", "type": "multiple_choice", "answers": [{"answer": "2.0", "correct": true, "feedback": "Richtig! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "1", "correct": false, "feedback": "Falsch! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. // beschreibt den Quotienten, nicht den Rest (diesen bekommen sie mit dem Modulo Operator %)."}, {"answer": "2.5", "correct": false, "feedback": "Falsch! // beschreibt keine Division sondern eine Division mit Rest."}, {"answer": "2", "correct": false, "feedback": "Falsch (aber fast richtig)! Das Ergebnis der Ganzzahldivision ist zwei, der Rest ist eins. Da aber mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -3334,8 +3334,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("NOZkXZeHIkUf")) {
-            show_questions(questionsNOZkXZeHIkUf,  NOZkXZeHIkUf); 
+          if(document.getElementById("TYNHTfxCnZJy")) {
+            show_questions(questionsTYNHTfxCnZJy,  TYNHTfxCnZJy); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -3344,18 +3344,18 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("NOZkXZeHIkUf");
-        // console.log(document.getElementById("NOZkXZeHIkUf"));
+        //console.log("TYNHTfxCnZJy");
+        // console.log(document.getElementById("TYNHTfxCnZJy"));
 
         try_show();
         }
-        </script><div class="output text_html"><div id="eizBmdEsalqa" data-shufflequestions="False"
+        </script><div class="output text_html"><div id="gitKuPPGDvEE" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#eizBmdEsalqa {
+#gitKuPPGDvEE {
    --jq-multiple-choice-bg: #345995;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3525,7 +3525,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionseizBmdEsalqa=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 / 2.0", "type": "multiple_choice", "answers": [{"answer": "2.5", "correct": true, "feedback": "Richtig! Das Ergebnis der Division ist 2.5. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}, {"answer": "2.0", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}]}];
+</style></div><script type="application/javascript">var questionsgitKuPPGDvEE=[{"question": "Was ist das Ergebnis des folgenden Codes?", "code": "5.0 / 2.0", "type": "multiple_choice", "answers": [{"answer": "2.5", "correct": true, "feedback": "Richtig! Das Ergebnis der Division ist 2.5. Da mindestens einer der Operanden eine Gleitkommazahl ist, ist das Ergebnis eine Gleitkommazahl."}, {"answer": "2", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}, {"answer": "2.0", "correct": false, "feedback": "Falsch! / beschreibt eine normale Division und keine Ganzzahldivision (der Operator daf\u00fcr w\u00e4re //)."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -4274,8 +4274,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("eizBmdEsalqa")) {
-            show_questions(questionseizBmdEsalqa,  eizBmdEsalqa); 
+          if(document.getElementById("gitKuPPGDvEE")) {
+            show_questions(questionsgitKuPPGDvEE,  gitKuPPGDvEE); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -4284,8 +4284,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("eizBmdEsalqa");
-        // console.log(document.getElementById("eizBmdEsalqa"));
+        //console.log("gitKuPPGDvEE");
+        // console.log(document.getElementById("gitKuPPGDvEE"));
 
         try_show();
         }

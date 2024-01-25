@@ -1,1 +1,1 @@
-# Vorlesung 12: numpy und pandas
+# Vorlesung 12: Datei Ein- und Ausgabe, scipy

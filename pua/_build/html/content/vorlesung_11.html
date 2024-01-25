@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Vorlesung 11: Ein- und Ausgabe von Dateien &#8212; Programmieren und Algorithmen</title>
+    <title>Vorlesung 11: numpy und pandas &#8212; Programmieren und Algorithmen</title>
   
   
   
@@ -98,7 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/vorlesung_11';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Vorlesung 12: numpy und pandas" href="vorlesung_12.html" />
+    <link rel="next" title="Vorlesung 12: Datei Ein- und Ausgabe, scipy" href="vorlesung_12.html" />
     <link rel="prev" title="Vorlesung 10: Numerische Integration und Differentialgleichungssysteme" href="vorlesung_10.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -235,8 +235,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_9.html">Vorlesung 9: Sortieren, lineare Gleichungssysteme und Interpolation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_10.html">Vorlesung 10: Numerische Integration und Differentialgleichungssysteme</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vorlesung 11: Ein- und Ausgabe von Dateien</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vorlesung_12.html">Vorlesung 12: numpy und pandas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vorlesung 11: numpy und pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vorlesung_12.html">Vorlesung 12: Datei Ein- und Ausgabe, scipy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vorlesung_13.html">Vorlesung 13: Darstellung von Daten</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Notebooks 🐍</span></p>
@@ -449,7 +449,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -460,11 +462,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vorlesung 11: Ein- und Ausgabe von Dateien</h1>
+    <h1>Vorlesung 11: numpy und pandas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -474,8 +484,31 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-11-ein-und-ausgabe-von-dateien">
-<h1>Vorlesung 11: Ein- und Ausgabe von Dateien<a class="headerlink" href="#vorlesung-11-ein-und-ausgabe-von-dateien" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="vorlesung-11-numpy-und-pandas">
+<h1>Vorlesung 11: numpy und pandas<a class="headerlink" href="#vorlesung-11-numpy-und-pandas" title="Permalink to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Hier geht zum Quiz…</p>
+<!--[Quiz zum Thema "Strings"](jupyterquiz/quiz_strings)-->
+</div>
+<section id="was-sie-wissen-sollten">
+<h2>Was Sie wissen sollten<a class="headerlink" href="#was-sie-wissen-sollten" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>NumPy ist die Bibliothek für numerisches Rechnen in Python. Das Herz von NumPy sind elementweise Operationen auf sehr großen, hochdimensionalen Arrays</p>
+<ul>
+<li><p>Wie definieren sie ndarrays? Wie konvertieren sie Python Listen und Tuples in ndarrays? Was müssen sie beim konvertieren von Sets beachten?</p></li>
+<li><p>Was ist ein numpy view und wie unterscheidet er sich vom Slice einer Liste?</p></li>
+</ul>
+</li>
+<li><p>Zu den Hauptmerkmalen von NumPy gehören effiziente und schnelle Operationen auf Arrays, Broadcasting, lineare Algebra-Funktionen und Zufallszahlengenerierung</p></li>
+<li><p>Pandas DataFrames sind eine zweidimensionale Datenstruktur mit Spalten unterschiedlicher Typen. Sie ermöglicht effiziente Manipulation, Bereinigung und Analyse tabellarischer Daten.</p>
+<ul>
+<li><p>Wie selektieren sie Zeilen und Spalten?</p></li>
+<li><p>Was müssen sie beachten, wenn sie mehrere boolsche Bedingungen verknüpfen wollen?</p></li>
+</ul>
+</li>
+<li><p>NumPy und Pandas sind die Grundlage fast aller weitergehender wissenschaftlichen Software in Python.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -523,7 +556,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Vorlesung 12: numpy und pandas</p>
+        <p class="prev-next-title">Vorlesung 12: Datei Ein- und Ausgabe, scipy</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -536,6 +569,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-sie-wissen-sollten">Was Sie wissen sollten</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
