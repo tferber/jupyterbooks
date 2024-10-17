@@ -92,8 +92,3 @@
     * Skeleton Code (eine Vorlage oder ein Rahmen, der die grundlegende Struktur und Funktionalität eines Programms bietet
     * Pseudocode, eine vereinfachte und informelle Version des Codes, der den Algorithmus beschreibt
 * Bei der Programmentwicklung können je nach Art und Komplexität des Problems und der Lösung verschiedene Programmierparadigmen zum Einsatz kommen, wie z. B. objektorientierte oder funktionale Programmierung
-
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 7 herunterladen.
-

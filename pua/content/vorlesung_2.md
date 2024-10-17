@@ -43,9 +43,6 @@
 * Code muss so dokumentiert, dass die Intention klar ist. Jede Funktion (Modul, Klasse, Methode) muss mit einem docstring versehen sein.
     * Gute Dokumentation braucht Erfahrung - dokumentieren sie am Anfang eher zu viel als zu wenig.
 
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 2 herunterladen.
 
 ## Videos to watch...
 ::::{grid}

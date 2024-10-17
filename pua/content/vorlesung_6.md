@@ -24,11 +24,6 @@
 * Polymorphism bezeichnet die Kontext-Ahaengigkeit von Methoden
 * Objekt-orientierte Programmierung nutzt (Multi)-Inheritance um neue Klassen auf Basis bestehender Klassen zu erstellen. Diese ermöglichst fördert die Wiederverwendbarkeit und Lesbarkeit des Codes.
 
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 6 herunterladen.
-
-
 <!--## Videos to watch...-->
 <!--::::{grid}-->
 <!--:class-container: text-center-->

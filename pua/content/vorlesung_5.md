@@ -29,10 +29,6 @@
     * Wo finden sie eine Auflistung aller magischer Funktionen? Was passiert wenn sie nur einen Unterstrich verwenden? Oder drei? Oder eine ungleiche Zahl zum Beginnen und Beenden?
 
 
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 5 herunterladen.
-
 <!--## Videos to watch...-->
 <!--::::{grid}-->
 <!--:class-container: text-center-->

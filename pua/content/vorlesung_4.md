@@ -66,9 +66,6 @@ Typischer Anwendungsfall: Verwenden Sie Sets, wenn Sie mehrere Elemente in einer
 * Verwenden sie NIEMALS mutable Datenobjekte als optionale Funktionsargumente!
     * Warum ist es riskant mutable Datenobjekte als optionale Funktionsargumente zu verwenden? In welcher Reihenfolge müssen optionale Funktionsargumente angebenen werden? Wie funktionert \* gather von Argumenten?
 
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 4 herunterladen.
 
 <!--## Videos to watch...-->
 <!--::::{grid}-->

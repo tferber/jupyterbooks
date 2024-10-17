@@ -27,9 +27,6 @@
 * Rekursive Funktionen rufen sich selbst auf bis eine Abbruchbedingung erfüllt ist
 * Prüfen sie Funkionsparameter und User-Eingaben: Easier to Ask Forgiveness Than Permission
 
-## Download Vorlesungsfolien
-
-{Download}`Hier <https://ilias.studium.kit.edu/goto.php?target=fold_2215340&client_id=produktiv>` können sie die Vorlesungsfolien zur Vorlesung 3 herunterladen.
 
 ## Videos to watch...
 ::::{grid}
