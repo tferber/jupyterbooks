@@ -20,7 +20,7 @@
 
 ## Was Sie wissen sollten
 
-* Mit boolschen Bedingungen (`=`, `!=`, `>`, `<`, `>=`, `<=`) und logischen Bedingungen (`and`, `or`, `not`) testen Sie Argumente auf True oder False
+* Mit boolschen Bedingungen (`==`, `!=`, `>`, `<`, `>=`, `<=`) und logischen Bedingungen (`and`, `or`, `not`) testen Sie Argumente auf True oder False
 * Mit `if-elif-else` Kontrollstrukturen kontrollieren sie, welche Teile ihres Codes unter welchen Bedingungen ausgeführt wird
 * Mit der Kontrollstrukturen `while` durchlaufen sie eine Schleife solange bis eine Abbruchbedingung erfüllt ist
 * Mit der Kontrollstrukturen `for` führen sie eine Schleife einmal pro Datenobjekt aus (sog. Iteration)
